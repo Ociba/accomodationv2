@@ -22,12 +22,12 @@
             </div>
         </div>
         <a name="top" style="height:0; position:absolute; top:0;" id="top"></a>
-        <div id="body-wrap"  class=" ">
+        <div id="body-wrap"  class=" " >
             <div id="wrap">
                 @include('layouts.menu')
                 @include('layouts.slider')  
                 <!--body content-->
-                <div id="cactus-body-container">
+                <div id="cactus-body-container" >
                     <div class="cactus-sidebar-control sb-ct-medium   sb-ct-small ">
                         <!--sb-ct-medium, sb-ct-small-->
                         <div class="cactus-container ">

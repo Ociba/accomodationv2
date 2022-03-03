@@ -9,8 +9,8 @@
                         <!--logo-->
                         <div class="cactus-logo navigation-font">
                             <a href="https://videopro.cactusthemes.com/v1/">
-                            <img src="{{ asset('wp-content/uploads/2016/05/01-videopro-logo-dark-1x.png')}}" alt="VideoPro" title="VideoPro" class="cactus-img-logo">
-                            <img src="{{ asset('wp-content/uploads/2016/05/01-videopro-logo-dark-1x.png')}}" alt="VideoPro" title="VideoPro" class="cactus-img-logo cactus-img-sticky">
+                            <img src="{{ asset('wp-content/uploads/house.png')}}" alt="VideoPro" title="VideoPro" class="cactus-img-logo">
+                            <img src="{{ asset('wp-content/uploads/house.png')}}" alt="VideoPro" title="VideoPro" class="cactus-img-logo cactus-img-sticky">
                             </a>
                         </div>
                         <!--logo-->
@@ -22,7 +22,7 @@
                         <!--header search-->
                         <div class="cactus-header-search-form search-box-expandable">
                             <aside id="advance_search_form-3" class="   widget widget-asf">
-                                <style>#advance_search_form-3 .ct-sub-w-title{color:#FFFFFF !important; background:#FF0000 !important}</style>
+                                <style>#advance_search_form-3 .ct-sub-w-title{color:#FFFFFF !important; background:#FFFFFF !important}</style>
                                 <div class="widget-inner">
                                     <div class="cactus-main-menu cactus-open-search-mobile navigation-font">
                                         <ul>
@@ -62,16 +62,16 @@
                                 <li><a href="javascript:;"><i class="fas fa-bars"></i>MENU</a></li>
                             </ul>
                         </div>
-                        <div class="cactus-submit-video">
-                            <!--<style>
-                                .cactus-submit-video a {background-color:##D9251D !important; color:##FFFFFF !important;}
-                                .cactus-submit-video a:hover{background-color:##999999 !important; color:##FFFFFF !important;}
-                                </style>-->
+                        {{--<div class="cactus-submit-video">
+                        <a href=""><i class="fas fa-shopping-cart" style="color:#ff8000;"></i>&nbsp;<span  style="background-color:whit;text-decoration: none;">Cart</span></a>
                             <a href="#" data-toggle="modal" data-target="#videopro_submit_form" class="btn btn-user-submit btn-default bt-style-1 padding-small " data-type="">        	
                             <span>Submit Video</span>        </a>
-                        </div>
+                        </div>--}}
                         <div class="cactus-main-menu cactus-user-login navigation-font">
                             <ul>
+                                <li>
+                                <a href="https://videopro.cactusthemes.com/v1/login/?redirect_to=https%3A%2F%2Fvideopro.cactusthemes.com%2Fv1%2Fhome-page-v5">Cart &nbsp; <i class="fas fa-shopping-cart"></i>1</a>
+                                </li>
                                 <li>
                                     <a href="https://videopro.cactusthemes.com/v1/login/?redirect_to=https%3A%2F%2Fvideopro.cactusthemes.com%2Fv1%2Fhome-page-v5"><i class="fas fa-user"></i>&nbsp;Login</a>
                                     <ul>

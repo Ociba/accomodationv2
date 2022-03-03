@@ -186,7 +186,7 @@ License URI: https://www.cactusthemes.com
 	}
 	.sub-lineheight { line-height:1.45;}
 
-	#body-wrap{ position:relative; overflow:hidden;}
+	#body-wrap{ position:relative; overflow:hidden;background-color:#FF4500;}
 	#wrap {position:relative; margin-left:auto; margin-right:auto;}
 
 		/*3.1 - Theme Color*/
@@ -201,7 +201,8 @@ License URI: https://www.cactusthemes.com
 
 		/*3.2 - dark div background*/
 		.dark-div { color:rgba(153,153,153,1.0)} /*Hex: #999999*/
-		.dark-bg-color-1 { background-color:rgba(38,38,38,1.00); /*Hex: #262626*/}
+		/*.dark-bg-color-1 { background-color:rgba(255, 0, 191,1.00);*/ /*Hex: #262626*/
+			.dark-bg-color-1 { background-color:rgba(0, 0, 153,1.00);} 
 		/*End - 3.2 - dark div background*/
 
 		/*3.3 - link*/
@@ -413,7 +414,7 @@ License URI: https://www.cactusthemes.com
 
 			/*style 1*/
 			.btn-default.bt-style-1:not(:hover), button.bt-style-1:not(:hover), input[type=button].bt-style-1:not(:hover), input[type=submit].bt-style-1:not(:hover),
-			.btn-default.bt-style-1:visited:not(:hover), button.bt-style-1:visited:not(:hover), input[type=button].bt-style-1:visited:not(:hover), input[type=submit].bt-style-1:visited:not(:hover) { background-color:rgba(217,37,29,1.0); color:rgba(255,255,255,1.00)}
+			.btn-default.bt-style-1:visited:not(:hover), button.bt-style-1:visited:not(:hover), input[type=button].bt-style-1:visited:not(:hover), input[type=submit].bt-style-1:visited:not(:hover) { background-color:rgba(255, 64, 0,1.0); color:rgba(255,255,255,1.00)}
 			/*style 1*/
 
 			/*style 2*/
@@ -940,7 +941,7 @@ License URI: https://www.cactusthemes.com
 			.cactus-user-login { text-align:right; padding-left:0;}
 			.cactus-user-login.cactus-main-menu > ul > li > ul { border-right:none; border-left:1px solid rgba(0,0,0,0);}
 			.cactus-user-login.cactus-main-menu > ul > li > ul { left: auto; right:0; z-index: 1}
-			.cactus-user-login.cactus-main-menu > ul > li > a { position:relative; color:rgba(245,235,78,1.0); padding-left:21px; max-width:155px; overflow:hidden; text-overflow:ellipsis;}
+			.cactus-user-login.cactus-main-menu > ul > li > a { position:relative; color:rgba(255, 255, 255,1.0); padding-left:21px; max-width:155px; overflow:hidden; text-overflow:ellipsis;}
 			.cactus-user-login.cactus-main-menu > ul > li > a:hover,
 			.cactus-user-login.cactus-main-menu > ul > li:hover > a { color:rgba(153,153,153,1.0);}
 			.cactus-user-login.cactus-main-menu > ul > li > a:before { /*background-color:rgba(72,72,72,1.0); width:1px; top:30px; bottom:30px; content:''; left:0px; display:block; position:absolute;*/}
@@ -1009,7 +1010,7 @@ License URI: https://www.cactusthemes.com
 		#header-navigation .cactus-header-search-form.search-box-expandable form input:not([type="submit"]):-webkit-autofill {
 			background-color:rgba(255,255,255,1.0);
 			-webkit-box-shadow:0 0 0 50px rgba(255,255,255,1.0) inset;
-			-webkit-text-fill-color:rgba(102,102,102,1.0);
+			-webkit-text-fill-color:rgba(255,255,255,1.0);
 			outline:none;
 		}
 
@@ -1086,7 +1087,7 @@ License URI: https://www.cactusthemes.com
 				.cactus-logo .cactus-img-logo { max-height:25px;}
 
 				.cactus-header-search-form { width:auto;}
-				.cactus-header-search-form form { visibility: hidden; opacity: 0; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color:rgba(38,38,38,1.0); transition: all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;}
+				.cactus-header-search-form form { visibility: hidden; opacity: 0; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color:rgba(255,255,255,1.0); transition: all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;}
 				.cactus-header-search-form form.active {visibility: visible; opacity: 1;}
 				.cactus-header-search-form form input[type="submit"] { display:none;}
 				#header-navigation .cactus-nav-control .cactus-header-search-form form input:not([type="submit"]),
@@ -1138,7 +1139,7 @@ License URI: https://www.cactusthemes.com
 				.cactus-nav-style-3 .cactus-nav-right > * { position:relative; z-index:1;}
 			}
 			@media(max-width:767px) {
-				.cactus-nav-style-3 .cactus-header-search-form form { background-color:rgba(60,60,60,1.0);}
+				.cactus-nav-style-3 .cactus-header-search-form form { background-color:rgba(255,255,255,1.0);}
 			}
 		/*Style 3*/
 
@@ -2640,7 +2641,7 @@ License URI: https://www.cactusthemes.com
 		/*End - 11.5 - Post Video*/
 	/*End - 11.0 - Single Post*/
 
-	.cactus-carousel-style-bottom { position:relative; z-index:3; padding:30px 22px 30px 21px; background-color:rgba(60,60,60,1.0);}
+	.cactus-carousel-style-bottom { position:relative; z-index:3; padding:30px 22px 30px 21px; background-color:rgb(48, 48, 49);}
 	.cactus-carousel-style-bottom.default-sidebar { padding-bottom:20px;}
 	.cactus-carousel-style-bottom .cactus-listing-config.style-2 .cactus-sub-wrap { white-space:nowrap;}
 	.cactus-carousel-style-bottom .cactus-listing-config.style-2 .cactus-sub-wrap:not(.slick-slider) { overflow:hidden;}
@@ -3256,7 +3257,7 @@ License URI: https://www.cactusthemes.com
 			.widget-asf .searchtext .suggestion ul li a { line-height:1.8; display:block; color:rgba(102,102,102,1.0); height:auto; padding:3px 15px 2px 15px; border-bottom:1px solid rgba(0,0,0,0.1);}
 
 			.widget-asf .searchtext .suggestion li a:hover,
-			.widget-asf .searchtext .suggestion li.active a { background-color:rgba(102,102,102,1.0); color:rgba(255,255,255,1.00);}
+			.widget-asf .searchtext .suggestion li.active a { background-color:rgba(255,255,255,1.0); color:rgba(255,255,255,1.00);}
 
 			#searchsubmit { width:100%;}
 

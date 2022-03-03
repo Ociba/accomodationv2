@@ -1,21 +1,21 @@
 <div class="cactus-sidebar ct-small">
     <div class="cactus-sidebar-content">
         <aside id="top-channel-2" class=" style-5  widget widget_top_channels">
-            <style>#top-channel-2 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
+            <style>#top-channel-2 .ct-sub-w-title{color:FFFFFF !important; background:#ff6600 !important}</style>
             <div class="widget-inner">
-                <h2 class="widget-title h4">Top Channels</h2>
+                <h2 class="widget-title h4">Accomodation</h2>
                 <div class="widget_top_channel_content">
                     <div class="post-metadata sp-style">
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/channel/music-channel/" title="Music Channel">
+                                <a href="/rooms/" title="rooms">
                                 <img width="50" height="50"  src="{{ asset('/wp-content/motor.jpg')}}"  data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade"  style="padding-top:100%;" alt="vp-ms07"/>
                                 </a>
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/channel/music-channel/" title="Music Channel">
-                                    Music Channel
+                                    <a href="/rooms/" title="rooms">
+                                    Rooms
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
@@ -32,8 +32,8 @@
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/channel/tv-channel/" title="TV Channel">
-                                    TV Channel
+                                    <a href="/hostels/" title="Hostels">
+                                    Hostels
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
@@ -50,8 +50,8 @@
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/channel/movies-channel/" title="Movie Channel">
-                                    Movie Channel
+                                    <a href="/houses/" title="Houses">
+                                    Houses
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
@@ -68,8 +68,8 @@
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/channel/tech-channel/" title="Tech Channel">
-                                    Tech Channel
+                                    <a href="/apartment/" title="Tech Channel">
+                                   Apartments
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
@@ -99,8 +99,8 @@
                     </div>
                 </div>
             </div>
-            </aside
-            aside id="videopro_categories-2" class=" style-2  widget videopro_widget_categories widget_casting">
+           </aside>
+            <aside id="videopro_categories-2" class=" style-2  widget videopro_widget_categories widget_casting">
             <style>#videopro_categories-2 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
             <div class="widget-inner">
                 <h2 class="widget-title h4">Categories</h2>

@@ -240,7 +240,7 @@
          </div>
       </div>
    </div>
-   <div class="footer-info dark-div">
+   <div class="footer-info dark-div" style="background-color:rgb(0, 0, 153,1.00)">
       <div class="cactus-container padding-20px">
          <div class="cactus-row magin-20px">
             <div class="copyright font-1">© 2016 VideoPro Theme by CactusThemes. All rights reserved.</div>
