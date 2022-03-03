@@ -1,0 +1,13 @@
+{
+    "name": "Beddings",
+    "alias": "beddings",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Beddings\\Providers\\BeddingsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

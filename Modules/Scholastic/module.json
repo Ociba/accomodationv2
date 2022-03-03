@@ -1,0 +1,13 @@
+{
+    "name": "Scholastic",
+    "alias": "scholastic",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Scholastic\\Providers\\ScholasticServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

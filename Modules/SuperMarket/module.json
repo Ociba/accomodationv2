@@ -1,0 +1,13 @@
+{
+    "name": "SuperMarket",
+    "alias": "supermarket",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SuperMarket\\Providers\\SuperMarketServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Saloon",
+    "alias": "saloon",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Saloon\\Providers\\SaloonServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -2,5 +2,20 @@
     "Rooms": true,
     "Hostels": true,
     "Houses": true,
-    "Apartment": true
+    "Apartment": true,
+    "PlotsAndLand": true,
+    "Shop": true,
+    "Office": true,
+    "SuperMarket": true,
+    "Clothes": true,
+    "Shoe": true,
+    "Phones": true,
+    "Saloon": true,
+    "Bags": true,
+    "Electronics": true,
+    "Computers": true,
+    "Drinks": true,
+    "Utensils": true,
+    "Beddings": true,
+    "Scholastic": true
 }

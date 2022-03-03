@@ -1,0 +1,13 @@
+{
+    "name": "Shoe",
+    "alias": "shoe",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Shoe\\Providers\\ShoeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

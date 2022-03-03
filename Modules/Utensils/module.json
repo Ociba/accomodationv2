@@ -1,0 +1,13 @@
+{
+    "name": "Utensils",
+    "alias": "utensils",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Utensils\\Providers\\UtensilsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

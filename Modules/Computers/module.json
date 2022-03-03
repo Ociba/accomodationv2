@@ -1,0 +1,13 @@
+{
+    "name": "Computers",
+    "alias": "computers",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Computers\\Providers\\ComputersServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "PlotsAndLand",
+    "alias": "plotsandland",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\PlotsAndLand\\Providers\\PlotsAndLandServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

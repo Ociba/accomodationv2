@@ -19,7 +19,7 @@
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 videos</span></span>
+                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
                                     <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 25953 views</div>
                                 </div>
                             </div>
@@ -37,7 +37,7 @@
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 videos</span></span>
+                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
                                     <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 7705 views</div>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 videos</span></span>
+                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
                                     <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 3737 views</div>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 videos</span></span>
+                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
                                     <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 2984 views</div>
                                 </div>
                             </div>
@@ -86,12 +86,48 @@
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/channel/sport-channel/" title="Sport Channel">
-                                    Sport Channel
+                                    <a href="/plotsandland/" title="Land and Plots">
+                                    Plots & Land
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 videos</span></span>
+                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
+                                    <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 2058 views</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-subscribe">
+                            <div class="channel-picture">
+                                <a href="https://videopro.cactusthemes.com/v1/channel/sport-channel/" title="Sport Channel">
+                                <img width="50" height="50"  src="{{ asset('/wp-content/singer.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-sp10"/>
+                                </a>
+                            </div>
+                            <div class="channel-content">
+                                <h4 class="channel-title h6">
+                                    <a href="/shop/" title="Shop">
+                                    Shop
+                                    </a>
+                                </h4>
+                                <div class="posted-on metadata-font">
+                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
+                                    <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 2058 views</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-subscribe">
+                            <div class="channel-picture">
+                                <a href="https://videopro.cactusthemes.com/v1/channel/sport-channel/" title="Sport Channel">
+                                <img width="50" height="50"  src="{{ asset('/wp-content/singer.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-sp10"/>
+                                </a>
+                            </div>
+                            <div class="channel-content">
+                                <h4 class="channel-title h6">
+                                    <a href="/office/" title="Office">
+                                    Office
+                                    </a>
+                                </h4>
+                                <div class="posted-on metadata-font">
+                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
                                     <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 2058 views</div>
                                 </div>
                             </div>
@@ -103,86 +139,138 @@
             <aside id="videopro_categories-2" class=" style-2  widget videopro_widget_categories widget_casting">
             <style>#videopro_categories-2 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
             <div class="widget-inner">
-                <h2 class="widget-title h4">Categories</h2>
+                <h2 class="widget-title h4">Supermarket</h2>
                 <div class="widget_casting_content widget-cat-style-icon">
                     <div class="post-metadata sp-style style-2 style-3">
                         <div class="channel-subscribe ">
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/category/game/" title="GAME">
+                                    <a href="/supermarket" title="All">
                                     <i class="fas fa fa-gamepad"></i>
-                                    GAME                        </a>
+                                    All                        
                                     <span class="tt-number">(13)</span>
+                                    </a>
                                 </h4>
                             </div>
                         </div>
                         <div class="channel-subscribe ">
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/category/kombat/" title="KOMBAT">
+                                    <a href="/clothes/" title="KOMBAT">
                                     <i class="fas fa-shield-alt"></i>
-                                    KOMBAT                        </a>
+                                    Colthes                        
                                     <span class="tt-number">(8)</span>
+                                    </a>
                                 </h4>
                             </div>
                         </div>
                         <div class="channel-subscribe ">
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/category/movie/" title="MOVIE">
+                                    <a href="/shoe/" title="Shoes">
                                     <i class="fas fa fa-play-circle"></i>
-                                    MOVIE                        </a>
+                                    Shoes                        
                                     <span class="tt-number">(15)</span>
+                                    </a>
                                 </h4>
                             </div>
                         </div>
                         <div class="channel-subscribe ">
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/category/music/" title="MUSIC">
+                                    <a href="/phones/" title="Phones">
                                     <i class="fas fa fa-music"></i>
-                                    MUSIC                        </a>
+                                    Phones                        
                                     <span class="tt-number">(14)</span>
+                                    </a>
                                 </h4>
                             </div>
                         </div>
                         <div class="channel-subscribe ">
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/category/news/" title="NEWS">
+                                    <a href="/saloon/" title="Saloon">
                                     <i class="fas far fa-newspaper"></i>
-                                    NEWS                        </a>
+                                    Saloon                        
                                     <span class="tt-number">(20)</span>
+                                    </a>
                                 </h4>
                             </div>
                         </div>
                         <div class="channel-subscribe ">
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/category/sport/" title="SPORT">
+                                    <a href="/bags/" title="Bags">
                                     <i class="fas far fa-futbol"></i>
-                                    SPORT                        </a>
+                                    Bags                        
                                     <span class="tt-number">(10)</span>
+                                    </a>
                                 </h4>
                             </div>
                         </div>
                         <div class="channel-subscribe ">
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/category/tech/" title="TECH">
+                                    <a href="/electronics/" title="Electronic">
                                     <i class="fas fa fa-location-arrow"></i>
-                                    TECH                        </a>
+                                    Electronics                      
                                     <span class="tt-number">(10)</span>
+                                    </a>
                                 </h4>
                             </div>
                         </div>
                         <div class="channel-subscribe ">
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/category/tv-show/" title="TV SHOW">
+                                    <a href="/computers/" title="Computer">
                                     <i class="fas fa fa-leaf"></i>
-                                    TV SHOW                        </a>
+                                    Computers                        
                                     <span class="tt-number">(9)</span>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="channel-subscribe ">
+                            <div class="channel-content">
+                                <h4 class="channel-title h6">
+                                    <a href="/drinks/" title="Drinks">
+                                    <i class="fas fa fa-leaf"></i>
+                                    Drinks                        
+                                    <span class="tt-number">(19)</span>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="channel-subscribe ">
+                            <div class="channel-content">
+                                <h4 class="channel-title h6">
+                                    <a href="/utensils/" title="Utensils">
+                                    <i class="fas fa fa-leaf"></i>
+                                    Utensils                        
+                                    <span class="tt-number">(9)</span>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="channel-subscribe ">
+                            <div class="channel-content">
+                                <h4 class="channel-title h6">
+                                    <a href="/beddings/" title="Beddings">
+                                    <i class="fas fa fa-leaf"></i>
+                                    Beddings                        
+                                    <span class="tt-number">(29)</span>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="channel-subscribe ">
+                            <div class="channel-content">
+                                <h4 class="channel-title h6">
+                                    <a href="/scholastic/" title="School">
+                                    <i class="fas fa fa-leaf"></i>
+                                    Scholastics                        
+                                    <span class="tt-number">(17)</span>
+                                    </a>
                                 </h4>
                             </div>
                         </div>
@@ -193,98 +281,111 @@
         <aside id="actor-listing-2" class="small-padding dark-div style-4  widget widget_casting">
             <style>#actor-listing-2 .ct-sub-w-title{color:FFFFFF !important; background:17A015 !important}</style>
             <div class="widget-inner">
-                <h2 class="widget-title h4"><span>Top Stars<i class="ct-sub-w-title">HOT</i></span></h2>
+                <h2 class="widget-title h4" style="text-align:center;"><span>Agriculture Produce{{--<i class="ct-sub-w-title">HOT</i>--}}</span></h2>
                 <div class="widget_casting_content original-style">
                     <div class="post-metadata sp-style style-2 style-3">
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/actor/trinity-green/" title="Trinity Green">
+                                <a href="/poultry/" title="Poultry">
                                 <img width="50" height="50"  src="{{ asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="08-Trinity-Green"/>
                                 </a>
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/actor/trinity-green/" title="Trinity Green">Trinity Green</a>
+                                    <a href="/poultry/" title="Poultry">Poultry</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">10 videos</span>
+                                <span class="tt-number cactus-info font-size-1">10 Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/actor/alex-johnson/" title="Alex Johnson">
+                                <a href="/animals/" title="Animals">
                                 <img width="50" height="50"  src="{{ asset('wp-content/uploads/2016/07/03-Alex-Johnson-50x50.jpg')}}"  data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="03-Alex-Johnson"/>
                                 </a>
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/actor/alex-johnson/" title="Alex Johnson">Alex Johnson</a>
+                                    <a href="/animals/" title="Animals">Animals</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">12 videos</span>
+                                <span class="tt-number cactus-info font-size-1">12 Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/actor/dakota-thomas/" title="Dakota Thomas">
+                                <a href="/cereals/" title="Cereals">
                                 <img width="50" height="50"  src="{{ asset('/wp-content/motor.jpg')}}"  data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="05-Dakota-Thomas"/>
                                 </a>
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/actor/dakota-thomas/" title="Dakota Thomas">Dakota Thomas</a>
+                                    <a href="/cereals/" title="Cereals">Cereals</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">16 videos</span>
+                                <span class="tt-number cactus-info font-size-1">16 Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/actor/tyler-allen/" title="Tyler Allen">
+                                <a href="/root-tubers/" title="Root Tubers">
                                 <img width="50" height="50" src="{{ asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="07-Tyler-Allen"/>
                                 </a>
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/actor/tyler-allen/" title="Tyler Allen">Tyler Allen</a>
+                                    <a href="/root-tubers/" title="Root Tubers">Root Tubers</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">12 videos</span>
+                                <span class="tt-number cactus-info font-size-1">12 Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/actor/daniel-walker/" title="Daniel Walker">
+                                <a href="/legumes/" title="Legumes">
                                 <img width="50" height="50" src="{{ asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="06-Daniel-Walker"/>
                                 </a>
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/actor/daniel-walker/" title="Daniel Walker">Daniel Walker</a>
+                                    <a href="/legumes/" title="Legumes">Legumes</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">12 videos</span>
+                                <span class="tt-number cactus-info font-size-1">12 Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/actor/kayla-miller/" title="Kayla Miller">
+                                <a href="/vegetables/" title="Vegetables">
                                 <img width="50" height="50" src="{{ asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="02-kayla-miller"/>
                                 </a>
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/actor/kayla-miller/" title="Kayla Miller">Kayla Miller</a>
+                                    <a href="/vegetables/" title="Vegetables">Vegetables</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">16 videos</span>
+                                <span class="tt-number cactus-info font-size-1">16 Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/actor/alyssa-moore/" title="Alyssa Moore">
+                                <a href="/fruits" title="Fruits">
                                 <img width="50" height="50" src="{{asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="04-Alyssa-Moore"/>
                                 </a>
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="https://videopro.cactusthemes.com/v1/actor/alyssa-moore/" title="Alyssa Moore">Alyssa Moore</a>
+                                    <a href="/fruits" title="Fruits">Fruits</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">8 videos</span>
+                                <span class="tt-number cactus-info font-size-1">8 Items</span>
+                            </div>
+                        </div>
+                        <div class="channel-subscribe">
+                            <div class="channel-picture">
+                                <a href="/stem-tubers" title="Stem Tubers">
+                                <img width="50" height="50" src="{{asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="04-Alyssa-Moore"/>
+                                </a>
+                            </div>
+                            <div class="channel-content">
+                                <h4 class="channel-title h6">
+                                    <a href="/stem-tubers" title="Stem Tubers">Stem Tubers</a>
+                                </h4>
+                                <span class="tt-number cactus-info font-size-1">8 Items</span>
                             </div>
                         </div>
                     </div>

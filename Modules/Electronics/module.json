@@ -1,0 +1,13 @@
+{
+    "name": "Electronics",
+    "alias": "electronics",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Electronics\\Providers\\ElectronicsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
