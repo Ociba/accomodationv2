@@ -26,5 +26,6 @@
     "Legumes": true,
     "Vegetables": true,
     "Fruits": true,
-    "StemTubers": true
+    "StemTubers": true,
+    "AgricultureEquipments": true
 }

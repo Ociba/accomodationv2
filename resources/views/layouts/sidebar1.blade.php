@@ -395,7 +395,7 @@
         <aside id="text-4" class="small-padding white-div style-4  widget widget_text">
             <style>#text-4 .ct-sub-w-title{color:FFFFFF !important; background:FFFFFF !important}</style>
             <div class="widget-inner">
-                <h2 class="widget-title h4">Buy Membership</h2>
+                <h2 class="widget-title h4"><a href="/agricultureequipments/">Agricultural Equipements</a></h2>
                 <div class="textwidget">
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
                     <p><a href="#" title="BUY NOW" id="cactus-btn-232"  class="btn btn-default bt-style-1">BUY NOW</a></p>
