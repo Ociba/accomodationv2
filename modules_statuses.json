@@ -17,5 +17,14 @@
     "Drinks": true,
     "Utensils": true,
     "Beddings": true,
-    "Scholastic": true
+    "Scholastic": true,
+    "PoultryController": true,
+    "Poultry": true,
+    "Animals": true,
+    "Cereals": true,
+    "RootTubers": true,
+    "Legumes": true,
+    "Vegetables": true,
+    "Fruits": true,
+    "StemTubers": true
 }

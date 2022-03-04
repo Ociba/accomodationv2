@@ -1,0 +1,13 @@
+{
+    "name": "Fruits",
+    "alias": "fruits",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Fruits\\Providers\\FruitsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

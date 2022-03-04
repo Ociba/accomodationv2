@@ -1,0 +1,13 @@
+{
+    "name": "Vegetables",
+    "alias": "vegetables",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Vegetables\\Providers\\VegetablesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1664,7 +1664,7 @@ License URI: https://www.cactusthemes.com
 		footer .footer-info .cactus-container > .cactus-row > * { width:50%;}
 
 		footer .footer-info { padding-top:23px;}
-        footer .footer-info.dark-div{border-top:1px solid rgba(60,60,60,1.0); }
+        footer .footer-info.dark-div{border-top:1px solid rgba(60,60,60,1.0);background-color:rgba(0, 0, 153,1.00); color:#fff; }
 		footer .footer-info .cactus-container > .cactus-row > * { margin-bottom:22px;}
 
 		footer .footer-info .link #menu-footer-menu { display:block; width:auto; list-style: none; margin: 0; padding: 0; text-align:right; font-size:0; line-height:0; margin-left:-15px; margin-right:-15px;}

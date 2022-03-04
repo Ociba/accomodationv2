@@ -1,0 +1,13 @@
+{
+    "name": "StemTubers",
+    "alias": "stemtubers",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\StemTubers\\Providers\\StemTubersServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

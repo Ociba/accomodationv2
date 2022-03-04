@@ -1,0 +1,13 @@
+{
+    "name": "RootTubers",
+    "alias": "roottubers",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\RootTubers\\Providers\\RootTubersServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

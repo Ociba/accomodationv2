@@ -1,0 +1,13 @@
+{
+    "name": "Cereals",
+    "alias": "cereals",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Cereals\\Providers\\CerealsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

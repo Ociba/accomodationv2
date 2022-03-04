@@ -1,0 +1,13 @@
+{
+    "name": "Legumes",
+    "alias": "legumes",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Legumes\\Providers\\LegumesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

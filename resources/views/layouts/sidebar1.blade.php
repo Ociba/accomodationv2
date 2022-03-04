@@ -325,13 +325,13 @@
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="/root-tubers/" title="Root Tubers">
+                                <a href="/roottubers/" title="Root Tubers">
                                 <img width="50" height="50" src="{{ asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="07-Tyler-Allen"/>
                                 </a>
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="/root-tubers/" title="Root Tubers">Root Tubers</a>
+                                    <a href="/roottubers/" title="Root Tubers">Root Tubers</a>
                                 </h4>
                                 <span class="tt-number cactus-info font-size-1">12 Items</span>
                             </div>
@@ -383,7 +383,7 @@
                             </div>
                             <div class="channel-content">
                                 <h4 class="channel-title h6">
-                                    <a href="/stem-tubers" title="Stem Tubers">Stem Tubers</a>
+                                    <a href="/stemtubers" title="Stem Tubers">Stem Tubers</a>
                                 </h4>
                                 <span class="tt-number cactus-info font-size-1">8 Items</span>
                             </div>

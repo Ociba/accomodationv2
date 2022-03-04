@@ -164,10 +164,10 @@
                                         <li class="menu-item level2 parent menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent level1 dropdown-submenu">
                                             <a href="#">Root Tubers</a>
                                             <ul class="sub-menu dropdown-menu level1">
-                                                <li id="mega-menu-item-2505" class=" menu-item menu-item-type-post_type menu-item-object-page level2"><a href="/root-tubers/">Cassava</a></li>
-                                                <li id="mega-menu-item-2506" class=" menu-item menu-item-type-post_type menu-item-object-page level2"><a href="/root-tubers/">Sweet Potatoes</a></li>
-                                                <li id="mega-menu-item-2507" class=" menu-item menu-item-type-post_type menu-item-object-page level2"><a href="/root-tubers/">Ginger</a></li>
-                                                <li id="mega-menu-item-2507" class=" menu-item menu-item-type-post_type menu-item-object-page level2"><a href="/root-tubers/">Ebisali</a></li>
+                                                <li id="mega-menu-item-2505" class=" menu-item menu-item-type-post_type menu-item-object-page level2"><a href="/roottubers/">Cassava</a></li>
+                                                <li id="mega-menu-item-2506" class=" menu-item menu-item-type-post_type menu-item-object-page level2"><a href="/roottubers/">Sweet Potatoes</a></li>
+                                                <li id="mega-menu-item-2507" class=" menu-item menu-item-type-post_type menu-item-object-page level2"><a href="/roottubers/">Ginger</a></li>
+                                                <li id="mega-menu-item-2507" class=" menu-item menu-item-type-post_type menu-item-object-page level2"><a href="/roottubers/">Ebisali</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item level2 parent menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent level1 dropdown-submenu">
@@ -203,7 +203,7 @@
                                         <li class="menu-item level2 parent menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent level1 dropdown-submenu">
                                             <a href="#">Stem Tubers</a>
                                             <ul class="sub-menu dropdown-menu level1">
-                                                <li id="mega-menu-item-2505" class=" menu-item menu-item-type-post_type menu-item-object-page level2"><a href="/stem-tubers/">Sugar Cane</a></li>
+                                                <li id="mega-menu-item-2505" class=" menu-item menu-item-type-post_type menu-item-object-page level2"><a href="/stemtubers/">Sugar Cane</a></li>
                                             </ul>
                                         </li>
                                     </ul>

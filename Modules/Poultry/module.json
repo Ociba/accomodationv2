@@ -1,0 +1,13 @@
+{
+    "name": "Poultry",
+    "alias": "poultry",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Poultry\\Providers\\PoultryServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
