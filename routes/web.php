@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 Route::get('/login-now', function() { return view('login-page');});
-Route::get('/register-now', function() { return view('register-page');});
+Route::get('/register-now', function() { return view('register-page');});  
+Route::get('/cart',[CartController::Class,'getCart'])->name('Cart'); 
+Route::get('/checkout',[CartController::Class,'getCheckout'])->name('Checkout');
+Route::get('/order-list',[CartController::Class,'OrderList'])->name('Place Order');

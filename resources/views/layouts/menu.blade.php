@@ -66,7 +66,7 @@
                         <div class="cactus-main-menu cactus-user-login navigation-font">
                             <ul>
                                 <li>
-                                <a href="https://videopro.cactusthemes.com/v1/login/?redirect_to=https%3A%2F%2Fvideopro.cactusthemes.com%2Fv1%2Fhome-page-v5">Cart &nbsp; <i class="fas fa-shopping-cart"></i><span style="background-color:orange; border-radius: 10px; padding:3px;">1</span></a>
+                                <a href="/cart">Cart &nbsp; <i class="fas fa-shopping-cart"></i><span style="background-color:orange; border-radius: 10px; padding:3px;">1</span></a>
                                 </li>
                                 <li>
                                     <a href="/login-now"><i class="fas fa-user"></i>&nbsp;Login</a>

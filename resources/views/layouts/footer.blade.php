@@ -246,7 +246,7 @@
             <div class="copyright font-1">© 2020- {{date('Y')}} JJOOME LImited -Uganda. All rights reserved.</div>
             <div class="link font-1">
                <div class="menu-footer-menu-container ">
-                  <ul id="menu-footer-menu" class="menu">
+                  <ul id="menu-footer-menu" class="menu" style="color:#ffffff;">
                      <li id="menu-item-782" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-782"><a href="/">Home</a></li>
                      <li id="menu-item-783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-783"><a href="#">About</a></li>
                      <li id="menu-item-784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-784"><a href="#">Contact Us</a></li>

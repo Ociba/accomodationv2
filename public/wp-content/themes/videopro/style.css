@@ -415,11 +415,12 @@ License URI: https://www.cactusthemes.com
 			/*style 1*/
 			.btn-default.bt-style-1:not(:hover), button.bt-style-1:not(:hover), input[type=button].bt-style-1:not(:hover), input[type=submit].bt-style-1:not(:hover),
 			.btn-default.bt-style-1:visited:not(:hover), button.bt-style-1:visited:not(:hover), input[type=button].bt-style-1:visited:not(:hover), input[type=submit].bt-style-1:visited:not(:hover) { background-color:rgba(255, 64, 0,1.0); color:rgba(255,255,255,1.00)}
+			.bt-style-2:visited:not(:hover) { background-color:rgba(36, 36, 143,1.0); color:rgba(255,255,255,1.00)}
 			/*style 1*/
 
 			/*style 2*/
 			.btn-default.bt-style-2, button.bt-style-2, input[type=button].bt-style-2, input[type=submit].bt-style-2,
-			.btn-default.bt-style-2:visited, button.bt-style-2:visited, input[type=button].bt-style-2:visited, input[type=submit].bt-style-2:visited { background-color:rgba(25,166,18,1.0)}
+			.btn-default.bt-style-2:visited, button.bt-style-2:visited, input[type=button].bt-style-2:visited, input[type=submit].bt-style-2:visited { background-color:rgba(36, 36, 143,1.0)}
 			.btn-default.bt-style-2:hover, button.bt-style-2:hover, input[type=button].bt-style-2:hover, input[type=submit].bt-style-2:hover {background-color:rgba(195,195,195,1.0); color:rgba(255,255,255,1.00)}
 			/*style 2*/
 
