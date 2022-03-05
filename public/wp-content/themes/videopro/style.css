@@ -203,6 +203,7 @@ License URI: https://www.cactusthemes.com
 		.dark-div { color:rgba(153,153,153,1.0)} /*Hex: #999999*/
 		/*.dark-bg-color-1 { background-color:rgba(255, 0, 191,1.00);*/ /*Hex: #262626*/
 			.dark-bg-color-1 { background-color:rgba(0, 0, 153,1.00);} 
+		    .btn-primary {background-color:rgba(0, 0, 153,1.00);}
 		/*End - 3.2 - dark div background*/
 
 		/*3.3 - link*/
