@@ -21,7 +21,7 @@
                                 <!--Sidebar-->
                                 @include('layouts.sidebar1')
                                 <!--Sidebar-->                        
-                                @livewire('shop')
+                                @livewire('office')
                                 <!--Sidebar-->
                                 @include('layouts.right-sidebar1')
                                 <!--Sidebar-->            

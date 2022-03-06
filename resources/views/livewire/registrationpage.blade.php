@@ -1,37 +1,38 @@
 <div>
-<div class="body-content">
-            <!--Content-->
-            <div class="tml tml-register" id="theme-my-login">
-	<p class="message">Register For This Site</p>		<form name="registerform" id="registerform" action="https://videopro.cactusthemes.com/v1/register/" method="post">
-				<p class="tml-user-login-wrap">
-			<label for="user_login">Username</label>
-			<input type="text" name="user_login" id="user_login" class="input" value="" size="20" />
-		</p>
-		
-		<p class="tml-user-email-wrap">
-			<label for="user_email">E-mail</label>
-			<input type="text" name="user_email" id="user_email" class="input" value="" size="20" />
-		</p>
-
-		<div class="g-recaptcha" data-sitekey="6LcHCX8dAAAAACVHV7bjRLHmqxMY_f8HR5ua0KA6" data-theme="light"></div>
-		<p class="tml-registration-confirmation" id="reg_passmail">Registration confirmation will be e-mailed to you.</p>
-
-		<p class="tml-submit-wrap">
-			<input type="submit" name="wp-submit" id="wp-submit" value="Register" />
-			<input type="hidden" name="redirect_to" value="../login/indexe981.html?checkemail=registered" />
-			<input type="hidden" name="instance" value="" />
-			<input type="hidden" name="action" value="register" />
-		</p>
-	</form>
-	<ul class="tml-action-links">
-<li><a href="/login-now" rel="nofollow">Log In</a></li>
-<li><a href="../lostpassword/index.html" rel="nofollow">Lost Password</a></li>
-</ul>
-</div>
-
-
-			            <!--Content-->
-            <div class="entry-footer">
-							</div><!-- .entry-footer -->
+    <div class="body-content">
+        <!--Content-->
+        <div role="form" class="wpcf7" id="wpcf7-f5-p1684-o1" lang="en-US" dir="ltr">
+            <div class="screen-reader-response"></div>
+            <form action="" method="post" class="wpcf7-form" novalidate="novalidate">
+                <p>Your Name *<br />
+                    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> 
+                </p>
+				<p>Your Phone Number *<br />
+                    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="contact" value="" size="40" maxLength="10" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> 
+                </p>
+				<p>Your Location *<br />
+                    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> 
+                </p>
+				<p>Your Photo *<br />
+                    <span class="wpcf7-form-control-wrap your-name"><input type="file" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> 
+                </p>
+                <p>Your Email *<br />
+                    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> 
+                </p>
+                <p>Your Password<br />
+                    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> 
+                </p>
+				<p>Confirm Password<br />
+                    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> 
+                </p>
+                <p><input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit btn-primary" /></p>
+                <div class="wpcf7-response-output wpcf7-display-none"></div>
+				<span style="color:blue;">Have already an account <a href="{{ route('login') }}" style="color:blue;">Login</a></span>
+            </form>
         </div>
+        <!--Content-->
+        <div class="entry-footer">
+        </div>
+        <!-- .entry-footer -->
+    </div>
 </div>

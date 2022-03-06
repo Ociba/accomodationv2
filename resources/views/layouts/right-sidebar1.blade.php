@@ -20,7 +20,10 @@
             <style>#text-7 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
             <div class="widget-inner">
                 <div class="textwidget">
-                    <div style="text-align:center"><a href="https://themeforest.net/item/videopro-video-wordpress-theme/16677956" title="VideoPro Sample Banner"><img src="{{ asset('wp-content/uploads/2016/05/videopro-banner-300x250.jpg')}}" alt="Ad banner"></a></div>
+                    <div style="text-align:center">
+                    <a href="/register-now" title="VideoPro Sample Banner">
+                    <img src="{{ asset('wp-content/uploads/2016/05/videopro-banner-300x250.jpg')}}" alt="Ad banner"></a>
+                   </div>
                 </div>
             </div>
         </aside>

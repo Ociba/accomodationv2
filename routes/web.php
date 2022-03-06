@@ -17,10 +17,14 @@ use App\Http\Controllers\CartController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+});
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
 Route::get('/login-now', function() { return view('login-page');});
 Route::get('/register-now', function() { return view('register-page');});  
 Route::get('/cart',[CartController::Class,'getCart'])->name('Cart'); 
