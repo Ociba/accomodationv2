@@ -1,6 +1,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="xmlrpc.php">
-<title>jjoome property  &#8211; limited</title>
+<title>jjoome property  &#8211; limited -{{request()->route()->getName()}}</title>
 <link rel='dns-prefetch' href='http://www.google.com/' />
 <link rel='dns-prefetch' href='http://s.w.org/' />
 <link rel="alternate" type="application/rss+xml" title="VideoPro &raquo; Feed" href='feed/" />
@@ -53,7 +53,7 @@
 <style id='ct_shortcode_style-inline-css' type='text/css'>
     @media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
     /* Retina Logo */
-    .primary-header .cactus-logo.navigation-font a{background:url(wp-content/uploads/2016/05/02-videopro-logo-dark-2x.png) no-repeat center; background-size:contain;}
+    .primary-header .cactus-logo.navigation-font a{background:url(wp-content/uploads/house.png) no-repeat center; background-size:contain;}
     .primary-header .cactus-logo.navigation-font a img{ opacity:0; visibility:hidden}
     }img.gform_ajax_spinner{background:url(wp-content/themes/videopro/images/ajax-loader.gif);}.cactus-submit-video a{background-color:#D9251D !important;color:#FFFFFF !important;}.cactus-submit-video a:hover{background-color:#999999 !important;color:#FFFFFF !important;}.postid-3014 .player-side-ad{display:none !important}
     #player-embed iframe{border:none;}

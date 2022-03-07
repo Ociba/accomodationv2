@@ -8,7 +8,7 @@
                     <div class="cactus-nav-left">
                         <!--logo-->
                         <div class="cactus-logo navigation-font">
-                            <a href="https://videopro.cactusthemes.com/v1/">
+                            <a href="/">
                             <img src="{{ asset('wp-content/uploads/house.png')}}" alt="VideoPro" title="VideoPro" class="cactus-img-logo">
                             <img src="{{ asset('wp-content/uploads/house.png')}}" alt="VideoPro" title="VideoPro" class="cactus-img-logo cactus-img-sticky">
                             </a>
@@ -20,30 +20,6 @@
                             </ul>
                         </div>
                         <!--header search-->
-                        <div class="cactus-header-search-form search-box-expandable">
-                            <aside id="advance_search_form-3" class="   widget widget-asf">
-                                <style>#advance_search_form-3 .ct-sub-w-title{color:#FFFFFF !important; background:#FFFFFF !important}</style>
-                                <div class="widget-inner">
-                                    <div class="cactus-main-menu cactus-open-search-mobile navigation-font">
-                                        <ul>
-                                            <li><a href="javascript:;"><i class="fas fa-search"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <form role="search" onsubmit="if(jQuery('.ss',jQuery(this)).val() == '' || jQuery('.ss',jQuery(this)).val() == '') return false;" method="get" id="searchform" action="https://videopro.cactusthemes.com/v1/">
-                                        <div>
-                                            <span class="searchtext">
-                                                <input type="text" value="" onfocus="if(this.value == '') this.value = '';" onblur="if(this.value == '') this.value=''" name="s" class="ss"  autocomplete="off" placeholder="Enter Keyword"/>
-                                                <span class="suggestion">
-                                                    <!-- -->
-                                                </span>
-                                                <i class="fas fa-search" aria-hidden="true"></i>
-                                            </span>
-                                            <input type="hidden" name="video_only" value="1" />
-                                        </div>
-                                    </form>
-                                </div>
-                            </aside>
-                        </div>
                         <!--header search-->
                         <div class="cactus-submit-video">
                             <a href="#" data-toggle="modal" data-target="#videopro_submit_form" class="btn btn-user-submit btn-default bt-style-1 padding-small " data-type="">        	
@@ -85,19 +61,6 @@
                             <ul class="nav navbar-nav">
                                 <li id="mega-menu-item-1589" class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children parent level0 has-sub dropdown main-menu-item list-style">
                                     <a href="/"><i class="fa fa-home"></i> Home</a>
-                                    {{--<ul class="sub-menu dropdown-menu sub-menu-list level0">
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page menu-item-home level1"><a href="https://videopro.cactusthemes.com/v1/">Home Page V1</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="https://videopro.cactusthemes.com/v1/home-page-v2/">Home Page V2</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="https://videopro.cactusthemes.com/v1/home-page-v3/">Home Page V3</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="https://videopro.cactusthemes.com/v1/home-page-v4/">Home Page V4</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1508 current_page_item level1"><a href="index.html">Home Page V5</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="https://videopro.cactusthemes.com/v1/home-page-v6/">Home Page V6</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="https://videopro.cactusthemes.com/v1/home-page-v7/">Home Page V7</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="https://videopro.cactusthemes.com/v1/home-page-v8/">Home Page V8</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="https://videopro.cactusthemes.com/v1/home-page-v9/">Home Page V9</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="https://videopro.cactusthemes.com/v1/home-page-v10/">Home Page V10</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="https://videopro.cactusthemes.com/v1/homepage-game-version/">Home Page V11</a></li>
-                                    </ul>--}}
                                 </li>
                                 <li id="mega-menu-item-1446" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent level0 has-sub dropdown main-menu-item list-style">
                                     <a href="#"><i class="fa fa-play-circle-o"></i> Accomodation</a>

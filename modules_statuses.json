@@ -28,5 +28,12 @@
     "Fruits": true,
     "StemTubers": true,
     "AgricultureEquipments": true,
-    "Category": true
+    "Category": true,
+    "Users": true,
+    "Subscribers": true,
+    "Brokers": true,
+    "Property": true,
+    "SuperMarketItemCategory": true,
+    "Produce": true,
+    "Income": true
 }

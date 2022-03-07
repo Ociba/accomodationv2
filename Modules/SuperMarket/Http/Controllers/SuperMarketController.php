@@ -16,6 +16,28 @@ class SuperMarketController extends Controller
     {
         return view('supermarket::index');
     }
+    /**
+     * This function get all supermarket items
+     */
+    public function getSupermarketItems()
+    {
+        return view('supermarket::supermarket_items');
+    }
+    /**
+     * This function get all supermarket customer orders
+     */
+    public function getSupermarketCustomerOrders()
+    {
+        return view('supermarket::customer_orders');
+    }
+
+     /**
+     * This function get all supermarket customer orders
+     */
+    public function getSupermarketCustomerOrdersSummary()
+    {
+        return view('supermarket::customer_order_summary');
+    }
 
     /**
      * Show the form for creating a new resource.

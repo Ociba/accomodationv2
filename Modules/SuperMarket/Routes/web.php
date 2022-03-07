@@ -11,6 +11,10 @@
 |
 */
 
-Route::prefix('supermarket')->group(function() {
+Route::prefix('supermarket')->group(function() { 
     Route::get('/', 'SuperMarketController@index');
+    Route::get('/supermaket-items', 'SuperMarketController@getSupermarketItems');
+    Route::get('/supermarkets-orders', 'SuperMarketController@getSupermarketCustomerOrders');
+    Route::get('/supermarket-order-summary', 'SuperMarketController@getSupermarketCustomerOrdersSummary');
+    //Route::get('/', 'SuperMarketController@index');
 });

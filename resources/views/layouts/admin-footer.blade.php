@@ -245,12 +245,12 @@
             <div class="cactus-row magin-20px">
                 <div class="copyright font-1">© 2016 VideoPro Theme by CactusThemes. All rights reserved.</div>
                 <div class="link font-1">
-                    <div class="menu-footer-menu-container ">
+                    <div class="menu-footer-menu-container " style="color:#ffffff;">
                         <ul id="menu-footer-menu" class="menu">
-                            <li id="menu-item-782" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-782"><a href="https://test.cactusthemes.com/videopro-v1">Home</a></li>
-                            <li id="menu-item-783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-783"><a href="#">About</a></li>
-                            <li id="menu-item-784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-784"><a href="#">Contact Us</a></li>
-                            <li id="menu-item-785" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-785"><a href="#">Report Video</a></li>
+                            <li id="menu-item-782" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-782"><a href="/" style="color:#ffffff;">Home</a></li>
+                            <li id="menu-item-783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-783"><a href="#" style="color:#ffffff;">About</a></li>
+                            <li id="menu-item-784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-784"><a href="#" style="color:#ffffff;">Contact Us</a></li>
+                            <li id="menu-item-785" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-785"><a href="#" style="color:#ffffff;">Report Video</a></li>
                         </ul>
                     </div>
                 </div>

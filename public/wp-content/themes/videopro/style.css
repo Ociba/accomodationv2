@@ -184,6 +184,15 @@ License URI: https://www.cactusthemes.com
 	  -webkit-font-smoothing: antialiased !important;
 	  -moz-osx-font-smoothing: grayscale !important;
 	}
+	.btn-info {
+		background-color:#1d6fd9;
+		color:#fff;
+		padding:6px;
+	}
+	.btn-danger {background-color:rgba(217,37,29,1.0);
+		          color:#fff;
+				  padding:6px;}
+	.mb-1 {margin-bottom:2px;}
 	.sub-lineheight { line-height:1.45;}
 
 	#body-wrap{ position:relative; overflow:hidden;background-color:rgba(85,85,85,1.0);}

@@ -16,7 +16,24 @@ class AgricultureEquipmentsController extends Controller
     {
         return view('agricultureequipments::index');
     }
-
+    /**
+     * This function gets received requests
+     */
+    public function equipmentReceivedRequests(){
+        return view('agricultureequipments::received_requests');
+    }
+     /**
+     * This function gets equipments in stock for sale
+     */
+    public function availbleEquipments(){
+        return view('agricultureequipments::available_equipment');
+    }
+     /**
+     * This function gets equipments being taken or bought
+     */
+    public function equipmentTaken(){
+        return view('agricultureequipments::equipment_taken');
+    }
     /**
      * Show the form for creating a new resource.
      * @return Renderable

@@ -43,34 +43,43 @@
                                         <th>NAME</th>
                                         <th>Quantity</th>
                                         <th>Price</th>
-                                        <th>Remove</th>
+                                        <th>Action</th>
                                     </tr>
                                     <tr>
                                         <td>Daniel Spark</td>
                                         <td>Web Developer</td>
                                         <td>Very Good</td>
                                         <td>
-                                            <a href="">
-                                                <i class="fa fa-times" style="color:#ff0000;"></i>
+                                            <a href=""  class="btn btn-info mb-1">Edit</a>
+                                            <a href=""  class="btn btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                     <tr>
                                     <td>Monica Grace</td>
                                     <td>Marketing Specialist</td>
                                     <td>Excellent</td>
-                                    <td><a href=""><i class="fa fa-times" style="color:#ff0000;"></i></td>
+                                     <td>
+                                            <a href=""  class="btn btn-info mb-1">Edit</a>
+                                            <a href=""  class="btn btn-danger">Delete</a>
+                                        </td>
                                     </tr>
                                     <tr>
                                     <td>Jenifer Storm</td>
                                     <td>Customer Support</td>
                                     <td>Very Good</td>
-                                    <td><a href=""><i class="fa fa-times" style="color:#ff0000;"></i></td>
+                                     <td>
+                                            <a href=""  class="btn btn-info mb-1">Edit</a>
+                                            <a href=""  class="btn btn-danger">Delete</a>
+                                        </td>
                                     </tr>
                                     <tr>
                                     <td>Cathy Abbott</td>
                                     <td>Mobile Developer</td>
                                     <td>Excellent</td>
-                                    <td><a href=""><i class="fa fa-times" style="color:#ff0000;"></i></td>
+                                     <td>
+                                            <a href=""  class="btn btn-info mb-1">Edit</a>
+                                            <a href=""  class="btn btn-danger">Delete</a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>

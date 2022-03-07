@@ -57,7 +57,7 @@
                                                                                                         <div class="picture-content">
                                                                                                             <a href="/" target="_self" title="Little Night Music In Perth Contemporary">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('wp-content/uploads/2016/05/vp-show-06-407x229.jpg')}}"
+                                                                                                                data-src="{{ asset('images/apart6.jpeg')}}"
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-show-06"
                                                                                                                 class="feature-image-first-index lazyload effect-fade"	
@@ -85,9 +85,28 @@
                                                                                                         <div class="posted-on metadata-font text-center">
                                                                                                             <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
                                                                                                         </div>
-                                                                                                        <div class="posted-on metadata-font text-center">
-                                                                                                            <div class="cactus-info font-size-1"><span><button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Add To Cart</button></span></div>
+                                                                                                        <div class="posted-on metadata-font">
+                                                                                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
+                                                                                                            <div class='watch-action'>
+                                                                                                                    <div class='watch-position align-left'>
+                                                                                                                        <div class='action-like'>
+                                                                                                                        <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
+                                                                                                                        <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
+                                                                                                                        </a>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                            </div>
+                                                                                                            <div class='wti-clear'></div>               
+                                                                                                            <div class="login-msg">
+                                                                                                                <div class="login-content">
+                                                                                                                    <span class="login-info">
+                                                                                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
+                                                                                                                    </span>
+                                                                                                                </span>
+                                                                                                                </div>
+                                                                                                            </div>
                                                                                                         </div>
+                                                                                                    </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </article>
@@ -100,7 +119,7 @@
                                                                                                         <div class="picture-content screenshots-preview-inlin">
                                                                                                             <a href="#" target="_self" title="Jessie Channels Her Inner Dominatrix">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('wp-content/uploads/2016/05/vp-show-09-407x229.jpg')}}"
+                                                                                                                data-src="{{ asset('images/apart5.jpeg')}}"
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-show-09"
                                                                                                                 class="feature-image-first-index lazyload effect-fade"	
@@ -124,9 +143,28 @@
                                                                                                         <div class="posted-on metadata-font text-center">
                                                                                                             <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
                                                                                                         </div>
-                                                                                                        <div class="posted-on metadata-font text-center">
-                                                                                                            <div class="cactus-info font-size-1"><span><button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Add To Cart</button></span></div>
-                                                                                                        </div>
+                                                                                                        <div class="posted-on metadata-font">
+                                                                                                                <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
+                                                                                                                    <div class='watch-action'>
+                                                                                                                            <div class='watch-position align-left'>
+                                                                                                                                <div class='action-like'>
+                                                                                                                                <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
+                                                                                                                                <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
+                                                                                                                                </a>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                    </div>
+                                                                                                                    <div class='wti-clear'></div>               
+                                                                                                                    <div class="login-msg">
+                                                                                                                        <div class="login-content">
+                                                                                                                            <span class="login-info">
+                                                                                                                                <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
+                                                                                                                            </span>
+                                                                                                                        </span>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </article>
@@ -139,7 +177,7 @@
                                                                                                         <div class="picture-content">
                                                                                                             <a href="/" target="_self" title="Selfillumination animated By Andre">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('wp-content/uploads/2016/05/vp-mv08-407x229.jpg')}}"
+                                                                                                                data-src="{{ asset('images/house.jpg')}}"
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-mv08"
                                                                                                                 class="feature-image-first-index lazyload effect-fade"	
@@ -168,9 +206,28 @@
                                                                                                         <div class="posted-on metadata-font text-center">
                                                                                                             <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
                                                                                                         </div>
-                                                                                                        <div class="posted-on metadata-font text-center">
-                                                                                                            <div class="cactus-info font-size-1"><span><button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Add To Cart</button></span></div>
+                                                                                                        <div class="posted-on metadata-font">
+                                                                                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
+                                                                                                            <div class='watch-action'>
+                                                                                                                    <div class='watch-position align-left'>
+                                                                                                                        <div class='action-like'>
+                                                                                                                        <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
+                                                                                                                        <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
+                                                                                                                        </a>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                            </div>
+                                                                                                            <div class='wti-clear'></div>               
+                                                                                                            <div class="login-msg">
+                                                                                                                <div class="login-content">
+                                                                                                                    <span class="login-info">
+                                                                                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
+                                                                                                                    </span>
+                                                                                                                </span>
+                                                                                                                </div>
+                                                                                                            </div>
                                                                                                         </div>
+                                                                                                    </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </article>
@@ -183,7 +240,7 @@
                                                                                                         <div class="picture-content">
                                                                                                             <a href="" target="_self" title="Sing Trailer 2 Animated Musical 2016">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('wp-content/uploads/2016/05/vp-mv09-407x229.jpg')}}"
+                                                                                                                data-src="{{ asset('images/single.jpg')}}"
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-mv09"
                                                                                                                 class="feature-image-first-index lazyload effect-fade"	
@@ -207,8 +264,27 @@
                                                                                                         <div class="posted-on metadata-font text-center">
                                                                                                             <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
                                                                                                         </div>
-                                                                                                        <div class="posted-on metadata-font text-center">
-                                                                                                            <div class="cactus-info font-size-1"><span><button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Add To Cart</button></span></div>
+                                                                                                        <div class="posted-on metadata-font">
+                                                                                                            <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
+                                                                                                                <div class='watch-action'>
+                                                                                                                        <div class='watch-position align-left'>
+                                                                                                                            <div class='action-like'>
+                                                                                                                            <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
+                                                                                                                            <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
+                                                                                                                            </a>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                                <div class='wti-clear'></div>               
+                                                                                                                <div class="login-msg">
+                                                                                                                    <div class="login-content">
+                                                                                                                        <span class="login-info">
+                                                                                                                            <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
+                                                                                                                        </span>
+                                                                                                                    </span>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -246,8 +322,27 @@
                                                                                                         <div class="posted-on metadata-font text-center">
                                                                                                             <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
                                                                                                         </div>
-                                                                                                        <div class="posted-on metadata-font text-center">
-                                                                                                            <div class="cactus-info font-size-1"><span><button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Add To Cart</button></span></div>
+                                                                                                        <div class="posted-on metadata-font">
+                                                                                                            <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
+                                                                                                                <div class='watch-action'>
+                                                                                                                        <div class='watch-position align-left'>
+                                                                                                                            <div class='action-like'>
+                                                                                                                            <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
+                                                                                                                            <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
+                                                                                                                            </a>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                                <div class='wti-clear'></div>               
+                                                                                                                <div class="login-msg">
+                                                                                                                    <div class="login-content">
+                                                                                                                        <span class="login-info">
+                                                                                                                            <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
+                                                                                                                        </span>
+                                                                                                                    </span>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -285,9 +380,28 @@
                                                                                                         <div class="posted-on metadata-font text-center">
                                                                                                             <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
                                                                                                         </div>
-                                                                                                        <div class="posted-on metadata-font text-center">
-                                                                                                            <div class="cactus-info font-size-1"><span><button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Add To Cart</button></span></div>
+                                                                                                        <div class="posted-on metadata-font">
+                                                                                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
+                                                                                                            <div class='watch-action'>
+                                                                                                                    <div class='watch-position align-left'>
+                                                                                                                        <div class='action-like'>
+                                                                                                                        <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
+                                                                                                                        <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
+                                                                                                                        </a>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                            </div>
+                                                                                                            <div class='wti-clear'></div>               
+                                                                                                            <div class="login-msg">
+                                                                                                                <div class="login-content">
+                                                                                                                    <span class="login-info">
+                                                                                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
+                                                                                                                    </span>
+                                                                                                                </span>
+                                                                                                                </div>
+                                                                                                            </div>
                                                                                                         </div>
+                                                                                                    </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </article>

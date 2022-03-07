@@ -1,0 +1,13 @@
+{
+    "name": "SuperMarketItemCategory",
+    "alias": "supermarketitemcategory",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SuperMarketItemCategory\\Providers\\SuperMarketItemCategoryServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

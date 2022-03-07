@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Route;  
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\AuthenticationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,4 @@ Route::get('/register-now', function() { return view('register-page');});
 Route::get('/cart',[CartController::Class,'getCart'])->name('Cart'); 
 Route::get('/checkout',[CartController::Class,'getCheckout'])->name('Checkout');
 Route::get('/order-list',[CartController::Class,'OrderList'])->name('Place Order');
+Route::get('/logout',[AuthenticationController::Class, 'logoutUser']);

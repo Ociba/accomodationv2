@@ -2,35 +2,42 @@
 <div class="body-content">
             <!--Content-->
             <div class="tml tml-login" id="theme-my-login">
-			<form name="loginform" id="loginform" action="https://videopro.cactusthemes.com/v1/login/" method="post">
+			<x-jet-validation-errors class="mb-4" />
+
+			@if (session('status'))
+				<div class="mb-4 font-medium text-sm text-green-600">
+					{{ session('status') }}
+				</div>
+			@endif
+			<form name="loginform" id="loginform" action="{{ route('login') }}" method="POST">
+				@csrf
 		<p class="tml-user-login-wrap">
-			<label for="user_login">Username or E-mail</label>
-			<input type="text" name="log" id="user_login" class="input" value="" size="20" />
+			<label for="user_login"> E-mail</label>
+			<input type="email" name="email" :value="old('email')" required autofocus id="email" class="input" size="20" />
 		</p>
 
 		<p class="tml-user-pass-wrap">
-			<label for="user_pass">Password</label>
-			<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" autocomplete="off" />
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" class="input" value="" size="20" aname="password" required autocomplete="current-password" />
 		</p>
-
-		<input type="hidden" name="_wp_original_http_referer" value="index870f.html?redirect_to=https%3A%2F%2Fvideopro.cactusthemes.com%2Fv1" />
 		<div class="tml-rememberme-submit-wrap">
 			<p class="tml-rememberme-wrap">
-				<input name="rememberme" type="checkbox" id="rememberme" value="forever" />
-				<label for="rememberme">Remember Me</label>
+				<input name="remember" type="checkbox" id="remember_me" />
+				<label for="remember_me">Remember Me</label>
 			</p>
 
 			<p class="tml-submit-wrap">
-				<input type="submit" name="wp-submit" id="wp-submit" value="Log In" />
-				<input type="hidden" name="redirect_to" value="../wp-admin/index.html" />
-				<input type="hidden" name="instance" value="" />
-				<input type="hidden" name="action" value="login" />
+				<button type="submit" class="btn btn-primary">Login</button>
 			</p>
 		</div>
 	</form>
 	<ul class="tml-action-links">
-<li><a href="../register-now" rel="nofollow">Register</a></li>
-<li><a href="../lostpassword/index.html" rel="nofollow">Lost Password</a></li>
+<li><a href="/register-now" rel="nofollow">Register</a></li>
+<li>
+     @if (Route::has('password.request'))
+	<a href="{{ route('password.request') }}" rel="nofollow">Lost Password</a>
+	 @endif
+</li>
 </ul>
 </div>
 

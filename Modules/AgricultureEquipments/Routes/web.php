@@ -11,6 +11,9 @@
 |
 */
 
-Route::prefix('agricultureequipments')->group(function() {
+Route::prefix('agricultureequipments')->group(function() {  
     Route::get('/', 'AgricultureEquipmentsController@index');
+    Route::get('/equipment-requests-recieved', 'AgricultureEquipmentsController@equipmentReceivedRequests');
+    Route::get('/equipments-available', 'AgricultureEquipmentsController@availbleEquipments');
+    Route::get('/equipments-taken', 'AgricultureEquipmentsController@equipmentTaken');
 });
