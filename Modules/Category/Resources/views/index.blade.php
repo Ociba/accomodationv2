@@ -27,9 +27,12 @@
                                                     <!--Single Page Content-->
                                                     <article id="post-1148" class="post-1148 page type-page status-publish cactus-single-content">
                                                         <div class="body-content">
+                                                            @include('layouts.messages')
                                                             @livewire('category-table')
                                                         </div>
+                                                    </article>
                                                 </div>
+                                            </article>
                                         </div>
                                     </div>
                                 </div>
@@ -41,61 +44,41 @@
                     </div>
                     <!-- .entry-footer -->
                 </div>
-                </article>
             </div>
-            </article>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
         </div>
         <!--body content-->
         <div class="main-bottom-sidebar-wrap"></div>
         <!--footer-->
         @include('layouts.admin-footer')
         <!--footer-->
-        </div>
         <!--Menu moblie-->
         <div class="canvas-ovelay"></div>
         @include('layouts.admin-mobile-view')
         <!--Menu moblie-->
         @include('layouts.javascript')
         @include('layouts.sidebar-modal')
-    </body>
-</html>
-<div class="submitModal modal fade" id="videopro_submit_form">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fas fa-times"></i></button>
-                <h4 class="modal-title" id="videopro_frontend_submit_heading">Add Category</h4>
-            </div>
-            <div class="modal-body" >
-                <aside id="text-20" class="   user-submit">
-                    <style>#text-20 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
-                    <div class="widget-inner">
-                        <div class="textwidget">
-                            <div role="form" class="wpcf7" id="" lang="en-US" dir="ltr">
-                                <div class="screen-reader-response"></div>
-                                <form action="/" method="post" class="wpcf7-for" enctype="multipart/form-data">
-                                    <div style="display: none;">
-                                        {{--<input type="hidden" name="created_by" value="{{auth()->user()->id}}" />--}}
-                                    </div>
-                                    <p>
-                                        Category<span class="wpcf7-form-control-wrap your-email"><input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span><br />
-                                    </p>
-                                    <hr>
-                                    <div class="text-center">
-                                        <button type="submit" class="btn btn-primary">SUBMIT</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+        <div class="submitModal modal fade" id="videopro_submit_form">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fas fa-times"></i></button>
+                        <h4 class="modal-title" id="videopro_frontend_submit_heading">Add Category</h4>
                     </div>
-                </aside>
+                    <div class="modal-body" >
+                        <aside id="text-20" class="   user-submit">
+                            <style>#text-20 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
+                            <div class="widget-inner">
+                                <div class="textwidget">
+                                    <div role="form" class="wpcf7" id="" lang="en-US" dir="ltr">
+                                        <div class="screen-reader-response"></div>
+                                        @livewire('category-form')
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </body>
+</html>

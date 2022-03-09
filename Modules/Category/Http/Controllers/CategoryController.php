@@ -5,6 +5,7 @@ namespace Modules\Category\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use App\Models\Category;
 
 class CategoryController extends Controller
 {
@@ -21,9 +22,17 @@ class CategoryController extends Controller
      * Show the form for creating a new resource.
      * @return Renderable
      */
-    public function create()
+    public function createCategory(Request $request)
     {
-        return view('category::create');
+        $validated = $request->validate([
+            'category_name' => 'required|unique:categories',
+            'created_by'    =>'',
+        ]);
+        $category = new Category;
+        $category->category_name =request()->category_name;
+        $category->created_by    = auth()->user()->id;
+        $category->save();
+        return redirect('/category/')->with('msg','Operation Successful');
     }
 
     /**
@@ -51,9 +60,10 @@ class CategoryController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function edit($id)
+    public function editCategory()
     {
-        return view('category::edit');
+        
+        return view('category::edit_category');
     }
 
     /**
@@ -62,9 +72,12 @@ class CategoryController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function updateCategory($category_id)
     {
-        //
+        Category::where('id',$category_id)->update(array(
+            'category_name' =>request()->category_name
+        ));
+        return Redirect('/category/')->with('msg','Operation Successfull');
     }
 
     /**
@@ -72,8 +85,9 @@ class CategoryController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function destroy($id)
+    public function deleteCategory($id)
     {
-        //
+        Category::where('id',$category_id)->delete();
+        return redirect()->back()->with('msg','Operation Successfull');
     }
 }

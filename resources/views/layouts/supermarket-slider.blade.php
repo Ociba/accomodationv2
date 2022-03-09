@@ -34,26 +34,8 @@
                                                     </h3>
                                                     <!--Title-->
                                                     <div class="posted-on metadata-font">
-                                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                                            <div class='watch-action'>
-                                                                    <div class='watch-position align-left'>
-                                                                        <div class='action-like'>
-                                                                        <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                                        <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                                        </a>
-                                                                        </div>
-                                                                    </div>
-                                                            </div>
-                                                            <div class='wti-clear'></div>               
-                                                            <div class="login-msg">
-                                                                <div class="login-content">
-                                                                    <span class="login-info">
-                                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
-                                                                    </span>
-                                                                </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <a href="/" class="author cactus-info font-size-1"><span>Emily</span></a>
+                                                        <div class="date-time cactus-info font-size-1"><a href="/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-27T04:12:23+00:00" class="entry-date updated">May 27, 2016</time></a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -81,26 +63,8 @@
                                                     </h3>
                                                     <!--Title-->
                                                     <div class="posted-on metadata-font">
-                                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                                            <div class='watch-action'>
-                                                                    <div class='watch-position align-left'>
-                                                                        <div class='action-like'>
-                                                                        <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                                        <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                                        </a>
-                                                                        </div>
-                                                                    </div>
-                                                            </div>
-                                                            <div class='wti-clear'></div>               
-                                                            <div class="login-msg">
-                                                                <div class="login-content">
-                                                                    <span class="login-info">
-                                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
-                                                                    </span>
-                                                                </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <a href="/" class="author cactus-info font-size-1"><span>Emily</span></a>
+                                                        <div class="date-time cactus-info font-size-1"><a href="/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-27T04:12:23+00:00" class="entry-date updated">May 27, 2016</time></a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -128,26 +92,8 @@
                                                     </h3>
                                                     <!--Title-->
                                                     <div class="posted-on metadata-font">
-                                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                                            <div class='watch-action'>
-                                                                    <div class='watch-position align-left'>
-                                                                        <div class='action-like'>
-                                                                        <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                                        <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                                        </a>
-                                                                        </div>
-                                                                    </div>
-                                                            </div>
-                                                            <div class='wti-clear'></div>               
-                                                            <div class="login-msg">
-                                                                <div class="login-content">
-                                                                    <span class="login-info">
-                                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
-                                                                    </span>
-                                                                </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <a href="/" class="author cactus-info font-size-1"><span>Emily</span></a>
+                                                        <div class="date-time cactus-info font-size-1"><a href="/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-27T04:12:23+00:00" class="entry-date updated">May 27, 2016</time></a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -180,26 +126,8 @@
                                                     </h3>
                                                     <!--Title-->
                                                     <div class="posted-on metadata-font">
-                                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                                            <div class='watch-action'>
-                                                                    <div class='watch-position align-left'>
-                                                                        <div class='action-like'>
-                                                                        <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                                        <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                                        </a>
-                                                                        </div>
-                                                                    </div>
-                                                            </div>
-                                                            <div class='wti-clear'></div>               
-                                                            <div class="login-msg">
-                                                                <div class="login-content">
-                                                                    <span class="login-info">
-                                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
-                                                                    </span>
-                                                                </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <a href="/" class="author cactus-info font-size-1"><span>Emily</span></a>
+                                                        <div class="date-time cactus-info font-size-1"><a href="/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-27T04:12:23+00:00" class="entry-date updated">May 27, 2016</time></a></div>
                                                     </div>
                                                 </div>
                                             </div>

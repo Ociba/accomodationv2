@@ -17,7 +17,7 @@ use App\Http\Controllers\AuthenticationController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('Accomodation');
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });

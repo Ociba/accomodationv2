@@ -57,7 +57,7 @@
                                                                                                         <div class="picture-content">
                                                                                                             <a href="/" target="_self" title="Little Night Music In Perth Contemporary">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('images/apart6.jpeg')}}"
+                                                                                                                data-src="{{ asset('images/apart6.jpeg')}}" style="height:145px;"
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-show-06"
                                                                                                                 class="feature-image-first-index lazyload effect-fade"	
@@ -119,7 +119,7 @@
                                                                                                         <div class="picture-content screenshots-preview-inlin">
                                                                                                             <a href="#" target="_self" title="Jessie Channels Her Inner Dominatrix">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('images/apart5.jpeg')}}"
+                                                                                                                data-src="{{ asset('images/apart5.jpeg')}}" style="height:145px;"
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-show-09"
                                                                                                                 class="feature-image-first-index lazyload effect-fade"	
@@ -177,7 +177,7 @@
                                                                                                         <div class="picture-content">
                                                                                                             <a href="/" target="_self" title="Selfillumination animated By Andre">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('images/house.jpg')}}"
+                                                                                                                data-src="{{ asset('images/house.jpg')}}" style="height:145px;"
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-mv08"
                                                                                                                 class="feature-image-first-index lazyload effect-fade"	
@@ -240,7 +240,7 @@
                                                                                                         <div class="picture-content">
                                                                                                             <a href="" target="_self" title="Sing Trailer 2 Animated Musical 2016">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('images/single.jpg')}}"
+                                                                                                                data-src="{{ asset('images/single.jpg')}}" style="height:145px;"
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-mv09"
                                                                                                                 class="feature-image-first-index lazyload effect-fade"	
@@ -298,7 +298,7 @@
                                                                                                         <div class="picture-content">
                                                                                                             <a href="/" target="_self" title="Quantum Jump Film By Hayk Sahakyants">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('wp-content/uploads/2016/05/vp-mv10-407x229.jpg')}}"
+                                                                                                                data-src="{{ asset('images/offices.jpg')}}" style="height:145px;"
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-mv10"
                                                                                                                 class="feature-image-first-index lazyload effect-fade"	
@@ -356,7 +356,7 @@
                                                                                                         <div class="picture-content">
                                                                                                             <a href="/" target="_self" title="Hendrix Official Lorem Ipsum Music">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('wp-content/uploads/2016/05/vp-tech01-407x229.jpg')}}"
+                                                                                                                data-src="{{ asset('images/bmk.jpeg')}}" style="height:145px;"
                                                                                                                 
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-ms01"
@@ -420,7 +420,7 @@
                                                                         <div class="wpb_wrapper">
                                                                             <div class="cactus-listing-wrap cactus-contents-block style-1 is_border" data-url="https://videopro.cactusthemes.com/v1/wp-admin/admin-ajax.php" data-shortcode="{&quot;title&quot;:&quot;Tech Videos&quot;,&quot;parent_column_size&quot;:&quot;12&quot;,&quot;show_datetime&quot;:&quot;0&quot;,&quot;show_author&quot;:&quot;0&quot;,&quot;cats&quot;:&quot;tech&quot;,&quot;totalPage&quot;:4,&quot;itemEndPage&quot;:1}" data-total-pages="4" data-last-page-items="1" data-filter="0" data-query="{&quot;post_type&quot;:&quot;post&quot;,&quot;posts_per_page&quot;:&quot;3&quot;,&quot;post_status&quot;:&quot;publish&quot;,&quot;ignore_sticky_posts&quot;:1,&quot;order&quot;:&quot;DESC&quot;,&quot;category_name&quot;:&quot;tech&quot;}" data-query-class="">
                                                                                 <div class="control-header">
-                                                                                    <h2 class="block-title">Tech Videos</h2>
+                                                                                    <h2 class="block-title">Your Supermarket</h2>
                                                                                     <div class="prev-next-slider elms-right">
                                                                                         <a href="#" class="btn btn-default ct-gradient bt-action metadata-font font-size-1 icon-smart control-prev"><i class="fa fa-angle-left"></i></a>
                                                                                         <a href="#" class="btn btn-default ct-gradient bt-action metadata-font font-size-1 icon-smart control-next"><i class="fa fa-angle-right"></i></a>
@@ -445,7 +445,7 @@
                                                                                                         <div class="picture-content">
                                                                                                             <a href="/" target="_self" title="Hendrix Official Lorem Ipsum Music">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('wp-content/uploads/2016/05/vp-tech01-407x229.jpg')}}"
+                                                                                                                data-src="{{ asset('images/computer.png')}}" style="height:145px;"
                                                                                                                 
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-ms01"
@@ -484,7 +484,7 @@
                                                                                                         <div class="picture-content">
                                                                                                             <a href="/" target="_self" title="Hendrix Official Lorem Ipsum Music">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('wp-content/uploads/2016/05/vp-tech01-407x229.jpg')}}"
+                                                                                                                data-src="{{ asset('images/juice.jpg')}}" style="height:145px;"
                                                                                                                 
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-ms01"
@@ -523,7 +523,7 @@
                                                                                                         <div class="picture-content">
                                                                                                             <a href="/" target="_self" title="Hendrix Official Lorem Ipsum Music">
                                                                                                                 <img 
-                                                                                                                data-src="{{ asset('wp-content/uploads/2016/05/vp-tech01-407x229.jpg')}}"
+                                                                                                                data-src="{{ asset('images/headset.png')}}" style="height:145px;"
                                                                                                                 
                                                                                                                 data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                                                                                 alt="vp-ms01"
@@ -562,13 +562,14 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            @include('layouts.agric-produce')
                                                             <div class="vc_row wpb_row vc_row-fluid">
                                                                 <div class="wpb_column vc_column_container vc_col-sm-12">
                                                                     <div class="vc_column-inner vc_custom_1466563983427">
                                                                         <div class="wpb_wrapper">
                                                                             <div class="cactus-listing-wrap cactus-contents-block style-1" data-url="https://videopro.cactusthemes.com/v1/wp-admin/admin-ajax.php" data-shortcode="{&quot;title&quot;:&quot;TV - Show Videos&quot;,&quot;parent_column_size&quot;:&quot;12&quot;,&quot;items_per_page&quot;:&quot;6&quot;,&quot;show_datetime&quot;:&quot;0&quot;,&quot;show_author&quot;:&quot;0&quot;,&quot;border_bottom&quot;:&quot;0&quot;,&quot;cats&quot;:&quot;tv-show&quot;,&quot;totalPage&quot;:2,&quot;itemEndPage&quot;:3}" data-total-pages="2" data-last-page-items="3" data-filter="0" data-query="{&quot;post_type&quot;:&quot;post&quot;,&quot;posts_per_page&quot;:&quot;6&quot;,&quot;post_status&quot;:&quot;publish&quot;,&quot;ignore_sticky_posts&quot;:1,&quot;order&quot;:&quot;DESC&quot;,&quot;category_name&quot;:&quot;tv-show&quot;}" data-query-class="">
                                                                                 <div class="control-header">
-                                                                                    <h2 class="block-title">TV - Show Videos</h2>
+                                                                                    <h2 class="block-title">Your Agriculture Equipment</h2>
                                                                                     <div class="prev-next-slider elms-right">
                                                                                         <a href="#" class="btn btn-default ct-gradient bt-action metadata-font font-size-1 icon-smart control-prev"><i class="fa fa-angle-left"></i></a>
                                                                                         <a href="#" class="btn btn-default ct-gradient bt-action metadata-font font-size-1 icon-smart control-next"><i class="fa fa-angle-right"></i></a>

@@ -11,6 +11,10 @@
 |
 */
 
-Route::prefix('category')->group(function() {
-    Route::get('/', 'CategoryController@index');
+Route::prefix('category')->group(function() { 
+    Route::get('/', 'CategoryController@index'); 
+    Route::get('/create-category', 'CategoryController@createCategory');
+    Route::get('/edit-category/{category_id}', 'CategoryController@editCategory');
+    Route::get('/update-category/{category_id}', 'CategoryController@updateCategory');
+    Route::get('/delete-category/{category_id}', 'CategoryController@deleteCategory');
 });

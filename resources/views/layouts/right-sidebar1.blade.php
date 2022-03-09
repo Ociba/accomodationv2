@@ -1,3 +1,61 @@
+<style>
+    .pic-ctn {
+  width: 100vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relativ;
+  width: 100vw;
+  height: ;
+  margin-top: 15vh;
+  margin-left:10px;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(40% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+</style>
 <div class="cactus-sidebar ct-medium">
     <div class="cactus-sidebar-content">
         <aside id="text-22" class=" style-5  widget widget_text">
@@ -22,7 +80,7 @@
                 <div class="textwidget">
                     <div style="text-align:center">
                     <a href="/register-now" title="VideoPro Sample Banner">
-                    <img src="{{ asset('wp-content/uploads/2016/05/videopro-banner-300x250.jpg')}}" alt="Ad banner"></a>
+                    <img src="{{ asset('images/JOOME.jpg')}}" alt="Ad banner"></a>
                    </div>
                 </div>
             </div>
@@ -30,7 +88,7 @@
         <aside id="popular_posts_id-2" class=" style-2  widget widget-popular-post">
             <style>#popular_posts_id-2 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
             <div class="widget-inner">
-                <h2 class="widget-title h4"><i class="fas fa-play"></i> <span>Latest Videos</span></h2>
+                <h2 class="widget-title h4"><i class="fas fa-play"></i> <span>Recent Items</span></h2>
                 <div class="widget-popular-post-content ">
                     <div class="cactus-listing-wrap">
                         <div class="cactus-listing-config style-3 style-widget-popular-post">
@@ -130,7 +188,7 @@
         <aside id="popular_posts_id-3" class=" style-2  widget widget-popular-post">
             <style>#popular_posts_id-3 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
             <div class="widget-inner">
-                <h2 class="widget-title h4"><i class="fas fa-star"></i> <span>Top Videos</span></h2>
+                <h2 class="widget-title h4"><i class="fas fa-star"></i> <span>Adverts Corner</span></h2>
                 <div class="widget-popular-post-content style-2">
                     <div class="cactus-listing-wrap">
                         <div class="cactus-listing-config style-2 style-widget-popular-post">
@@ -139,25 +197,18 @@
                                     <div class="entry-content">
                                         <div class="picture">
                                             <div class="picture-content">
-                                                <a title="Top 3 Fitness Apps For That Body" target="_self" href="https://videopro.cactusthemes.com/v1/ping-pong-trick-shots-2-dude-perfect/">
-                                                    <img width="407" height="229"  data-sizes="(max-width: 407px) 100vw, 407px" class="lazyload effect-fade" src="{{ asset('wp-content/uploads/2016/05/videopro-banner-300x250.jpg')}}" style="padding-top:56.265356265356%;" alt="vp-sp04"/>
-                                                    <div class="ct-icon-video"></div>
-                                                </a>
-                                                <div class="cactus-note ct-time font-size-1"><span>05:05</span></div>
+                                            <div class="pic-ctn text-center">
+                                                <img src="{{ asset('advert/adv1.png')}}" style="width:280px; height:160px;,background-color:#fff;" alt="" class="pic">
+                                                <img src="{{ asset('advert/adv5.jpg')}}" style="width:260px; height:160px;" alt="" class="pic">
+                                                <img src="{{ asset('advert/adv6.jpg')}}" style="width:260px; height:160px;" alt="" class="pic">
+                                                <img src="{{ asset('advert/adv7.jpg')}}" style="width:260px; height:160px;" alt="" class="pic">
+                                                <img src="{{ asset('advert/adv9.jpg')}}" style="width:260px; height:160px;" alt="" class="pic">
                                             </div>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="cactus-post-title entry-title h6 sub-lineheight">
-                                                <a href="https://videopro.cactusthemes.com/v1/ping-pong-trick-shots-2-dude-perfect/" target="_self" title="Top 3 Fitness Apps For That Body">Top 3 Fitness Apps For That Body</a>
-                                            </h3>
-                                            <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
-                                                <div class="liked cactus-info font-size-1">438.74K Likes</div>
                                             </div>
                                         </div>
                                     </div>
                                 </article>
-                                <article class="cactus-post-item hentry">
+                                {{--<article class="cactus-post-item hentry">
                                     <div class="entry-content">
                                         <div class="picture">
                                             <div class="picture-content">
@@ -179,6 +230,7 @@
                                         </div>
                                     </div>
                                 </article>
+                                --}}
                                 <article class="cactus-post-item hentry">
                                     <div class="entry-content">
                                         <div class="picture">
