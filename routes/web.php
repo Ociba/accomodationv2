@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;  
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\AuthenticationController;
-
+use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +20,12 @@ use App\Http\Controllers\AuthenticationController;
 Route::get('/', function () {
     return view('welcome');
 })->name('Accomodation');
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-});
+// Route::get('/dashboard', function () {
+//     return view('admin.dashboard');
+// });
+Route::get('/dashboard',[DashboardController::Class,'getDashboard']);
+//Route::get('/login', function() { return view('welcome');});
+Route::get('/save-client-information',[CheckoutController::Class,'validateSupermarketUser']);
 
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -32,3 +37,10 @@ Route::get('/cart',[CartController::Class,'getCart'])->name('Cart');
 Route::get('/checkout',[CartController::Class,'getCheckout'])->name('Checkout');
 Route::get('/order-list',[CartController::Class,'OrderList'])->name('Place Order');
 Route::get('/logout',[AuthenticationController::Class, 'logoutUser']);
+Route::get('/produce-registration', function(){ return view('produce-registration');}); 
+Route::post('/create-accomodation-account',[AuthenticationController::Class, 'registerAccomodationUser']);
+Route::post('/create-prouduce-account',[AuthenticationController::Class, 'registerProduceUser']);
+
+
+Route::get('/pay-with-mtn',[PaymentController::Class,'payWithMtn']);
+Route::get('/pay-with-airtel',[PaymentController::Class,'payWithAirtel']);

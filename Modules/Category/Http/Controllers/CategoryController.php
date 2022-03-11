@@ -60,10 +60,10 @@ class CategoryController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function editCategory()
+    public function editCategory($category_id)
     {
-        
-        return view('category::edit_category');
+        $edit_category =Category::where('id',$category_id)->get();
+        return view('category::edit_category',compact('edit_category'));
     }
 
     /**
@@ -85,7 +85,7 @@ class CategoryController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function deleteCategory($id)
+    public function deleteCategory($category_id)
     {
         Category::where('id',$category_id)->delete();
         return redirect()->back()->with('msg','Operation Successfull');

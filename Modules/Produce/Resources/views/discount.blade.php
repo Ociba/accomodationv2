@@ -27,8 +27,27 @@
                                                     <!--Single Page Content-->
                                                     <article id="post-1148" class="post-1148 page type-page status-publish cactus-single-content">
                                                         <div class="body-content">
-                                                            @include('layouts.messages')
-                                                            @livewire('income-table')
+                                                        @include('layouts.messages')
+                                                            @foreach($get_discount_form as $discount)
+                                                          <form action="/produce/save-discount/{{$discount->id}}" method="get" class="wpcf7-for">
+                                                                @csrf
+                                                                <div style="display: none;">
+                                                                    {{--<input type="hidden" name="created_by" value="{{auth()->user()->id}}">--}}
+                                                                </div>
+                                                                New Amount
+                                                                <span class="wpcf7-form-control-wrap your-email">
+                                                                    <input type="text" name="new_amount" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                                                </span>
+                                                                Discount <span style="color:red;">(Specify 10, 5,15 etc)</span>
+                                                                <span class="wpcf7-form-control-wrap your-email">
+                                                                    <input type="text" name="discount_percentage" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                                                </span> 
+                                                                <hr>
+                                                                <div class="text-center">
+                                                                    <button type="submit" class="btn btn-primary" style="padding:5px; color:#fff; margin-top:5px;">Submit Discount</button>
+                                                                </div>
+                                                            </form>
+                                                            @endforeach
                                                         </div>
                                                 </div>
                                         </div>
@@ -66,4 +85,3 @@
         @include('layouts.sidebar-modal')
     </body>
 </html>
-

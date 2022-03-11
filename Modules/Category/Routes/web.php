@@ -11,7 +11,8 @@
 |
 */
 
-Route::prefix('category')->group(function() { 
+// Route::prefix('category')->group(function() 
+Route::group(['prefix'=>'category', 'middleware'=>['auth']],function(){
     Route::get('/', 'CategoryController@index'); 
     Route::get('/create-category', 'CategoryController@createCategory');
     Route::get('/edit-category/{category_id}', 'CategoryController@editCategory');

@@ -28,7 +28,7 @@
                                                     <article id="post-1148" class="post-1148 page type-page status-publish cactus-single-content">
                                                         <div class="body-content">
                                                             @include('layouts.messages')
-                                                            @livewire('users-table')
+                                                            @livewire('my-produce')
                                                         </div>
                                                 </div>
                                         </div>
@@ -64,14 +64,12 @@
         <!--Menu moblie-->
         @include('layouts.javascript')
         @include('layouts.sidebar-modal')
-    </body>
-</html>
-<div class="submitModal modal fade" id="videopro_submit_form">
+        <div class="submitModal modal fade" id="produce">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fas fa-times"></i></button>
-                <h4 class="modal-title" id="videopro_frontend_submit_heading">Add User</h4>
+                <h4 class="modal-title" id="videopro_frontend_submit_heading">Add Your Produce</h4>
             </div>
             <div class="modal-body" >
                 <aside id="text-20" class="   user-submit">
@@ -80,30 +78,38 @@
                         <div class="textwidget">
                             <div role="form" class="" id="" lang="en-US" >
                                 <div class="screen-reader-response"></div>
-                                <form action="/users/create-user" method="post" class="wpcf7-for" enctype="multipart/form-data">
+                                <form action="/produce/save-produce" method="post" class="wpcf7-for" enctype="multipart/form-data">
                                     @csrf
                                     <div style="display: none;">
-                                        {{--<input type="hidden" name="created_by" value="{{auth()->user()->id}}" />--}}
+                                        <input type="hidden" name="created_by" value="{{auth()->user()->id}}">
                                     </div>
-                                        Name
+                                        Produce Category
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                        <select name="produce_category_id" class="form-control" required>
+                                            @foreach($produce_category as $produce)
+                                            <option value="{{$produce->id}}">{{$produce->produce_category}}</option>
+                                            @endforeach
+                                        </select>
                                     </span>
-                                        Email
+                                    Name of Produce
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                        <input type="text" name="produce_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
-                                        Password
+                                     Price <span style="color:red;">(Specify Per pair, Per Kilo,Each, Per bag)</span>
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="password" name="password" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                        <input type="text" name="price" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
-                                        Confirm Password
+                                        Estimated Quantity
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="password" name="password_confirmation" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                        <input type="text" name="quantity" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
-                                    Upload Profile Photo
+                                        Current Available PhoneNumber
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="file" name="profile_photo_path" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                        <input type="text" name="phone_number" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                    </span>
+                                        Produce Image
+                                    <span class="wpcf7-form-control-wrap your-email">
+                                        <input type="file" name="image" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
                                     <hr>
                                     <div class="text-center">
@@ -118,3 +124,5 @@
         </div>
     </div>
 </div>
+    </body>
+</html>

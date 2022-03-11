@@ -37,6 +37,7 @@
                                                 
                                                     <!--Single Page Content-->
                                                     <article id="post-1508" class="post-1508 page type-page status-publish cactus-single-content">
+                                                      @include('layouts.messages')
                                                        @livewire('checkout')
                                                     </article>
                                                 </div>

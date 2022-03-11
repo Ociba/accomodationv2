@@ -19,7 +19,7 @@ class CreateProducesTable extends Migration
             $table->foreignId('produce_category_id');
             $table->string('quantity');
             $table->string('phone_number');
-            $table->enum('status',['active','sold'])->default('active');
+            $table->enum('status',['available','sold'])->default('available');
             $table->timestamps();
         });
     }

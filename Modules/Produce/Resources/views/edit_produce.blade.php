@@ -26,9 +26,33 @@
                                                 <div class="single-page-content single-content">
                                                     <!--Single Page Content-->
                                                     <article id="post-1148" class="post-1148 page type-page status-publish cactus-single-content">
+                                                        
                                                         <div class="body-content">
-                                                            @include('layouts.messages')
-                                                            @livewire('income-table')
+                                                        @include('layouts.messages')
+                                                            @foreach($edit_produce as $edit)
+                                                          <form action="/produce/update-produce-info/{{$edit->id}}" method="get" class="wpcf7-for">
+                                                                @csrf
+                                                                <div style="display: none;">
+                                                                    {{--<input type="hidden" name="created_by" value="{{auth()->user()->id}}">--}}
+                                                                </div>
+                                                                 Quantity
+                                                                <span class="wpcf7-form-control-wrap your-email">
+                                                                    <input type="text" name="quantity" value="{{$edit->quantity}}" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                                                </span>
+                                                                Price 
+                                                                <span class="wpcf7-form-control-wrap your-email">
+                                                                    <input type="text" name="price" value="{{$edit->price}}" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                                                </span>
+                                                                Phone Number 
+                                                                <span class="wpcf7-form-control-wrap your-email">
+                                                                    <input type="text" name="phone_number" value="{{$edit->phone_number}}" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                                                </span> 
+                                                                <hr>
+                                                                <div class="text-center">
+                                                                    <button type="submit" class="btn btn-primary" style="padding:5px; color:#fff; margin-top:5px;">Submit Discount</button>
+                                                                </div>
+                                                            </form>
+                                                            @endforeach
                                                         </div>
                                                 </div>
                                         </div>
@@ -66,4 +90,3 @@
         @include('layouts.sidebar-modal')
     </body>
 </html>
-

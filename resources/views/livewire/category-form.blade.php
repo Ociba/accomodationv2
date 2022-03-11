@@ -1,5 +1,6 @@
 <div>
      <form  action="/category/create-category" class="wpcf7-for" enctype="multipart/form-data">
+     @csrf
         <div style="display: none;">
             <input type="hidden" name="created_by" value="{{auth()->user()->id}}">
         </div>

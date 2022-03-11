@@ -5,6 +5,9 @@ namespace Modules\Users\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use App\Models\User;
+use Hash;
+use Auth;
 
 class UsersController extends Controller
 {
@@ -21,59 +24,60 @@ class UsersController extends Controller
      * Show the form for creating a new resource.
      * @return Renderable
      */
-    public function create()
+    private function createUser()
     {
-        return view('users::create');
-    }
+        $user_photo = request()->profile_photo_path;
+        $user_photo_original_name = $user_photo->getClientOriginalName();
+        $user_photo->move('user_photos/',$user_photo_original_name);
 
-    /**
-     * Store a newly created resource in storage.
-     * @param Request $request
-     * @return Renderable
-     */
-    public function store(Request $request)
-    {
-        //
+        $user_obj = new User;
+        $user_obj->email              = request()->email;
+        $user_obj->name               = request()->name;
+        $user_obj->type               ="staff";
+       $user_obj->profile_photo_path =$user_photo_original_name;
+        $user_obj->password    = Hash::make(request()->password);
+        $user_obj->save();
+        return redirect()->back()->with('msg','You have successfully created');
     }
-
     /**
-     * Show the specified resource.
-     * @param int $id
-     * @return Renderable
+     * This function validates user created
      */
-    public function show($id)
-    {
-        return view('users::show');
+    public function validateUser(){
+        if(empty(request()->name)){
+            return redirect()->back()->withErrors('Enter name to continue');
+        }elseif(empty(request()->email)){
+            return redirect()->back()->withErrors('Enter Email to continue');
+        }elseif(empty(request()->profile_photo_path)){
+            return redirect()->back()->withErrors('Enter Photo to continue');
+        }elseif(User::where('email',request()->email)->exists()){
+            return redirect()->back()->withErrors('This  email is already taken');
+        }else{
+            if(request()->password == request()->password_confirmation){
+                return $this->createUser();
+            }else{
+                return redirect()->back()->withErrors('Make sure the two passwords match');
+            }
+        }
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function edit($id)
-    {
-        return view('users::edit');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     * @param Request $request
-     * @param int $id
-     * @return Renderable
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     * @param int $id
-     * @return Renderable
-     */
-    public function destroy($id)
-    {
-        //
-    }
+     /**
+        * This function suspends the User 
+        */
+        protected function suspendUser($user_id){
+            User::where('id',$user_id)->update(array('status'=>'suspended'));
+            return redirect()->back()->with('msg', 'You have Successfully suspended this User');
+        }
+        /** 
+         * This function ctivates suspended User
+        */
+        protected function activateUser($user_id){
+            User::where('id',$user_id)->update(array('status'=>'active'));
+            return redirect()->back()->with('msg', 'You have Successfully activated '.request()->name.'');
+        }
+        /**
+         * This function deletes users permanently
+         */
+        protected function deleteUser($user_id){
+            User::where('id',$user_id)->delete();
+            return redirect()->back()->with('msg', 'You have Successfully deleted this User');
+        }
 }

@@ -57,7 +57,7 @@
         <!--Menu moblie-->
         @include('layouts.javascript')
         @include('layouts.sidebar-modal')
-        <div class="submitModal modal fade" id="videopro_submit_form">
+        <div class="submitModal modal fade" id="edit_category_form">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -69,9 +69,25 @@
                             <style>#text-20 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
                             <div class="widget-inner">
                                 <div class="textwidget">
-                                    <div role="form" class="wpcf7" id="" lang="en-US" dir="ltr">
+                                    <div role="form" class="" id="" lang="en-US">
                                         <div class="screen-reader-response"></div>
-                                        @livewire('category-form')
+                                        <form  action="/category/create-category" class="wpcf7-for">
+                                            @csrf
+                                            <div style="display: none;">
+                                                <input type="hidden" name="created_by" value="{{auth()->user()->id}}">
+                                            </div>
+                                            <p>
+                                                Category
+                                                <span class="wpcf7-form-control-wrap your-email">
+                                                <input type="text" name="category_name"  size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                                
+                                                </span><br />
+                                            </p>
+                                            <hr>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary">SUBMIT</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

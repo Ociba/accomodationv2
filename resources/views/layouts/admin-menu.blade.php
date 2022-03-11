@@ -8,9 +8,9 @@
                     <div class="cactus-nav-left">
                         <!--logo-->
                         <div class="cactus-logo navigation-font">
-                            <a href="../index.html">
-                            <img src="../wp-content/uploads/house.png" alt="VideoPro" title="VideoPro" class="cactus-img-logo">
-                            <img src="../wp-content/uploads/house.png" alt="VideoPro" title="VideoPro" class="cactus-img-logo cactus-img-sticky">
+                            <a href="/dashboard">
+                            <img src="{{ asset('wp-content/uploads/house.png')}}" alt="VideoPro" title="VideoPro" class="cactus-img-logo">
+                            <img src="{{ asset('wp-content/uploads/house.png')}}" alt="VideoPro" title="VideoPro" class="cactus-img-logo cactus-img-sticky">
                             </a>
                         </div>
                         <!--logo-->
@@ -125,6 +125,7 @@
                                 <li id="mega-menu-item-773" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent level0 has-sub dropdown main-menu-item list-style">
                                     <a href="#"><i class="fa fa-database"></i> Produce</a>
                                     <ul class="sub-menu dropdown-menu sub-menu-list level0">
+                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/produce/my-produce">My Produce</a></li>
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/produce/produce-available">Produce Available</a></li>
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="/produce/produce-taken">Produce Taken</a></li>
                                     </ul>

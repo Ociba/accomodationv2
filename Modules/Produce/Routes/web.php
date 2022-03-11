@@ -14,5 +14,13 @@
 Route::prefix('produce')->group(function() { 
     Route::get('/', 'ProduceController@index');
     Route::get('/produce-available', 'ProduceController@availableProduce');
-    Route::get('/produce-taken', 'ProduceController@takenProduce');
+    Route::get('/produce-taken', 'ProduceController@takenProduce'); 
+    Route::get('/my-produce', 'ProduceController@myProduce');
+    Route::post('/save-produce', 'ProduceController@saveProduceInfo');
+    Route::get('/save-discount/{produce_id}', 'ProduceController@saveDiscount');
+    Route::get('/add-discount-form/{produce_id}', 'ProduceController@AddDiscountForm');
+    Route::get('/edit-produce-form/{produce_id}', 'ProduceController@editProduce'); 
+    Route::get('/update-produce-info/{produce_id}', 'ProduceController@updateProduce'); 
+    Route::get('/mark-produce-as-sold/{produce_id}', 'ProduceController@markProduceAsSold');
+    Route::get('/delete-produce/{produce_id}', 'ProduceController@deleteProduce');
 });

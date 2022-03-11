@@ -33,7 +33,7 @@
         <div class="vc_column-inner vc_custom_1469089860166">
             <div class="wpb_wrappe">
                 <label for="address">Address <span style="color:red;">*</span></label>
-                <input type="text" name="address" id="user_login" class="input" value="" size="50" />
+                <input type="text" name="address" id="address" class="input" value="" size="50" />
             </div>
         </div>
     </div>
@@ -86,11 +86,8 @@
         </div>
     </div>
 </div>
-<p class="tml-submit-wrap">
-			<input type="submit" name="wp-submit" id="wp-submit" value="Register" />
-			<input type="hidden" name="redirect_to" value="../login/indexe981.html?checkemail=registered" />
-			<input type="hidden" name="instance" value="" />
-			<input type="hidden" name="action" value="register" />
+     <p class="tml-submit-wra">
+			<button type="submit" class="btn btn-primary">Submit</a>
 		</p>
 	</form>
 </div>

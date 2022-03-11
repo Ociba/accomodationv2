@@ -10,7 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::prefix('subscribers')->group(function() {
+Route::group(['prefix'=>'subscribers', 'middleware'=>['auth']],function(){ 
     Route::get('/', 'SubscribersController@index');
+    Route::get('/send-email', 'SubscribersController@createSubscriber');
+    Route::get('/delete-email/{subscriber_id}','SubscribersController@deleteSubscriber');
 });

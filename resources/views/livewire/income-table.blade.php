@@ -1,88 +1,97 @@
 <div>
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1469088724328 vc_row-has-fill">
-        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill">
-            <div class="vc_column-inner vc_custom_1469092997733">
+<div class="vc_row wpb_row vc_row-fluid">
+        <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="vc_column-inner ">
                 <div class="wpb_wrapper">
-                    <div class="wpb_text_column wpb_content_element  vc_custom_1469094242775" >
-                        <div class="vc_row wpb_row vc_row-fluid vc_custom_1469089899584 vc_row-has-fill">
-                            <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
-                                <div class="vc_column-inner vc_custom_1469089852378">
-                                    <div class="wpb_wrapper">
-                                        Show  Entries
-                                        <span class="wpcf7-form-control-wrap your-email">
-                                            <select>
-                                                <option>10</option>
-                                                <option>20</option>
-                                                <option>30</option>
-                                                <option>40</option>
-                                                <option>50</option>
-                                                <option>60</option>
-                                            </select>
-                                        </span>
+                    <div id="v_comparetable_8519" class="ct-compare-table-group ">
+                        <div  class="compare-table-item col-md-3 " data-special="0">
+                            <div class="compare-table-content">
+                                <div class="compare-table-title h5" style="background-color:#ffcc00;">Mtn</div>
+                                {{--
+                                <div class="compare-table-price">
+                                    <div class="price-wrap"><span class="price-number">FREE</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
-                                <div class="vc_column-inner vc_custom_1469089860166">
+                                --}}
+                                <div class="compare-table-option">
+                                    <p>5GB Storage</p>
                                 </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
-                                <div class="vc_column-inner vc_custom_1469089860166">
-                                    <div class="wpb_wrapper">
-                                        <span title="Your Amount" id="cactus-btn-493"  class="btn btn-defaul bt-style-1">
-                                        Search Entries<span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span>
-                                        </span>
-                                    </div>
+                                <div class="compare-table-option">
+                                    <p>4GB Memory</p>
+                                </div>
+                                <div class="compare-table-option">
+                                    <p>1,000GB Bandwidth</p>
+                                </div>
+                                <div class="compare-table-option">
+                                    <p>Forum Support</p>
+                                </div>
+                                <div class="compare-table-option">
+                                    <form action="/pay-with-mtn" method="get">
+                                    <input type="text" value="{{auth()->user()->id}}">
+                                    <input type="text" name="amount" placeholder="Amount" required>
+                                    <button title="BUY THIS THEME"   class="btn btn-primary bt-style-2" style="background-color:#000066;">Pay With MTN</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="wpb_wrapper" style="overflow-x:auto;">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <th>NAME</th>
-                                        <th>Quantity</th>
-                                        <th>Price</th>
-                                        <th>Action</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Spark</td>
-                                        <td>Web Developer</td>
-                                        <td>Very Good</td>
-                                        <td>
-                                            <a href=""  class="btn btn-info mb-1">Edit</a>
-                                            <a href=""  class="btn btn-danger">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                    <td>Monica Grace</td>
-                                    <td>Marketing Specialist</td>
-                                    <td>Excellent</td>
-                                     <td>
-                                            <a href=""  class="btn btn-info mb-1">Edit</a>
-                                            <a href=""  class="btn btn-danger">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                    <td>Jenifer Storm</td>
-                                    <td>Customer Support</td>
-                                    <td>Very Good</td>
-                                     <td>
-                                            <a href=""  class="btn btn-info mb-1">Edit</a>
-                                            <a href=""  class="btn btn-danger">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                    <td>Cathy Abbott</td>
-                                    <td>Mobile Developer</td>
-                                    <td>Excellent</td>
-                                     <td>
-                                            <a href=""  class="btn btn-info mb-1">Edit</a>
-                                            <a href=""  class="btn btn-danger">Delete</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        {{--<div  class="compare-table-item col-md-3 " data-special="1">
+                            <div class="compare-table-content">
+                                <div class="compare-table-title h5">SUPERMARKET</div>
+                                <div class="compare-table-price">
+                                    <div class="price-wrap"><span class="currency">$</span><span class="sub-price">99</span><span class="sub-text">/month</span><span class="price-number">9.99</span>
+                                    </div>
+                                </div>
+                                <div class="compare-table-option">
+                                    <p>20GB Storage</p>
+                                </div>
+                                <div class="compare-table-option">
+                                    <p>8GB Memory</p>
+                                </div>
+                                <div class="compare-table-option">
+                                    <p>10,000GB Bandwidth</p>
+                                </div>
+                                <div class="compare-table-option">
+                                    <p>24/7 Support</p>
+                                </div>
+                                <div class="compare-table-option">
+                                    <form action="/pay-with-mtn" method="get">
+                                    <input type="text" value="{{auth()->user()->id">
+                                    <input type="text" name="amount" placeholder="Amount" required>
+                                    <button title="BUY THIS THEME" id="ct_custom_1191469785710"  class="btn btn-default bt-style-1">Pay With Airtel</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>--}}
+                        <div  class="compare-table-item col-md-3 " data-special="0">
+                            <div class="compare-table-content">
+                                <div class="compare-table-title h5" style="background-color:#ff5050;">Airtel</div>
+                                {{--
+                                <div class="compare-table-price">
+                                    <div class="price-wrap"><span class="currency">$</span><span class="sub-price">99</span><span class="sub-text">/month</span><span class="price-number">49.99</span>
+                                    </div>
+                                </div>
+                                --}}
+                                <div class="compare-table-option">
+                                    <p>100GB Storage</p>
+                                </div>
+                                <div class="compare-table-option">
+                                    <p>8GB Memory</p>
+                                </div>
+                                <div class="compare-table-option">
+                                    <p>Unlimited Bandwidth</p>
+                                </div>
+                                <div class="compare-table-option">
+                                    <p>24/7 Support</p>
+                                </div>
+                                <div class="compare-table-option">
+                                    <form action="/pay-with-airtel" method="get">
+                                    <input type="text" value="{{auth()->user()->id}}">
+                                    <input type="text" name="amount" placeholder="Amount" required>
+                                    <button title="BUY THIS THEME" id=""  class="btn btn-default bt-style-1" style="background-color:#000066;">Pay With Airtel</button>
+                                    </form>
+                                </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -40,49 +40,41 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
+                                        <th>No.</th>
                                         <th>NAME</th>
                                         <th>Quantity</th>
                                         <th>Price</th>
+                                        <th>Image</th>
+                                        <th>New Price</th>
+                                        <th>Discount</th>
                                         <th>Action</th>
                                     </tr>
+                                    @foreach($available_produce as $i=>$produce)
                                     <tr>
-                                        <td>Daniel Spark</td>
-                                        <td>Web Developer</td>
-                                        <td>Very Good</td>
-                                        <td>
-                                            <a href=""  class="btn btn-info mb-1">Edit</a>
-                                            <a href=""  class="btn btn-danger">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                    <td>Monica Grace</td>
-                                    <td>Marketing Specialist</td>
-                                    <td>Excellent</td>
+                                       @php
+                                        if( $available_produce->currentPage() == 1){
+                                        $i = $i+1;
+                                        }else{
+                                        $i = ($i+1) + 10*($available_produce->currentPage()-1);
+                                        }
+                                        @endphp
+                                    <td>{{$i}}</td>
+                                    <td>{{$produce->produce_name}}</td>
+                                    <td>{{$produce->quantity}}</td>
+                                    <td>{{$produce->price}}</td>
+                                    <td><img style="width:60px; Height:50px;" src="{{ asset('produce_photos/'.$produce->image)}}"></td>
+                                    <td>{{$produce->new_amount}}</td>
+                                    <td>{{$produce->discount_percentage}}</td>
                                      <td>
-                                            <a href=""  class="btn btn-info mb-1">Edit</a>
-                                            <a href=""  class="btn btn-danger">Delete</a>
+                                            <a href="/produce/delete-produce/{{$produce->id}}"  class="btn btn-danger">Delete</a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                    <td>Jenifer Storm</td>
-                                    <td>Customer Support</td>
-                                    <td>Very Good</td>
-                                     <td>
-                                            <a href=""  class="btn btn-info mb-1">Edit</a>
-                                            <a href=""  class="btn btn-danger">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                    <td>Cathy Abbott</td>
-                                    <td>Mobile Developer</td>
-                                    <td>Excellent</td>
-                                     <td>
-                                            <a href=""  class="btn btn-info mb-1">Edit</a>
-                                            <a href=""  class="btn btn-danger">Delete</a>
-                                        </td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
+                        </div>
+                        <div class="row mb-1">
+                            {{ $available_produce->links()}}
                         </div>
                     </div>
                 </div>

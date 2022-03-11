@@ -265,18 +265,15 @@ img:nth-child(5) {
                 <h2 class="widget-title h4"><i class="fas fa-envelope"></i> <span>Email Subscribe</span></h2>
                 <div class="textwidget">
                     Want to be the first to know when new videos available? Subscribe to our weekly email newsletter. No spam!
-                    <div role="form" class="wpcf7" id="wpcf7-f1388-o1" lang="en-US" dir="ltr">
+                    <div role="form"  lang="en-US" dir="">
                         <div class="screen-reader-response"></div>
-                        <form action="https://videopro.cactusthemes.com/v1/home-page-v5/#wpcf7-f1388-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-                            <div style="display: none;">
-                                <input type="hidden" name="_wpcf7" value="1388" />
-                                <input type="hidden" name="_wpcf7_version" value="5.0.1" />
-                                <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1388-o1" />
-                                <input type="hidden" name="_wpcf7_container_post" value="0" />
-                            </div>
-                            <p><span class="wpcf7-form-control-wrap email-719"><input type="email" name="email-719" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email" /></span></p>
-                            <p><input type="submit" value="SUBSCRIBE" class="wpcf7-form-control wpcf7-submit" /></p>
+                        {{--@include('layouts.messages')--}}
+                        <form action="/subscribers/send-email" method="get" class="wpcf7-form">
+                            <p><span class="wpcf7-form-control-wrap email-719">
+                                <input type="email" name="subscriber_email" value="" size="40" class="" required placeholder="Your Email" />
+                                </span>
+                            </p>
+                            <p><button type="submit" value="SUBSCRIBE" class="btn btn-primary" style="background-color:orange;">Subscribe Now</button>
                             <div class="wpcf7-response-output wpcf7-display-none"></div>
                         </form>
                     </div>

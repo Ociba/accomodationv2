@@ -5,6 +5,7 @@ namespace Modules\Subscribers\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use App\Models\Subscriber;
 
 class SubscribersController extends Controller
 {
@@ -21,9 +22,12 @@ class SubscribersController extends Controller
      * Show the form for creating a new resource.
      * @return Renderable
      */
-    public function create()
+    public function createSubscriber()
     {
-        return view('subscribers::create');
+        $subscriber_object =new Subscriber;
+        $subscriber_object->subscriber_email =request()->subscriber_email;
+        $subscriber_object->save();
+        return redirect()->back();
     }
 
     /**
@@ -33,7 +37,7 @@ class SubscribersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -72,8 +76,9 @@ class SubscribersController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function destroy($id)
+    public function deleteSubscriber($subscriber_id)
     {
-        //
+        Subscriber::where('id',$subscriber_id)->delete();
+        return redirect()->back()->with('msg','Subscriber Email Deleted');
     }
 }
