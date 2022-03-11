@@ -5,6 +5,7 @@ namespace Modules\SuperMarketItemCategory\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use App\Models\SupermarketCategories;
 
 class SuperMarketItemCategoryController extends Controller
 {
@@ -18,12 +19,16 @@ class SuperMarketItemCategoryController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * This function saves the category.
      * @return Renderable
      */
-    public function create()
+    public function createCategory()
     {
-        return view('supermarketitemcategory::create');
+        $save_category =new SupermarketCategories;
+        $save_category->item_category =request()->item_category;
+        $save_category->created_by    =auth()->user()->id;
+        $save_category->save();
+        return redirect()->back()->with('msg','You have successfully created Category');
     }
 
     /**
@@ -53,7 +58,8 @@ class SuperMarketItemCategoryController extends Controller
      */
     public function edit($id)
     {
-        return view('supermarketitemcategory::edit');
+        $edit_category =SupermarketCategories::where('id',$id)->get();
+        return view('supermarketitemcategory::edit',compact('edit_category'));
     }
 
     /**
@@ -64,7 +70,10 @@ class SuperMarketItemCategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        SupermarketCategories::where('id',$id)->update(array(
+            'item_category' =>request()->item_category
+        ));
+        return redirect('/supermarketitemcategory/')->with('msg','You have successfully Updated Category');
     }
 
     /**
@@ -72,8 +81,9 @@ class SuperMarketItemCategoryController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function destroy($id)
+    public function deleteCategory($id)
     {
-        //
+        SupermarketCategories::where('id',$id)->delete();
+        return redirect()->back()->with('msg','You have deleted successfully');
     }
 }

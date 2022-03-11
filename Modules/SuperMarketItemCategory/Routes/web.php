@@ -11,6 +11,10 @@
 |
 */
 
-Route::prefix('supermarketitemcategory')->group(function() {
-    Route::get('/', 'SuperMarketItemCategoryController@index');
+Route::prefix('supermarketitemcategory')->group(function() {  
+    Route::get('/', 'SuperMarketItemCategoryController@index'); 
+    Route::get('/save-category', 'SuperMarketItemCategoryController@createCategory');
+    Route::get('/delete/{id}', 'SuperMarketItemCategoryController@deleteCategory');
+    Route::get('/edit/{id}', 'SuperMarketItemCategoryController@edit');
+    Route::get('/update/{id}', 'SuperMarketItemCategoryController@update');
 });

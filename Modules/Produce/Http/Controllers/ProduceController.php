@@ -21,7 +21,8 @@ class ProduceController extends Controller
 
     public function availableProduce()
     {
-        return view('produce::available_produce');
+        $produce_category =ProduceCategory::select('id','produce_category')->get();
+        return view('produce::available_produce',compact('produce_category'));
     }
   
     public function takenProduce()

@@ -5,6 +5,8 @@ namespace Modules\SuperMarket\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use App\Models\Supermarket;
+use App\Models\SupermarketCategories;
 
 class SuperMarketController extends Controller
 {
@@ -21,7 +23,8 @@ class SuperMarketController extends Controller
      */
     public function getSupermarketItems()
     {
-        return view('supermarket::supermarket_items');
+        $get_categories=SupermarketCategories::select('id','item_category')->get();
+        return view('supermarket::supermarket_items',compact('get_categories'));
     }
     /**
      * This function get all supermarket customer orders
@@ -43,9 +46,22 @@ class SuperMarketController extends Controller
      * Show the form for creating a new resource.
      * @return Renderable
      */
-    public function create()
+    private function createItem()
     {
-        return view('supermarket::create');
+        $super_market_photo = request()->photo;
+        $super_market_photo_original_name = $super_market_photo->getClientOriginalName();
+        $super_market_photo->move('super_market_photos/',$super_market_photo_original_name);
+
+        $object =new Supermarket;
+        $object->item_group_id   =request()->item_group_id;  
+        $object->item            =request()->item;
+        $object->description     =request()->description;
+        $object->price           =request()->price;
+        $object->number          =request()->number;
+        $object->photo           =$super_market_photo_original_name;
+        $object->created_by       =auth()->user()->id;
+        $object->save();
+        return redirect()->back()->with('msg','Operation Successful');
     }
 
     /**
@@ -53,11 +69,25 @@ class SuperMarketController extends Controller
      * @param Request $request
      * @return Renderable
      */
-    public function store(Request $request)
+    public function saveItem()
     {
-        //
+        if(empty(request()->item_group_id)){
+            return redirect()->back()->withErrors('Enter category to proceed');
+        }elseif(empty(request()->price)){
+            return redirect()->back()->withErrors('Enter Location to proceed');
+        }elseif(empty(request()->item)){
+        return redirect()->back()->withErrors('Enter Item to proceed');
+        }elseif(empty(request()->description)){
+            return redirect()->back()->withErrors('Enter Description to proceed');
+        }elseif(empty(request()->photo)){
+            return redirect()->back()->withErrors('Upload Photo to proceed');
+        }elseif(empty(request()->number)){
+            return redirect()->back()->withErrors('Enter number to proceed');
+        }else{
+            return $this-> createItem();
+        }
     }
-
+    
     /**
      * Show the specified resource.
      * @param int $id

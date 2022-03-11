@@ -27,6 +27,7 @@
                                                     <!--Single Page Content-->
                                                     <article id="post-1148" class="post-1148 page type-page status-publish cactus-single-content">
                                                         <div class="body-content">
+                                                            @include('layouts.messages')
                                                             @livewire('produce-available-table')
                                                         </div>
                                                 </div>
@@ -78,43 +79,44 @@
                     <style>#text-20 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
                     <div class="widget-inner">
                         <div class="textwidget">
-                            <div role="form" class="wpcf7" id="" lang="en-US" dir="ltr">
+                        <div role="form" class="" id="" lang="en-US" >
                                 <div class="screen-reader-response"></div>
-                                <form action="/" method="post" class="wpcf7-for" enctype="multipart/form-data">
+                                <form action="/produce/save-produce" method="post" class="wpcf7-for" enctype="multipart/form-data">
+                                    @csrf
                                     <div style="display: none;">
-                                        {{--<input type="hidden" name="created_by" value="{{auth()->user()->id}}" />--}}
+                                        <input type="hidden" name="created_by" value="{{auth()->user()->id}}">
                                     </div>
-                                        Name
+                                        Produce Category
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                        <select name="produce_category_id" class="form-control" required>
+                                            @foreach($produce_category as $produce)
+                                            <option value="{{$produce->id}}">{{$produce->produce_category}}</option>
+                                            @endforeach
+                                        </select>
                                     </span>
-                                    Contact
+                                    Name of Produce
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                        <input type="text" name="produce_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
-                                    Address
+                                     Price <span style="color:red;">(Specify Per pair, Per Kilo,Each, Per bag)</span>
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                        <input type="text" name="price" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
-                                    Photo
+                                        Estimated Quantity
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="file" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
-                                    </span><br>
-                                        Email
-                                    <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                        <input type="text" name="quantity" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
-                                        Password
+                                        Current Available PhoneNumber
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                        <input type="text" name="phone_number" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
-                                        Confirm Password
+                                        Produce Image
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                        <input type="file" name="image" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
                                     <hr>
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                                        <button type="submit" class="btn btn-primary" style="padding:5px; color:#fff; margin-top:5px;">Submit</button>
                                     </div>
                                 </form>
                             </div>

@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Supermarket extends Model
 {
     use HasFactory;
-    protected $guard=[];
+    protected $fillable=['item_group_id','item','description','price','photo','number','discount','new_price','created_by'];
 }
