@@ -27,6 +27,7 @@
                                                     <!--Single Page Content-->
                                                     <article id="post-1148" class="post-1148 page type-page status-publish cactus-single-content">
                                                         <div class="body-content">
+                                                            @include('layouts.messages')
                                                             @livewire('supermarket-items-table')
                                                         </div>
                                                 </div>
@@ -106,7 +107,7 @@
                                     </span>
                                     Brief Description
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <textarea type="text" name="description" value="" size="40" rows="4" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required></textarea>
+                                        <textarea type="text" name="description" value="" size="40" rows="2" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required></textarea>
                                     </span><br>
                                         Item Photo
                                     <span class="wpcf7-form-control-wrap your-email">
@@ -115,7 +116,7 @@
                                        
                                     <hr>
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                                        <button type="submit" class="btn btn-primary"  style="padding:5px; color:#fff; margin-top:5px;">SUBMIT</button>
                                     </div>
                                 </form>
                             </div>

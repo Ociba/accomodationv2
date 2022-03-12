@@ -53,7 +53,7 @@
                                 <tbody>
                                     <tr>
                                         <th>No.</th>
-                                        <th>Category</th>
+                                        {{--<th>Category</th>--}}
                                         <th>Name</th>
                                         <th>Price</th>
                                         <th>Description</th>
@@ -74,19 +74,25 @@
                                         }
                                         @endphp
                                         <td>{{$i}}</td>
-                                        <td>{{$supermarket->item_category}}</td>
+                                        <td hidden>{{$supermarket->id}}</td>
+                                        {{--<td>{{$supermarket->item_category}}</td>--}}
                                         <td>{{$supermarket->item}}</td>
-                                        <td>{{$supermarket->price}}</td>
+                                        <td>{{ number_format($supermarket->price)}}</td>
                                         <td>{{$supermarket->description}}</td>
                                         <td><img style="width:60px; height:40px;" src="{{ asset('super_market_photos/'.$supermarket->photo)}}"></td>
                                         <td>{{$supermarket->number}}</td>
-                                        <td></td>
+                                        @php 
+                                          $delivered_items =\DB::table('orders')->where('item_id',$supermarket->id)->where('status','delivered')->sum('quantity');
+                                          $original_number =\DB::table('supermarkets')->where('id',$supermarket->id)->value('number');
+                                          $stock=$original_number-$delivered_items;
+                                        @endphp
+                                        <td style="color:red;">{{$stock}}</td>
                                         <td>{{$supermarket->discount}}</td>
-                                        <td>{{$supermarket->new_price}}</td>
+                                        <td>{{ $supermarket->new_price}}</td>
                                         <td>
                                             <a href="/supermarket/edit/{{$supermarket->id}}"  class="btn btn-info mb-1">Edit</a>
                                             <a href="/supermarket/add-discount/{{$supermarket->id}}"  class="btn btn-success mb-1">Discount</a>
-                                            <a href="/supermarket/delete/{{$supermarket->id}}"  class="btn btn-danger">Delete</a>
+                                            <a href="/supermarket/delete/{{$supermarket->id}}"  class="btn btn-danger mb-1">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach

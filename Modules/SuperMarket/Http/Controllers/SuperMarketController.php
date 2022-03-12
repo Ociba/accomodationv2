@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use App\Models\Supermarket;
 use App\Models\SupermarketCategories;
+use App\Models\Order;
+use App\Models\Unitprice;
+use Carbon\Carbon;
 
 class SuperMarketController extends Controller
 {
@@ -87,36 +90,32 @@ class SuperMarketController extends Controller
             return $this-> createItem();
         }
     }
-    
     /**
-     * Show the specified resource.
+     * Show the form for editing the specified item.
      * @param int $id
      * @return Renderable
      */
-    public function show($id)
+    public function editSupermarketItems($item_id)
     {
-        return view('supermarket::show');
+        $edit_supermarket_items =Supermarket::where('id',$item_id)->get();
+        return view('supermarket::edit_item',compact('edit_supermarket_items'));
     }
 
     /**
-     * Show the form for editing the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function edit($id)
-    {
-        return view('supermarket::edit');
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Update the edited item.
      * @param Request $request
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function updateItem($item_id)
     {
-        //
+        Supermarket::where('id',$item_id)->update(array(
+            'item'        =>request()->item,
+            'description' =>request()->description,
+            'price'       =>request()->price	,
+            'number'      =>request()->number,
+        ));
+        return redirect('/supermarket/supermaket-items')->with('msg','Operation Successful');
     }
 
     /**
@@ -124,8 +123,86 @@ class SuperMarketController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function destroy($id)
+    public function deleteItem($item_id)
     {
-        //
+        Supermarket::where('id',$item_id)->delete();
+        return redirect()->back()->with('msg','Operation Successful');
+
+    }
+      /** 
+     * This function gets form for adding discount
+    */
+    protected function addDiscountForm($item_id){
+        $get_form =Supermarket::where('id',$item_id)->get();
+        return view('supermarket::add_discount', compact('get_form'));
+    }
+    /**
+     * This function creates discount
+     */
+    public function saveDiscount($item_id){
+        Supermarket::where('id',$item_id)->update(array(
+            'new_price'  =>request()->new_price,
+            'discount'   =>request()->discount
+        ));
+        return redirect('/supermarket/supermaket-items')->with('msg','Operation Successful');
+    }
+       /**
+     * This function gets orders from the custommers
+     */
+    protected function getCustomerOrdersInfo($order_id){
+        $get_all_orders_info=Order::join('users','users.id','orders.user_id')
+        ->join('supermarkets','supermarkets.id','orders.item_id')
+        ->where('orders.status','active')
+        ->whereDate('orders.created_at' , '=',Carbon::today())
+        ->whereTime('orders.created_at' , '>',Carbon::now()->subHours(1))
+         ->where('orders.user_id',$order_id)
+        ->select('users.*','orders.user_id','orders.item_name','orders.quantity','orders.price','orders.id','orders.created_at','supermarkets.photo',
+        'supermarkets.description')
+        ->get();
+        return view('supermarket::customers_orders_info',compact('get_all_orders_info'));
+    }
+      /**
+     * This function gets orders Details for Particular Person
+     */
+    protected function printCustomerOrdersInfoNow($user_id){
+        $print_orders_info=Order::join('users','users.id','orders.user_id')
+        ->join('supermarkets','supermarkets.id','orders.item_id')
+        ->where('orders.user_id',$user_id)
+        ->whereDate('orders.created_at' , '=',Carbon::today())
+        ->whereTime('orders.created_at' , '>',Carbon::now()->subHours(1))
+        ->select('users.*','orders.user_id','orders.item_name','orders.quantity','orders.price','orders.id','orders.created_at','supermarkets.photo')
+        ->limit(1) ->get();
+        return view('supermarket::print_now',compact('print_orders_info'));
+    }
+    /**
+     * This function saves the unit Price for customers order
+     */
+    protected function getUnitPrice($order_id){
+        $quantity =Order::where('id',$order_id)->value('quantity');
+        $price =Order::where('id',$order_id)->value('price');
+        $total =$quantity * $price;
+
+
+        $unit_price =new Unitprice;
+        $unit_price->user_id =request()->user_id;
+        $unit_price->total =$total;
+        $unit_price->save();
+        return redirect()->back()->with('msg','Operation Successful');
+    }
+   /**
+    * This function marks order as delivered
+    */
+    protected function markOrderAsDelivered($order_id){
+        Order::where('user_id',$order_id)->update(array(
+            'status' =>'delivered'
+        ));
+        return redirect()->back()->with('msg','Operation Successful');
+    }
+     /**
+    * This function marks order as delivered
+    */
+    protected function deleteOrder($order_id){
+        Order::where('user_id',$order_id)->delete();
+        return redirect()->back()->with('msg','Operation Successful');
     }
 }

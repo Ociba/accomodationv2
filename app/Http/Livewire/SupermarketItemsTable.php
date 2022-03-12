@@ -29,7 +29,7 @@ class SupermarketItemsTable extends Component
             ->where('item','like',$searchTerm)
             ->orwhere('item_category','like',$searchTerm)
             ->orderBy('supermarkets.created_at','Desc')
-            ->Paginate($this->per_page)
+            ->Paginate($this->per_page,['supermarkets.*','supermarket_categories.item_category'])
         ]);
     }
 }

@@ -110,7 +110,7 @@
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="/supermarketitemcategory/">Items Category</a></li>
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="/supermarket/supermaket-items">Supermarket Items</a></li>
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="/supermarket/supermarkets-orders">Customer Order</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="/supermarket/supermarket-order-summary">Orders Summary</a></li>
+                                        {{--<li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-page level1"><a href="/supermarket/supermarket-order-summary">Orders Summary</a></li>--}}
                                     </li>
                                     </ul>
                                 </li>
