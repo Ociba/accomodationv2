@@ -13,6 +13,13 @@
 
 Route::prefix('property')->group(function() {
     Route::get('/', 'PropertyController@index');
-    Route::get('/my-property', 'PropertyController@myProperty');
-    Route::get('/property-taken', 'PropertyController@propertyTaken');
+    Route::get('/my-property', 'PropertyController@myProperty'); 
+    Route::get('/property-taken', 'PropertyController@propertyTaken'); 
+    Route::post('/create-property', 'PropertyController@validateProperty');
+    Route::get('/edit/{property_id}', 'PropertyController@editProperty');  
+    Route::get('/update-property/{property_id}', 'PropertyController@updateProperty');
+    Route::get('/add-discount/{property_id}', 'PropertyController@addDiscountForm');  
+    Route::get('/save-discount/{property_id}', 'PropertyController@saveDiscount');  
+    Route::get('/delete/{property_id}', 'PropertyController@deleteProperty');
+    Route::get('/mark-as-taken/{property_id}', 'PropertyController@updatePropertyStatus');
 });

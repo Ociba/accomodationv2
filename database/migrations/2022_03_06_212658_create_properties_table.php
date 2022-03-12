@@ -25,6 +25,7 @@ class CreatePropertiesTable extends Migration
             $table->string('description')->nullable();
             $table->string('price');
             $table->string('discount')->nullable();
+            $table->string('discount_price')->nullable();
             $table->string('photo')->nullable();
             $table->string('property_status')->nullable();
             $table->enum('status',['pending','taken'])->default('pending');
