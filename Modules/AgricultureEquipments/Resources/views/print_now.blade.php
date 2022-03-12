@@ -98,16 +98,16 @@
                                                                             <th> Unit Price</th>
                                                                         </tr>
                                                                         @php
-                                                                        $items_ordered = \DB::table('orders')->join('supermarkets','supermarkets.id','orders.item_id')
+                                                                        $items_ordered = \DB::table('orders')->join('equipment','equipment.id','orders.equipment_id')
                                                                         ->where('user_id',$info->user_id)
                                                                         ->whereDate('orders.created_at' , '=',\Carbon\Carbon::today())
                                                                         ->whereTime('orders.created_at' , '>',\Carbon\Carbon::now()->subHours(1))
-                                                                        ->get(['orders.*','supermarkets.photo']);
+                                                                        ->get(['orders.*','equipment.photo']);
                                                                         @endphp
                                                                         @foreach($items_ordered as $orders)
                                                                         <tr>
                                                                             <td>{{$orders->item_name}}</td>
-                                                                            <td><img style="width:60px; height:40px;" src="{{ asset('super_market_photos/'.$orders->photo)}}"></td>
+                                                                            <td><img style="width:60px; height:40px;" src="{{ asset('equipment_photos/'.$orders->photo)}}"></td>
                                                                             <td>{{$orders->quantity}}</td>
                                                                             <td>{{number_format($orders->price)}}</td>
                                                                             <td> <strong>sh .{{ number_format($orders->price * $orders->quantity)}}</strong></td>

@@ -16,10 +16,13 @@ class CreateEquipmentTable extends Migration
         Schema::create('equipment', function (Blueprint $table) {
             $table->id(); 
             $table->foreignId('created_by');
-            $table->foreignId('equipment_category_id');
+            $table->string('photo');
             $table->string('equipment');
             $table->string('price');
             $table->string('description');
+            $table->string('quantity');
+            $table->string('discount_amount')->nullable();
+            $table->string('equipment_discount')->nullable();
             $table->enum('status',['active','taken','out of stock'])->default('active');
             $table->timestamps();
         });

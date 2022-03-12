@@ -22,7 +22,7 @@
                                     <div class="main-content-col-body">
                                         <div class="single-page-content">
                                             <article class="cactus-single-content">
-                                                <h2 class="hidden-title">Smart Content Box V2</h2>
+                                                <h2 class="hidden-titl"><strong>Available Equipments</strong></h2>
                                                 <div class="single-page-content single-content">
                                                     <!--Single Page Content-->
                                                     <article id="post-1148" class="post-1148 page type-page status-publish cactus-single-content">
@@ -71,50 +71,44 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fas fa-times"></i></button>
-                <h4 class="modal-title" id="videopro_frontend_submit_heading">Add Broker</h4>
+                <h4 class="modal-title" id="videopro_frontend_submit_heading">Add Equipment</h4>
             </div>
             <div class="modal-body" >
                 <aside id="text-20" class="   user-submit">
                     <style>#text-20 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
                     <div class="widget-inner">
                         <div class="textwidget">
-                            <div role="form" class="wpcf7" id="" lang="en-US" dir="ltr">
+                            <div role="form" class="" id="" lang="en-US" >
                                 <div class="screen-reader-response"></div>
-                                <form action="/" method="post" class="wpcf7-for" enctype="multipart/form-data">
+                                <form action="/agricultureequipments/save-equipment" method="post" class="wpcf7-for" enctype="multipart/form-data">
+                                     @csrf
                                     <div style="display: none;">
                                         {{--<input type="hidden" name="created_by" value="{{auth()->user()->id}}" />--}}
                                     </div>
-                                        Name
+                                       Equipment Name
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                        <input type="text" name="equipment" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
-                                    Contact
+                                    Quantity
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                        <input type="text" name="quantity" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
-                                    Address
+                                    Price
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                        <input type="text" name="price" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
                                     Photo
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="file" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                        <input type="file" name="photo" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span><br>
-                                        Email
+                                        Description
                                     <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+                                        <input type="text" name="description" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
-                                        Password
-                                    <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
-                                    </span>
-                                        Confirm Password
-                                    <span class="wpcf7-form-control-wrap your-email">
-                                        <input type="text" name="category_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
-                                    </span>
+                                     
                                     <hr>
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                                        <button type="submit" class="btn btn-primary" style="padding:5px; color:#fff; margin-top:5px;">SUBMIT</button>
                                     </div>
                                 </form>
                             </div>

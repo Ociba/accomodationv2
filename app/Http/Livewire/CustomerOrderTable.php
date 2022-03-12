@@ -29,6 +29,7 @@ class CustomerOrderTable extends Component
             ->where('name','like',$searchTerm)
             ->orderBy('orders.created_at','DESC')
             ->distinct('name')->where('orders.status','active')
+            ->where('orders.equipment_id',null)
             ->Paginate($this->per_page,['users.*','orders.created_at','orders.user_id'])
     
         ]);
