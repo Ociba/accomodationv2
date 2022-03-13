@@ -19,8 +19,16 @@
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
-                                    <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 25953 views</div>
+                                    @php
+                                    $rooms=\DB::table('properties')->where('category_id',1)->orwhere('category_id',2)->count();
+                                    $hostel=\DB::table('properties')->where('category_id',4)->count();
+                                    $houses=\DB::table('properties')->where('category_id',3)->count();
+                                    $apartment=\DB::table('properties')->where('category_id',5)->count();
+                                    $plots=\DB::table('properties')->where('category_id',6)->orwhere('category_id',7)->count();
+                                    $shop=\DB::table('properties')->where('category_id',9)->count();
+                                    $office=\DB::table('properties')->where('category_id',10)->count();
+                                    @endphp
+                                    <span class="cactus-info font-size-1"><span> {{$rooms}} Items</span></span>
                                 </div>
                             </div>
                         </div>
@@ -37,8 +45,8 @@
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
-                                    <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 7705 views</div>
+                                    <span class="cactus-info font-size-1"><span> {{$hostel}} Items</span></span>
+                                    {{--<div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 7705 views</div>--}}
                                 </div>
                             </div>
                         </div>
@@ -55,8 +63,7 @@
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
-                                    <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 3737 views</div>
+                                    <span class="cactus-info font-size-1"><span> {{$houses}} Items</span></span>
                                 </div>
                             </div>
                         </div>
@@ -73,8 +80,7 @@
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
-                                    <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 2984 views</div>
+                                    <span class="cactus-info font-size-1"><span> {{$apartment}} Items</span></span>
                                 </div>
                             </div>
                         </div>
@@ -91,8 +97,7 @@
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
-                                    <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 2058 views</div>
+                                    <span class="cactus-info font-size-1"><span> {{$plots}} Items</span></span>
                                 </div>
                             </div>
                         </div>
@@ -109,8 +114,7 @@
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
-                                    <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 2058 views</div>
+                                    <span class="cactus-info font-size-1"><span> {{$shop}} Items</span></span>
                                 </div>
                             </div>
                         </div>
@@ -127,8 +131,7 @@
                                     </a>
                                 </h4>
                                 <div class="posted-on metadata-font">
-                                    <span class="cactus-info font-size-1"><span> 8 Items</span></span>
-                                    <div class="cactus-info font-size-1"><i class="fas fa-eye"></i> 2058 views</div>
+                                    <span class="cactus-info font-size-1"><span> {{$office}} items</span></span>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +151,7 @@
                                     <a href="/supermarket" title="All">
                                     <i class="fas fa fa-gamepad"></i>
                                     All                        
-                                    <span class="tt-number">(13)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -159,7 +162,7 @@
                                     <a href="/clothes/" title="KOMBAT">
                                     <i class="fas fa-shield-alt"></i>
                                     Colthes                        
-                                    <span class="tt-number">(8)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -170,7 +173,7 @@
                                     <a href="/shoe/" title="Shoes">
                                     <i class="fas fa fa-play-circle"></i>
                                     Shoes                        
-                                    <span class="tt-number">(15)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -181,7 +184,7 @@
                                     <a href="/phones/" title="Phones">
                                     <i class="fas fa fa-music"></i>
                                     Phones                        
-                                    <span class="tt-number">(14)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -192,7 +195,7 @@
                                     <a href="/saloon/" title="Saloon">
                                     <i class="fas far fa-newspaper"></i>
                                     Saloon                        
-                                    <span class="tt-number">(20)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -203,7 +206,7 @@
                                     <a href="/bags/" title="Bags">
                                     <i class="fas far fa-futbol"></i>
                                     Bags                        
-                                    <span class="tt-number">(10)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -214,7 +217,7 @@
                                     <a href="/electronics/" title="Electronic">
                                     <i class="fas fa fa-location-arrow"></i>
                                     Electronics                      
-                                    <span class="tt-number">(10)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -225,7 +228,7 @@
                                     <a href="/computers/" title="Computer">
                                     <i class="fas fa fa-leaf"></i>
                                     Computers                        
-                                    <span class="tt-number">(9)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -236,7 +239,7 @@
                                     <a href="/drinks/" title="Drinks">
                                     <i class="fas fa fa-leaf"></i>
                                     Drinks                        
-                                    <span class="tt-number">(19)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -247,7 +250,7 @@
                                     <a href="/utensils/" title="Utensils">
                                     <i class="fas fa fa-leaf"></i>
                                     Utensils                        
-                                    <span class="tt-number">(9)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -258,7 +261,7 @@
                                     <a href="/beddings/" title="Beddings">
                                     <i class="fas fa fa-leaf"></i>
                                     Beddings                        
-                                    <span class="tt-number">(29)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -269,7 +272,7 @@
                                     <a href="/scholastic/" title="School">
                                     <i class="fas fa fa-leaf"></i>
                                     Scholastics                        
-                                    <span class="tt-number">(17)</span>
+                                    <span class="tt-number"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -282,6 +285,16 @@
             <style>#actor-listing-2 .ct-sub-w-title{color:FFFFFF !important; background:17A015 !important}</style>
             <div class="widget-inner">
                 <h2 class="widget-title h4" style="text-align:center;"><span>Agriculture Produce{{--<i class="ct-sub-w-title">HOT</i>--}}</span></h2>
+                @php
+                  $poultry=\DB::table('produces')->where('produce_category_id',1)->count();
+                  $animals=\DB::table('produces')->where('produce_category_id',2)->count();
+                  $cereals=\DB::table('produces')->where('produce_category_id',3)->count();
+                  $root_tubers=\DB::table('produces')->where('produce_category_id',4)->count();
+                  $legumes=\DB::table('produces')->where('produce_category_id',5)->count();
+                  $vegetables=\DB::table('produces')->where('produce_category_id',6)->count();
+                  $fruits=\DB::table('produces')->where('produce_category_id',7)->count();
+                  $stem_tubers=\DB::table('produces')->where('produce_category_id',8)->count();
+                @endphp
                 <div class="widget_casting_content original-style">
                     <div class="post-metadata sp-style style-2 style-3">
                         <div class="channel-subscribe">
@@ -294,7 +307,7 @@
                                 <h4 class="channel-title h6">
                                     <a href="/poultry/" title="Poultry">Poultry</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">10 Items</span>
+                                <span class="tt-number cactus-info font-size-1">{{$poultry}} Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
@@ -307,7 +320,7 @@
                                 <h4 class="channel-title h6">
                                     <a href="/animals/" title="Animals">Animals</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">12 Items</span>
+                                <span class="tt-number cactus-info font-size-1">{{$animals}} Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
@@ -320,7 +333,7 @@
                                 <h4 class="channel-title h6">
                                     <a href="/cereals/" title="Cereals">Cereals</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">16 Items</span>
+                                <span class="tt-number cactus-info font-size-1"> {{$cereals}} Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
@@ -333,7 +346,7 @@
                                 <h4 class="channel-title h6">
                                     <a href="/roottubers/" title="Root Tubers">Root Tubers</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">12 Items</span>
+                                <span class="tt-number cactus-info font-size-1">{{$root_tubers}} Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
@@ -346,7 +359,7 @@
                                 <h4 class="channel-title h6">
                                     <a href="/legumes/" title="Legumes">Legumes</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">12 Items</span>
+                                <span class="tt-number cactus-info font-size-1">{{$legumes}} Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
@@ -359,7 +372,7 @@
                                 <h4 class="channel-title h6">
                                     <a href="/vegetables/" title="Vegetables">Vegetables</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">16 Items</span>
+                                <span class="tt-number cactus-info font-size-1">{{$vegetables}} Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
@@ -372,7 +385,7 @@
                                 <h4 class="channel-title h6">
                                     <a href="/fruits" title="Fruits">Fruits</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">8 Items</span>
+                                <span class="tt-number cactus-info font-size-1">{{$fruits}} Items</span>
                             </div>
                         </div>
                         <div class="channel-subscribe">
@@ -385,7 +398,7 @@
                                 <h4 class="channel-title h6">
                                     <a href="/stemtubers" title="Stem Tubers">Stem Tubers</a>
                                 </h4>
-                                <span class="tt-number cactus-info font-size-1">8 Items</span>
+                                <span class="tt-number cactus-info font-size-1">{{$stem_tubers}} Items</span>
                             </div>
                         </div>
                     </div>
