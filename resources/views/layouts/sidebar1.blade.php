@@ -300,7 +300,7 @@
                         <div class="channel-subscribe">
                             <div class="channel-picture">
                                 <a href="/poultry/" title="Poultry">
-                                <img width="50" height="50"  src="{{ asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="08-Trinity-Green"/>
+                                <img width="50" height="50"  src="{{asset('/produce/guinea2.jpeg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="08-Trinity-Green"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -313,7 +313,7 @@
                         <div class="channel-subscribe">
                             <div class="channel-picture">
                                 <a href="/animals/" title="Animals">
-                                <img width="50" height="50"  src="{{ asset('wp-content/uploads/2016/07/03-Alex-Johnson-50x50.jpg')}}"  data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="03-Alex-Johnson"/>
+                                <img width="50" height="50"  src="{{asset('/produce/rabits.jpeg')}}"  data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="03-Alex-Johnson"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -326,7 +326,7 @@
                         <div class="channel-subscribe">
                             <div class="channel-picture">
                                 <a href="/cereals/" title="Cereals">
-                                <img width="50" height="50"  src="{{ asset('/wp-content/motor.jpg')}}"  data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="05-Dakota-Thomas"/>
+                                <img width="50" height="50"  src="{{asset('/produce/peass.jpeg')}}"  data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="05-Dakota-Thomas"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -339,7 +339,7 @@
                         <div class="channel-subscribe">
                             <div class="channel-picture">
                                 <a href="/roottubers/" title="Root Tubers">
-                                <img width="50" height="50" src="{{ asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="07-Tyler-Allen"/>
+                                <img width="50" height="50" src="{{asset('/produce/sweetpotaoes.jpeg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="07-Tyler-Allen"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -352,7 +352,7 @@
                         <div class="channel-subscribe">
                             <div class="channel-picture">
                                 <a href="/legumes/" title="Legumes">
-                                <img width="50" height="50" src="{{ asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="06-Daniel-Walker"/>
+                                <img width="50" height="50" src="{{asset('/produce/gnuts.jpeg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="06-Daniel-Walker"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -365,7 +365,7 @@
                         <div class="channel-subscribe">
                             <div class="channel-picture">
                                 <a href="/vegetables/" title="Vegetables">
-                                <img width="50" height="50" src="{{ asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="02-kayla-miller"/>
+                                <img width="50" height="50" src="{{asset('/produce/redchilli.jpeg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="02-kayla-miller"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -378,7 +378,7 @@
                         <div class="channel-subscribe">
                             <div class="channel-picture">
                                 <a href="/fruits" title="Fruits">
-                                <img width="50" height="50" src="{{asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="04-Alyssa-Moore"/>
+                                <img width="50" height="50" src="{{asset('/produce/mango.jpeg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="04-Alyssa-Moore"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -391,7 +391,7 @@
                         <div class="channel-subscribe">
                             <div class="channel-picture">
                                 <a href="/stem-tubers" title="Stem Tubers">
-                                <img width="50" height="50" src="{{asset('/wp-content/motor.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="04-Alyssa-Moore"/>
+                                <img width="50" height="50" src="{{asset('/produce/cane3.jpeg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="04-Alyssa-Moore"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -410,8 +410,8 @@
             <div class="widget-inner">
                 <h2 class="widget-title h4"><a href="/agricultureequipments/">Agricultural Equipements</a></h2>
                 <div class="textwidget">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-                    <p><a href="#" title="BUY NOW" id="cactus-btn-232"  class="btn btn-default bt-style-1">BUY NOW</a></p>
+                    <img style="height:200px; width:250px;" src="{{asset('/produce/sprayer.jpeg')}}">
+                    <p><a href="/agricultureequipments/" title="BUY NOW" id="cactus-btn-232"  class="btn btn-default bt-style-1">BUY NOW</a></p>
                 </div>
             </div>
         </aside>
@@ -419,7 +419,7 @@
             <style>#text-23 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
             <div class="widget-inner">
                 <div class="textwidget">
-                    <div style="text-align:center"><a href="https://themeforest.net/item/videopro-video-wordpress-theme/16677956" title="VideoPro Sample Banner"><img src="{{ asset('wp-content/uploads/2016/05/banner-2.jpg')}}" alt="Ad banner"></a></div>
+                    <div style="text-align:center"><a href="/agricultureequipments/" title="VideoPro Sample Banner"><img src="{{ asset('wp-content/uploads/2016/05/banner-2.jpg')}}" alt="Ad banner"></a></div>
                 </div>
             </div>
         </aside>

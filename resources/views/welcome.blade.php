@@ -41,8 +41,7 @@
                                                                                 <div class="control-header">
                                                                                     <h2 class="block-title">{{request()->route()->getName()}}</h2>
                                                                                     <div class="view-sortby metadata-font font-size-1 ct-gradient elms-right">
-                                                                                        <span class="cur-item" data-filter="0" >Search</span>
-                                                                                        <i class="fa fa-search"></i>
+                                                                                        <span style="color:blue;"><i class="fa fa-clock"></i> {{  date('l,jS F, Y') }} | {{  date("H:i:s")}} </span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="block-wrap ajax-container active tab-active" data-filter="0" data-paged="1">

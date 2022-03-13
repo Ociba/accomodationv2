@@ -148,34 +148,11 @@ img:nth-child(5) {
                                         </div>
                                     </div>
                                 </article>
-                                {{--<article class="cactus-post-item hentry">
-                                    <div class="entry-content">
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a title="Xpogo Edition Dude Perfect" target="_self" href="https://videopro.cactusthemes.com/v1/xpogo-edition-dude-perfect/">
-                                                    <img width="407" height="229" src="{{ asset('wp-content/photo.jpg')}}" data-sizes="(max-width: 407px) 100vw, 407px" class="lazyload effect-fade"  style="padding-top:56.265356265356%;" alt="vp-sp03"/>
-                                                    <div class="ct-icon-video"></div>
-                                                </a>
-                                                <div class="cactus-note ct-time font-size-1"><span>05:05</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="cactus-post-title entry-title h6 sub-lineheight">
-                                                <a href="https://videopro.cactusthemes.com/v1/xpogo-edition-dude-perfect/" target="_self" title="Xpogo Edition Dude Perfect">Xpogo Edition Dude Perfect</a>
-                                            </h3>
-                                            <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
-                                                <div class="liked cactus-info font-size-1">182.98K Likes</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                --}}
                                 <article class="cactus-post-item hentry">
                                     <div class="entry-content">
                                         <div class="picture">
                                             <div class="picture-content">
-                                                <a title="World&#8217;s Greatest Drag Race 2" target="_self" href="https://videopro.cactusthemes.com/v1/worlds-greatest-drag-race-2/">
+                                                <a title="World&#8217;s Greatest Drag Race 2" target="_self" href="/">
                                                     <img width="407" height="229"  src="{{ asset('wp-content/pic2.png')}}"  data-sizes="(max-width: 407px) 100vw, 407px" class="lazyload effect-fade" style="padding-top:56.265356265356%;" alt="vp-sp06"/>
                                                     <div class="ct-icon-video"></div>
                                                 </a>
@@ -184,11 +161,11 @@ img:nth-child(5) {
                                         </div>
                                         <div class="content">
                                             <h3 class="cactus-post-title entry-title h6 sub-lineheight">
-                                                <a href="https://videopro.cactusthemes.com/v1/worlds-greatest-drag-race-2/" target="_self" title="World&#8217;s Greatest Drag Race 2">World&#8217;s Greatest Drag Race 2</a>
+                                                <a href="/" target="_self" title="World&#8217;s Greatest Drag Race 2">Service&#8217;s & Market Efficiency is our result</a>
                                             </h3>
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
-                                                <div class="liked cactus-info font-size-1">91.69K Likes</div>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">JJOOME</span></a>
+                                                <div class="liked cactus-info font-size-1">{{ date('Y')}}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -224,7 +201,7 @@ img:nth-child(5) {
             <style>#popular_posts_id-9 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
             <div class="widget-inner">
                 <div class="cactus-carousel-style-bottom default-sidebar dark-div">
-                    <h2 class="widget-title h4">Popular Posts</h2>
+                    <h2 class="widget-title h4">Get Your Fruits</h2>
                     <div class="cactus-listing-wrap">
                         <div class="cactus-listing-config style-2">
                             <!--addClass: style-1 + (style-2 -> style-n)-->
@@ -235,9 +212,9 @@ img:nth-child(5) {
                                         <!--picture (remove)-->
                                         <div class="picture">
                                             <div class="picture-content">
-                                                <a title="" class="post-link" target="_self" href="https://videopro.cactusthemes.com/v1/jwplayer-embed-code/">
-                                                    <img width="277" height="156"  src="{{ asset('wp-content/photo1.jpg')}}" data-sizes="(max-width: 277px) 100vw, 277px" class="lazyload effect-fade"  style="padding-top:56.317689530686%;" alt="canberra_hero_image_JiMVvYU"/>
-                                                    <div class="ct-icon-video"></div>
+                                                <a title="" class="post-link" target="_self" href="/">
+                                                    <img width="277" height="156"  src="{{ asset('produce/orange.jpeg')}}" data-sizes="(max-width: 277px) 100vw, 277px" class="lazyload effect-fade"  style="padding-top:56.317689530686%;" alt="canberra_hero_image_JiMVvYU"/>
+                                                    
                                                 </a>
                                             </div>
                                         </div>
@@ -245,13 +222,14 @@ img:nth-child(5) {
                                         <div class="content">
                                             <!--Title (no title remove)-->
                                             <h3 class="cactus-post-title entry-title h4"> 
-                                                <a href="https://videopro.cactusthemes.com/v1/jwplayer-embed-code/" title=""></a>
+                                                <a href="/" title=""></a>
                                             </h3>
                                             <!--Title-->
-                                            <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/videopro/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">videopro</span></a>
-                                                <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/jwplayer-embed-code/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2017-07-11T01:57:01+00:00" class="entry-date updated">July 11, 2017</time></a></div>
+                                           {{--<div class="posted-on metadata-font">
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">videopro</span></a>
+                                                <div class="date-time cactus-info font-size-1"><a href="/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2017-07-11T01:57:01+00:00" class="entry-date updated">July 11, 2017</time></a></div>
                                             </div>
+                                            --}}
                                         </div>
                                     </div>
                                 </article>
@@ -305,7 +283,7 @@ img:nth-child(5) {
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
                                                 <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/self-hosted-video/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-09-08T04:27:07+00:00" class="entry-date updated">September 8, 2016</time></a></div>
                                             </div>
                                         </div>
@@ -418,7 +396,7 @@ img:nth-child(5) {
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
                                                 <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/avexir-updates-flashy-plasma/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-28T04:54:16+00:00" class="entry-date updated">May 28, 2016</time></a></div>
                                             </div>
                                         </div>
@@ -447,7 +425,7 @@ img:nth-child(5) {
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
                                                 <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/mtv-game-awards-graphic-package/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-28T04:52:46+00:00" class="entry-date updated">May 28, 2016</time></a></div>
                                             </div>
                                         </div>
@@ -476,7 +454,7 @@ img:nth-child(5) {
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
                                                 <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/enders-game-motion-graphics-reel/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-28T04:51:33+00:00" class="entry-date updated">May 28, 2016</time></a></div>
                                             </div>
                                         </div>
@@ -505,7 +483,7 @@ img:nth-child(5) {
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
                                                 <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/how-to-farm-souls-early-on-in-dark-souls-3/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-28T04:48:25+00:00" class="entry-date updated">May 28, 2016</time></a></div>
                                             </div>
                                         </div>
@@ -534,7 +512,7 @@ img:nth-child(5) {
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
                                                 <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/game-grumps-animated-balogna-man-by-patrick-stannard/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-28T04:47:05+00:00" class="entry-date updated">May 28, 2016</time></a></div>
                                             </div>
                                         </div>
@@ -563,7 +541,7 @@ img:nth-child(5) {
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
                                                 <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/top-10-best-android-games-2016-must-play/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-28T04:45:43+00:00" class="entry-date updated">May 28, 2016</time></a></div>
                                             </div>
                                         </div>
@@ -592,7 +570,7 @@ img:nth-child(5) {
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
                                                 <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/reviewers-bad-at-games-the-know/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-28T04:41:47+00:00" class="entry-date updated">May 28, 2016</time></a></div>
                                             </div>
                                         </div>
@@ -621,7 +599,7 @@ img:nth-child(5) {
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
                                                 <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/clueless-gamer-overwatch-with-peter-dinklage-lena-headey-conan-on-tbs/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-28T04:40:35+00:00" class="entry-date updated">May 28, 2016</time></a></div>
                                             </div>
                                         </div>
@@ -650,7 +628,7 @@ img:nth-child(5) {
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
                                                 <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/overwatch-gameplay-trailer/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-28T04:38:31+00:00" class="entry-date updated">May 28, 2016</time></a></div>
                                             </div>
                                         </div>
@@ -679,7 +657,7 @@ img:nth-child(5) {
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
                                                 <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/overwatch-best-pc-game-this-year-so-far-the-know/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-28T04:36:23+00:00" class="entry-date updated">May 28, 2016</time></a></div>
                                             </div>
                                         </div>
