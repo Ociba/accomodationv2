@@ -17,7 +17,6 @@ class User extends Authenticatable
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
-    use DB;
 
     /**
      * The attributes that are mass assignable.
@@ -69,12 +68,4 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
-    public function scopeSearch($query, $val){
-        return $query
-        ->where('name','like','%'.$val.'%');
-    }
-    //count rooms
-    public function countRooms(){
-        return DB::table('properties')->where('category_id',1)->count();
-    }
 }

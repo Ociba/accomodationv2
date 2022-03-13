@@ -77,7 +77,7 @@
                                         <td>{{$property->location}}</td>
                                         <td>{{$property->description}}</td>
                                         <td>{{ number_format($property->price)}}</td>
-                                        <td><img style="width:60px; height:50px;" src="{{ asset('property_photos/'.$property->photo)}}"></td>
+                                        <td><img style="width:100px; height:50px;" src="{{ asset('property_photos/'.$property->photo)}}"></td>
                                         <td>{{$property->property_status}}</td>
                                         <td>{{$property->discount}}</td>
                                         <td>{{ number_format($property->discount_price)}}</td>
