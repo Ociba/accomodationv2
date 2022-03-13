@@ -10,8 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::prefix('property')->group(function() {
+Route::group(['prefix'=>'property', 'middleware'=>['auth']],function(){ 
     Route::get('/', 'PropertyController@index');
     Route::get('/my-property', 'PropertyController@myProperty'); 
     Route::get('/property-taken', 'PropertyController@propertyTaken'); 

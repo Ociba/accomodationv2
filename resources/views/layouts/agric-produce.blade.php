@@ -2,7 +2,7 @@
     <div class="wpb_column vc_column_container vc_col-sm-12">
         <div class="vc_column-inner ">
             <div class="wpb_wrapper">
-                <div class="cactus-listing-wrap cactus-contents-block style-1 is_border" data-url="https://videopro.cactusthemes.com/v1/wp-admin/admin-ajax.php" data-shortcode="{&quot;title&quot;:&quot;Music Videos&quot;,&quot;parent_column_size&quot;:&quot;12&quot;,&quot;number&quot;:&quot;6&quot;,&quot;items_per_page&quot;:&quot;6&quot;,&quot;show_datetime&quot;:&quot;0&quot;,&quot;show_author&quot;:&quot;0&quot;,&quot;videoplayer_lightbox&quot;:&quot;1&quot;,&quot;cats&quot;:&quot;music&quot;,&quot;totalPage&quot;:1,&quot;itemEndPage&quot;:&quot;6&quot;}" data-total-pages="1" data-last-page-items="6" data-filter="0" data-query="{&quot;post_type&quot;:&quot;post&quot;,&quot;posts_per_page&quot;:&quot;6&quot;,&quot;post_status&quot;:&quot;publish&quot;,&quot;ignore_sticky_posts&quot;:1,&quot;order&quot;:&quot;DESC&quot;,&quot;category_name&quot;:&quot;music&quot;}" data-query-class="">
+                <div class="cactus-listing-wrap cactus-contents-block style-1 is_border">
                     <div class="control-header">
                         <h2 class="block-title">Agriculture Products</h2>
                         <div class="view-sortby metadata-font font-size-1 ct-gradient elms-right">
@@ -14,7 +14,8 @@
                         <div class="cactus-listing-config style-2">
                             <!--addClass: style-1 + (style-2 -> style-n)-->
                             <div class="cactus-sub-wrap">
-                                <!--item listing-->                                                
+                                <!--item listing-->     
+                                @foreach($produce as $production)                                           
                                 <article class="cactus-post-item">
                                     <div class="entry-content">
                                         <!--picture (remove)-->
@@ -22,7 +23,7 @@
                                             <div class="picture-content">
                                                 <a href="/" target="_self" title="Little Night Music In Perth Contemporary">
                                                     <img 
-                                                    data-src="{{ asset('images/02.png')}}" style="height:145px;"
+                                                    data-src="{{ asset('produce_photos/'.$production->image)}}" style="height:145px;"
                                                     data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                     alt="vp-show-06"
                                                     class="feature-image-first-index lazyload effect-fade"	
@@ -44,11 +45,11 @@
                                         <div class="content">
                                             <!--Title (no title remove)-->
                                             <h3 class="cactus-post-title entry-title h4"> 
-                                                Little Night Music In Perth Contemporary    
+                                                {{$production->produce_name}}  | {{$production->address}}   
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font text-center">
-                                                <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
+                                                <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: {{$production->price}}</span></div>
                                             </div>
                                             <div class="posted-on metadata-font">
                                             <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
@@ -65,7 +66,7 @@
                                                 <div class="login-msg">
                                                     <div class="login-content">
                                                         <span class="login-info">
-                                                            <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
+                                                            <strong><i class="fa fa-phone-volume"></i> {{$production->phone_number}}</strong>                        
                                                         </span>
                                                     </span>
                                                     </div>
@@ -75,301 +76,7 @@
                                         </div>
                                     </div>
                                 </article>
-                                <!--item listing-->
-                                <!--item listing-->                                                
-                                <article class="cactus-post-item">
-                                    <div class="entry-content">
-                                        <!--picture (remove)-->
-                                        <div class="picture">
-                                            <div class="picture-content screenshots-preview-inlin">
-                                                <a href="#" target="_self" title="Jessie Channels Her Inner Dominatrix">
-                                                    <img 
-                                                    data-src="{{ asset('images/honey.PNG')}}" style="height:145px;"
-                                                    data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
-                                                    alt="vp-show-09"
-                                                    class="feature-image-first-index lazyload effect-fade"	
-                                                    width="407" 
-                                                    height="229" 
-                                                    style="padding-top:56.265356265356%;"												
-                                                    />	
-                                                </a>
-                                                <div class="cactus-note font-size-1"><i class="fa fa-thumbs-up"></i><span>1</span></div>
-                                                <div class="cactus-note ct-time font-size-1"><span>03:03</span></div>
-                                                <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1542"><i class="fas fa-clock"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--picture-->
-                                        <div class="content">
-                                            <!--Title (no title remove)-->
-                                            <h3 class="cactus-post-title entry-title h4"> 
-                                                Jessie Channels Her Inner Dominatrix
-                                            </h3>
-                                            <!--Title--> 
-                                            <div class="posted-on metadata-font text-center">
-                                                <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
-                                            </div>
-                                            <div class="posted-on metadata-font">
-                                                    <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                                        <div class='watch-action'>
-                                                                <div class='watch-position align-left'>
-                                                                    <div class='action-like'>
-                                                                    <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                                    <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                                    </a>
-                                                                    </div>
-                                                                </div>
-                                                        </div>
-                                                        <div class='wti-clear'></div>               
-                                                        <div class="login-msg">
-                                                            <div class="login-content">
-                                                                <span class="login-info">
-                                                                    <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
-                                                                </span>
-                                                            </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <!--item listing-->
-                                <!--item listing-->                                                
-                                <article class="cactus-post-item">
-                                    <div class="entry-content">
-                                        <!--picture (remove)-->
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a href="/" target="_self" title="Selfillumination animated By Andre">
-                                                    <img 
-                                                    data-src="{{ asset('images/07.jpg')}}" style="height:145px;"
-                                                    data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
-                                                    alt="vp-mv08"
-                                                    class="feature-image-first-index lazyload effect-fade"	
-                                                    width="407" 
-                                                    height="229" 
-                                                    style="padding-top:56.265356265356%;"												
-                                                    />	
-                                                    <div class="badges-group">
-                                                        <div class="badges-item">
-                                                            <img src="{{ asset('wp-content/uploads/2016/05/12-015-Video-Badges_05.png')}}" alt="Selfillumination animated By Andre">
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <div class="cactus-note font-size-1"><i class="fa fa-thumbs-up"></i><span>4.46K</span></div>
-                                                <div class="cactus-note ct-time font-size-1"><span>05:05</span></div>
-                                                <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="341"><i class="fas fa-clock"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--picture-->
-                                        <div class="content">
-                                            <!--Title (no title remove)-->
-                                            <h3 class="cactus-post-title entry-title h4"> 
-                                                Selfillumination animated By Andre
-                                            </h3>
-                                            <!--Title-->
-                                            <div class="posted-on metadata-font text-center">
-                                                <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
-                                            </div>
-                                            <div class="posted-on metadata-font">
-                                            <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                                <div class='watch-action'>
-                                                        <div class='watch-position align-left'>
-                                                            <div class='action-like'>
-                                                            <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                            <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                            </a>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                <div class='wti-clear'></div>               
-                                                <div class="login-msg">
-                                                    <div class="login-content">
-                                                        <span class="login-info">
-                                                            <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
-                                                        </span>
-                                                    </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <!--item listing-->
-                                <!--item listing-->                                                
-                                <article class="cactus-post-item">
-                                    <div class="entry-content">
-                                        <!--picture (remove)-->
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a href="" target="_self" title="Sing Trailer 2 Animated Musical 2016">
-                                                    <img 
-                                                    data-src="{{ asset('images/veg.png')}}" style="height:145px;"
-                                                    data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
-                                                    alt="vp-mv09"
-                                                    class="feature-image-first-index lazyload effect-fade"	
-                                                    width="407" 
-                                                    height="229" 
-                                                    style="padding-top:56.265356265356%;"												
-                                                    />	
-                                                </a>
-                                                <div class="cactus-note font-size-1"><i class="fa fa-thumbs-up"></i><span>76</span></div>
-                                                <div class="cactus-note ct-time font-size-1"><span>03:01</span></div>
-                                                <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="340"><i class="fas fa-clock"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--picture-->
-                                        <div class="content">
-                                            <!--Title (no title remove)-->
-                                            <h3 class="cactus-post-title entry-title h4"> 
-                                                Sing Trailer 2 Animated Musical 2016
-                                            </h3>
-                                            <!--Title-->
-                                            <div class="posted-on metadata-font text-center">
-                                                <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
-                                            </div>
-                                            <div class="posted-on metadata-font">
-                                                <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                                    <div class='watch-action'>
-                                                            <div class='watch-position align-left'>
-                                                                <div class='action-like'>
-                                                                <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                                <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                                </a>
-                                                                </div>
-                                                            </div>
-                                                    </div>
-                                                    <div class='wti-clear'></div>               
-                                                    <div class="login-msg">
-                                                        <div class="login-content">
-                                                            <span class="login-info">
-                                                                <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
-                                                            </span>
-                                                        </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <!--item listing-->
-                                <!--item listing-->                                                
-                                <article class="cactus-post-item">
-                                    <div class="entry-content">
-                                        <!--picture (remove)-->
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a href="/" target="_self" title="Quantum Jump Film By Hayk Sahakyants">
-                                                    <img 
-                                                    data-src="{{ asset('images/project-2.jpg')}}" style="height:145px;"
-                                                    data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
-                                                    alt="vp-mv10"
-                                                    class="feature-image-first-index lazyload effect-fade"	
-                                                    width="407" 
-                                                    height="229" 
-                                                    style="padding-top:56.265356265356%;"												
-                                                    />
-                                                </a>
-                                                <div class="cactus-note font-size-1"><i class="fa fa-thumbs-up"></i><span>2.30K</span></div>
-                                                <div class="cactus-note ct-time font-size-1"><span>07:02</span></div>
-                                                <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="339"><i class="fas fa-clock"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--picture-->
-                                        <div class="content">
-                                            <!--Title (no title remove)-->
-                                            <h3 class="cactus-post-title entry-title h4"> 
-                                                Quantum Jump Film By Hayk Sahakyants
-                                            </h3>
-                                            <!--Title-->
-                                            <div class="posted-on metadata-font text-center">
-                                                <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
-                                            </div>
-                                            <div class="posted-on metadata-font">
-                                                <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                                    <div class='watch-action'>
-                                                            <div class='watch-position align-left'>
-                                                                <div class='action-like'>
-                                                                <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                                <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                                </a>
-                                                                </div>
-                                                            </div>
-                                                    </div>
-                                                    <div class='wti-clear'></div>               
-                                                    <div class="login-msg">
-                                                        <div class="login-content">
-                                                            <span class="login-info">
-                                                                <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
-                                                            </span>
-                                                        </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <!--item listing-->
-                                <!--item listing-->                                                
-                                <article class="cactus-post-item">
-                                    <div class="entry-content">
-                                        <!--picture (remove)-->
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a href="/" target="_self" title="Hendrix Official Lorem Ipsum Music">
-                                                    <img 
-                                                    data-src="{{ asset('images/cassava.jpg')}}" style="height:145px;"
-                                                    
-                                                    data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
-                                                    alt="vp-ms01"
-                                                    class="feature-image-first-index lazyload effect-fade"	
-                                                    width="407" 
-                                                    height="229" 
-                                                    style="padding-top:56.265356265356%;"												
-                                                    />
-                                                </a>
-                                                <div class="cactus-note font-size-1"><i class="fa fa-thumbs-up"></i><span>1.92K</span></div>
-                                                <div class="cactus-note ct-time font-size-1"><span>03:03</span></div>
-                                                <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="191"><i class="fas fa-clock"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--picture-->
-                                        <div class="content">
-                                            <!--Title (no title remove)-->
-                                            <h3 class="cactus-post-title entry-title h4"> 
-                                                Hendrix Official Lorem Ipsum Music
-                                            </h3>
-                                            <div class="posted-on metadata-font text-center">
-                                                <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: 30,000</span></div>
-                                            </div>
-                                            <div class="posted-on metadata-font">
-                                            <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                                <div class='watch-action'>
-                                                        <div class='watch-position align-left'>
-                                                            <div class='action-like'>
-                                                            <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                            <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                            </a>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                <div class='wti-clear'></div>               
-                                                <div class="login-msg">
-                                                    <div class="login-content">
-                                                        <span class="login-info">
-                                                            <strong><i class="fa fa-phone-volume"></i> 0775401793</strong>                        
-                                                        </span>
-                                                    </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </article>
+                                @endforeach
                                 <!--item listing-->
                             </div>
                         </div>

@@ -10,8 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::prefix('agricultureequipments')->group(function() {  
+Route::group(['prefix'=>'agricultureequipments', 'middleware'=>['auth']],function(){ 
     Route::get('/', 'AgricultureEquipmentsController@index');  
     Route::get('/equipment-requests-recieved', 'AgricultureEquipmentsController@equipmentReceivedRequests');
     Route::get('/equipments-available', 'AgricultureEquipmentsController@availbleEquipments');

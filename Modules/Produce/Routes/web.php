@@ -10,8 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::prefix('produce')->group(function() { 
+Route::group(['prefix'=>'produce', 'middleware'=>['auth']],function(){ 
     Route::get('/', 'ProduceController@index');
     Route::get('/produce-available', 'ProduceController@availableProduce');
     Route::get('/produce-taken', 'ProduceController@takenProduce'); 

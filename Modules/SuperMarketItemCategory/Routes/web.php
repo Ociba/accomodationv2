@@ -10,8 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::prefix('supermarketitemcategory')->group(function() {  
+Route::group(['prefix'=>'supermarketitemcategory', 'middleware'=>['auth']],function(){   
     Route::get('/', 'SuperMarketItemCategoryController@index'); 
     Route::get('/save-category', 'SuperMarketItemCategoryController@createCategory');
     Route::get('/delete/{id}', 'SuperMarketItemCategoryController@deleteCategory');

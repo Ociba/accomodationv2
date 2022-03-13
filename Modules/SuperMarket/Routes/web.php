@@ -10,8 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::prefix('supermarket')->group(function() { 
+Route::group(['prefix'=>'supermarket', 'middleware'=>['auth']],function(){ 
     Route::get('/', 'SuperMarketController@index');
     Route::get('/supermaket-items', 'SuperMarketController@getSupermarketItems');
     Route::get('/supermarkets-orders', 'SuperMarketController@getSupermarketCustomerOrders');

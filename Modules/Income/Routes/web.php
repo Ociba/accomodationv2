@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::prefix('income')->group(function() {
+Route::group(['prefix'=>'income', 'middleware'=>['auth']],function(){ 
     Route::get('/', 'IncomeController@index');
 });

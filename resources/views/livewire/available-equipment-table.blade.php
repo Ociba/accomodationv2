@@ -74,13 +74,19 @@
                                         @endphp
                                         <td>{{$i}}</td>
                                         <td>{{$equipment->equipment}}</td>
+                                        <td hidden>{{$equipment->id}}</td>
                                         <td>{{ number_format($equipment->price)}}</td>
                                         <td>{{$equipment->description}}</td>
                                         <td><img style="width:60px; height:50px;" src="{{ asset('equipment_photos/'.$equipment->photo)}}"></td>
                                         <td>{{$equipment->equipment_discount}}</td>
                                         <td>{{$equipment->discount_amount}}</td>
                                         <td>{{$equipment->quantity}}</td>
-                                        <td></td>
+                                        @php 
+                                          $delivered_items =\DB::table('orders')->where('equipment_id',$equipment->id)->where('status','delivered')->sum('quantity');
+                                          $original_number =\DB::table('equipment')->where('id',$equipment->id)->value('quantity');
+                                          $stock=$original_number-$delivered_items;
+                                        @endphp
+                                        <td style="color:red;">{{$stock}}</td>
                                         <td>
                                             <a href="/agricultureequipments/edit-equipment/{{$equipment->id}}"  class="btn btn-info mb-1">Edit</a>
                                             <a href="/agricultureequipments/add-discount/{{$equipment->id}}"  class="btn btn-success mb-1">Discount</a>

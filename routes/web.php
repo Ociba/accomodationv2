@@ -6,6 +6,7 @@ use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,14 +18,8 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('Accomodation');
-// Route::get('/dashboard', function () {
-//     return view('admin.dashboard');
-// });
+Route::get('/',[HomeController::Class,'getWelcomePage'])->name('Accomodation');
 Route::get('/dashboard',[DashboardController::Class,'getDashboard']);
-//Route::get('/login', function() { return view('welcome');});
 Route::get('/save-client-information',[CheckoutController::Class,'validateSupermarketUser']);
 
 

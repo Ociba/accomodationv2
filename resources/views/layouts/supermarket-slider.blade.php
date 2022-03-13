@@ -17,7 +17,7 @@
                                         <div class="picture">
                                             <div class="picture-content">
                                                 <a href="/" target="_self" title="Homer Madison Bumgarner Hits">
-                                                    <img width="636" height="358"  data-src="{{ asset('images/apart1.jpeg')}}" data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade" src="{{ asset('wp-content/themes/videopro/images/dflazy.jpg')}}" style="padding-top:56.289308176101%;" alt="vp-sp01"/>			
+                                                    <img width="636" height="358"  data-src="{{ asset('shop/elect.jpeg')}}" data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade" src="{{ asset('wp-content/themes/videopro/images/dflazy.jpg')}}" style="padding-top:56.289308176101%;" alt="vp-sp01"/>			
                                                     <div class="ct-icon-video lightbox_item" data-source="" data-type="iframe-video" data-caption="Homer Madison Bumgarner Hits" data-id="153">
                                                         			
                                                     </div>
@@ -51,7 +51,7 @@
                                         <div class="picture">
                                             <div class="picture-content">
                                                 <a href="/" target="_self" title="A Guide To American Football">
-                                                    <img width="636" height="358"  src="{{ asset('images/apart4.jpeg')}}" data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade" src="{{ asset('wp-content/themes/videopro/images/dflazy.jpg')}}" style="padding-top:56.289308176101%;" alt="vp-sp05"/>			
+                                                    <img width="636" height="358"  src="{{ asset('shop/image2.jpg')}}" data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade" src="{{ asset('wp-content/themes/videopro/images/dflazy.jpg')}}" style="padding-top:56.289308176101%;" alt="vp-sp05"/>			
                                                     <div class="ct-icon-video lightbox_item" data-source="" data-type="iframe-video" data-caption="A Guide To American Football" data-id="148">
                                                         			
                                                     </div>
@@ -80,7 +80,7 @@
                                         <div class="picture">
                                             <div class="picture-content">
                                                 <a href="/" target="_self" title="Zika Fear Is Swarming Olympic Golf">
-                                                    <img width="636" height="358"  data-src="{{ asset('images/apart5.jpeg')}}" data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade" src="{{ asset('wp-content/themes/videopro/images/dflazy.jpg')}}" style="padding-top:56.289308176101%;" alt="vp-sp02"/>			
+                                                    <img width="636" height="358"  data-src="{{ asset('shop/saloon2.jpeg')}}" data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade" src="{{ asset('wp-content/themes/videopro/images/dflazy.jpg')}}" style="padding-top:56.289308176101%;" alt="vp-sp02"/>			
                                                     <div class="ct-icon-video lightbox_item" data-source="" data-type="iframe-video" data-caption="Zika Fear Is Swarming Olympic Golf" data-id="138">
                                                         			
                                                     </div>
@@ -109,7 +109,7 @@
                                         <div class="picture">
                                             <div class="picture-content">
                                                 <a href="/" target="_self" title="Top 3 Fitness Apps For That Body">
-                                                    <img width="636" height="358"  data-src="{{ asset('images/house.jpg')}}"  data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade" src="{{ asset('wp-content/themes/videopro/images/dflazy.jpg')}}" style="padding-top:56.289308176101%;" alt="vp-sp04"/>			
+                                                    <img width="636" height="358"  data-src="{{ asset('shop/juice.jpg')}}"  data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade" src="{{ asset('wp-content/themes/videopro/images/dflazy.jpg')}}" style="padding-top:56.289308176101%;" alt="vp-sp04"/>			
                                                     <div class="ct-icon-video lightbox_item" data-source="" data-type="iframe-video" data-caption="Top 3 Fitness Apps For That Body" data-id="129">
                                                         			
                                                     </div>
@@ -143,7 +143,7 @@
                                         <div class="picture">
                                             <div class="picture-content">
                                                 <a href="/" target="_self" title="Xpogo Edition Dude Perfect">
-                                                    <img width="636" height="358"  data-src="{{ asset('images/single.jpg')}}" dat-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade" src="{{ asset('wp-content/themes/videopro/images/dflazy.jpg')}}" style="padding-top:56.289308176101%;" alt="vp-sp03"/>			
+                                                    <img width="636" height="358"  data-src="{{ asset('shop/shop10.jpg')}}" dat-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade" src="{{ asset('wp-content/themes/videopro/images/dflazy.jpg')}}" style="padding-top:56.289308176101%;" alt="vp-sp03"/>			
                                                     <div class="ct-icon-video lightbox_item" data-source="" data-type="iframe-video" data-caption="Xpogo Edition Dude Perfect" data-id="117">
                                                         			
                                                     </div>

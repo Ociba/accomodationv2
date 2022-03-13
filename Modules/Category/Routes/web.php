@@ -10,8 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::prefix('category')->group(function() 
 Route::group(['prefix'=>'category', 'middleware'=>['auth']],function(){
     Route::get('/', 'CategoryController@index'); 
     Route::get('/create-category', 'CategoryController@createCategory');

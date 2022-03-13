@@ -93,92 +93,32 @@ img:nth-child(5) {
                     <div class="cactus-listing-wrap">
                         <div class="cactus-listing-config style-3 style-widget-popular-post">
                             <div class="cactus-sub-wrap">
+                                @php
+                                $equipment_items =\App\Models\Equipment::where('status','active')->latest()->limit(6)->get();
+                                @endphp
+                                @foreach($equipment_items as $equipment)
                                 <article class="cactus-post-item hentry">
                                     <div class="entry-content">
                                         <div class="picture">
                                             <div class="picture-content">
-                                                <a title="JWPlayer Embed Code" target="_self" href="https://videopro.cactusthemes.com/v1/jwplayer-embed-code/">
-                                                    <img width="100" height="75"  src="{{ asset('wp-content/uploads/2016/05/videopro-banner-300x250.jpg')}}" data-sizes="(max-width: 100px) 100vw, 100px" class="lazyload effect-fade" style="padding-top:75%;" alt="canberra_hero_image_JiMVvYU"/>
-                                                    <div class="ct-icon-video small-icon"></div>
+                                                <a title="" target="_self" href="/agricultureequipments/">
+                                                    <img width="100" height="75"  src="{{ asset('equipment_photos/'.$equipment->photo)}}" data-sizes="(max-width: 100px) 100vw, 100px" class="lazyload effect-fade" style="padding-top:75%;" alt="canberra_hero_image_JiMVvYU"/>
+                                                    
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="content">
                                             <h3 class="cactus-post-title entry-title h6 sub-lineheight">
-                                                <a href="https://videopro.cactusthemes.com/v1/jwplayer-embed-code/" target="_self" title="JWPlayer Embed Code">JWPlayer Embed Code</a>
+                                                <a href="/agricultureequipments/" target="_self" title="">{{$equipment->description}}</a>
                                             </h3>
                                             <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/videopro/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">videopro</span></a>
-                                                <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/jwplayer-embed-code/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2017-07-11T01:57:01+00:00" class="entry-date updated">July 11, 2017</time></a></div>
+                                                <a href="/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">{{$equipment->equipment}}</span></a>
+                                                <div class="date-time cactus-info font-size-1"><a href="/agricultureequipments/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2017-07-11T01:57:01+00:00" class="entry-date updated">Ugx: {{ number_format($equipment->price)}}</time></a></div>
                                             </div>
                                         </div>
                                     </div>
                                 </article>
-                                <article class="cactus-post-item hentry">
-                                    <div class="entry-content">
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a title="Google Drive Video Link" target="_self" href="https://videopro.cactusthemes.com/v1/google-drive-video-link/">
-                                                    <img width="100" height="75"  src="{{ asset('wp-content/uploads/2016/05/videopro-banner-300x250.jpg')}}" class="lazyload effect-fade" style="padding-top:75%;" alt="3.5"/>
-                                                    <div class="ct-icon-video small-icon"></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="cactus-post-title entry-title h6 sub-lineheight">
-                                                <a href="https://videopro.cactusthemes.com/v1/google-drive-video-link/" target="_self" title="Google Drive Video Link">Google Drive Video Link</a>
-                                            </h3>
-                                            <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/nhungph/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Rose</span></a>
-                                                <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/google-drive-video-link/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2017-02-24T11:04:51+00:00" class="entry-date updated">February 24, 2017</time></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="cactus-post-item hentry">
-                                    <div class="entry-content">
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a title="Self-Hosted Video" target="_self" href="https://videopro.cactusthemes.com/v1/self-hosted-video/">
-                                                    <img width="100" height="75" src="{{ asset('wp-content/uploads/2016/05/videopro-banner-300x250.jpg')}}" class="lazyload effect-fade" src="https://videopro.cactusthemes.com/v1/wp-content/themes/videopro/images/dflazy.jpg" style="padding-top:75%;" alt="vp-mv01"/>
-                                                    <div class="ct-icon-video small-icon"></div>
-                                                </a>
-                                                <div class="cactus-note ct-time font-size-1"><span>00:41</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="cactus-post-title entry-title h6 sub-lineheight">
-                                                <a href="https://videopro.cactusthemes.com/v1/self-hosted-video/" target="_self" title="Self-Hosted Video">Self-Hosted Video</a>
-                                            </h3>
-                                            <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/hoaintt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Emily</span></a>
-                                                <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/self-hosted-video/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-09-08T04:27:07+00:00" class="entry-date updated">September 8, 2016</time></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="cactus-post-item hentry">
-                                    <div class="entry-content">
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a title="58th Grammy Announcement Moment" target="_self" href="https://videopro.cactusthemes.com/v1/taylor-swift-album-of-the-year-58th-grammys/">
-                                                    <img width="100" height="75"  src="{{ asset('wp-content/uploads/2016/05/videopro-banner-300x250.jpg')}}" class="lazyload effect-fade" src="https://videopro.cactusthemes.com/v1/wp-content/themes/videopro/images/dflazy.jpg" style="padding-top:75%;" alt="vp-show-02"/>
-                                                    <div class="ct-icon-video small-icon"></div>
-                                                </a>
-                                                <div class="cactus-note ct-time font-size-1"><span>02:22</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="cactus-post-title entry-title h6 sub-lineheight">
-                                                <a href="https://videopro.cactusthemes.com/v1/taylor-swift-album-of-the-year-58th-grammys/" target="_self" title="58th Grammy Announcement Moment">58th Grammy Announcement Moment</a>
-                                            </h3>
-                                            <div class="posted-on metadata-font">
-                                                <a href="https://videopro.cactusthemes.com/v1/uploader/huongttt/" target="_self" class="vcard author cactus-info font-size-1"><span class="fn">Jenifer Lopez</span></a>
-                                                <div class="date-time cactus-info font-size-1"><a href="https://videopro.cactusthemes.com/v1/taylor-swift-album-of-the-year-58th-grammys/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-27T09:53:27+00:00" class="entry-date updated">May 27, 2016</time></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -295,7 +235,7 @@ img:nth-child(5) {
                                         <!--picture (remove)-->
                                         <div class="picture">
                                             <div class="picture-content">
-                                                <a title="JWPlayer Embed Code" class="post-link" target="_self" href="https://videopro.cactusthemes.com/v1/jwplayer-embed-code/">
+                                                <a title="" class="post-link" target="_self" href="https://videopro.cactusthemes.com/v1/jwplayer-embed-code/">
                                                     <img width="277" height="156"  src="{{ asset('wp-content/photo1.jpg')}}" data-sizes="(max-width: 277px) 100vw, 277px" class="lazyload effect-fade"  style="padding-top:56.317689530686%;" alt="canberra_hero_image_JiMVvYU"/>
                                                     <div class="ct-icon-video"></div>
                                                 </a>
@@ -305,7 +245,7 @@ img:nth-child(5) {
                                         <div class="content">
                                             <!--Title (no title remove)-->
                                             <h3 class="cactus-post-title entry-title h4"> 
-                                                <a href="https://videopro.cactusthemes.com/v1/jwplayer-embed-code/" title="JWPlayer Embed Code">JWPlayer Embed Code</a>
+                                                <a href="https://videopro.cactusthemes.com/v1/jwplayer-embed-code/" title=""></a>
                                             </h3>
                                             <!--Title-->
                                             <div class="posted-on metadata-font">

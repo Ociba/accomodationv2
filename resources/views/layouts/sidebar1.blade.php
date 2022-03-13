@@ -9,7 +9,7 @@
                         <div class="channel-subscribe">
                             <div class="channel-picture">
                                 <a href="/rooms/" title="rooms">
-                                <img width="50" height="50"  src="{{ asset('/wp-content/motor.jpg')}}"  data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade"  style="padding-top:100%;" alt="vp-ms07"/>
+                                <img width="50" height="50"  src="{{ asset('images/single.jpg')}}"  data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade"  style="padding-top:100%;" alt="vp-ms07"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -26,8 +26,8 @@
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/channel/tv-channel/" title="TV Channel">
-                                <img width="50" height="50"  src="{{ asset('/wp-content/rider2.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-show-02"/>
+                                <a href="/" title="TV Channel">
+                                <img width="50" height="50"  src="{{ asset('images/single.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-show-02"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -44,8 +44,8 @@
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/channel/movies-channel/" title="Movie Channel">
-                                <img width="50" height="50"  src="{{ asset('/wp-content/photo.jpg')}}"  data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-ms05"/>
+                                <a href="/" title="Movie Channel">
+                                <img width="50" height="50"  src="{{ asset('images/single.jpg')}}"  data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-ms05"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -62,8 +62,8 @@
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/channel/tech-channel/" title="Tech Channel">
-                                <img width="50" height="50"  src="{{ asset('/wp-content/river.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-tech07"/>
+                                <a href="/" title="Tech Channel">
+                                <img width="50" height="50"  src="{{ asset('images/single.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-tech07"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -80,8 +80,8 @@
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/channel/sport-channel/" title="Sport Channel">
-                                <img width="50" height="50"  src="{{ asset('/wp-content/singer.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-sp10"/>
+                                <a href="/" title="Sport Channel">
+                                <img width="50" height="50"  src="{{ asset('images/single.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-sp10"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -98,8 +98,8 @@
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/channel/sport-channel/" title="Sport Channel">
-                                <img width="50" height="50"  src="{{ asset('/wp-content/singer.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-sp10"/>
+                                <a href="/" title="Sport Channel">
+                                <img width="50" height="50"  src="{{ asset('images/single.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-sp10"/>
                                 </a>
                             </div>
                             <div class="channel-content">
@@ -116,8 +116,8 @@
                         </div>
                         <div class="channel-subscribe">
                             <div class="channel-picture">
-                                <a href="https://videopro.cactusthemes.com/v1/channel/sport-channel/" title="Sport Channel">
-                                <img width="50" height="50"  src="{{ asset('/wp-content/singer.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-sp10"/>
+                                <a href="/" title="Sport Channel">
+                                <img width="50" height="50"  src="{{ asset('images/single.jpg')}}" data-sizes="(max-width: 50px) 100vw, 50px" class="lazyload effect-fade" style="padding-top:100%;" alt="vp-sp10"/>
                                 </a>
                             </div>
                             <div class="channel-content">
