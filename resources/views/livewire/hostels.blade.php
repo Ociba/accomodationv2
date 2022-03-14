@@ -1,4 +1,18 @@
 <div>
+    <style>
+        .mb-1 {
+        margin-top:5px;
+        }
+        .mt-0 {
+        margin-top:-100px;
+        }
+        .btn-primary{
+            background-color:#000066;
+            color:#ffffff;
+        }
+    </style>
+    @livewireStyles
+    <link rel="stylesheet" href="{{ asset('css/tailwind.css')}}" />
     <div class="main-content-col single-channel">
         <div class="main-content-col-body">
            @include('layouts.accomodation-crumb')
@@ -19,45 +33,78 @@
                         <i class="fa fa-hand-point-right"></i>
                         <span class="first-title">Like</span>
                         </a>
-                        <input type="hidden"  name="url_ajax" value="https://videopro.cactusthemes.com/v1/wp-admin/admin-ajax.php">
+                        <input type="hidden"  name="url_ajax" value="">
                         <span class="font-size-1 metadata-font sub-count">
                         <span class="subscribe-counter">1</span>               
                         </span>
                         <span class="info-dot"></span>
-                        <span class="font-size-1 metadata-font sub-count meta-2">                
-                        8 Single 4 Double Rooms			
+                        <span class="font-size-1 metadata-font sub-count meta-2">
+                            @php
+                              $count_hostels =DB::table('properties')->where('category_id',4)->count();
+                            @endphp                
+                        {{$count_hostels}} Hostel(s)			
                         </span>
                     </div>
                 </div>
                 @include('layouts.social-links')
+            </div>
+            <div class="vc_row wpb_row vc_row-fluid vc_custom_1469089899584 vc_col-sm-12 vc_row-has-fill">
+                <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_1469089852378">
+                        <div class="wpb_wrapper">
+                            Show  More Hostels
+                            <span class="wpcf7-form-control-wrap your-email">
+                                <select class="form-control" wire:model="per_page">
+                                    <option>10</option>
+                                    <option>20</option>
+                                    <option>30</option>
+                                    <option>40</option>
+                                    <option>50</option>
+                                    <option>60</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_1469089860166">
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_1469089860166">
+                        <div class="wpb_wrapper">
+                            <span title="" id="cactus-btn-493"  class="btn btn-defaul bt-style-1">
+                            Search By Location
+                            <span class="wpcf7-form-control-wrap your-email">
+                            <p>
+                                <span class="wpcf7-form-control-wrap email-719">
+                                    <input type="email" value="" size="40" placeholder="Type Location Here" wire:model="searchTerm" />
+                                </span>
+                            </p>
+                            </span>
+                        </span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="channel-menu">
                 <div class="channel-menu-content">
                     
                 </div>
             </div>
-            <div class="combo-change">
-                <div class="listing-select">
-                </div>
-            </div>
-            <div class="category-tools style-for-channel">
-                    <p class="tml-user-pass-wrap">
-                        <label for="user_pass">Search By Location,Price,Number of Rooms</label>
-                        <input type="text" name="pwd" id="user_pass" class="form-control" value="" size="20" autocomplete="off" />
-                    </p>
-            </div>
             <div class="cactus-listing-wrap switch-view-enable">
                 <div class="cactus-listing-config style-2 style-channel-listing">
                     <!--addClass: style-1 + (style-2 -> style-n)-->
                     <div class="cactus-sub-wrap">
+                        @foreach($hostel_accomodation as $hostel)
                         <article class="cactus-post-item hentry">
                             <div class="entry-content">
                                 <!--picture (remove)-->
                                 <div class="picture">
                                     <div class="picture-content screenshots-preview-inlin" data-post-id="1570">
-                                        <a href="/" target="_self"  title=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
+                                        <a href="#" target="_self"  title=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
                                             <div class="screenshots"><img
-                                                src="{{ asset('wp-content/uploads/2016/05/vp-show-06-636x358.jpg')}}"
+                                                src="{{ asset('property_photos/'.$hostel->photo)}}" style="width: 636px; height:150px;"
                                                 data-sizes="(max-width: 636px) 100vw, 636px"
                                                 alt="vp-show-06"
                                                 class="feature-image-first-index lazyload effect-fade"
@@ -78,547 +125,38 @@
                                 <div class="content">
                                     <!--Title (no title remove)-->
                                     <h3 class="cactus-post-title entry-title h4"> 
-                                         1 Room in Agip,Soroti, ugx:150,000 Per Month
+                                    <span style="color:#333399;"> {{$hostel->category_name}}</span> {{$hostel->bedroom}} Room. {{$hostel->property_status}} <br> ugx:{{$hostel->price}} Per month
                                     </h3>
                                     <!--Title-->
                                     <!--excerpt (remove)-->
-                                    <div class="excerpt sub-lineheight">
-                                          <i class="fas fa-map-marker-alt"></i> Central Division 
-                                    </div>
-                                    <!--excerpt-->   
-                                   
-                                    <div class="posted-on metadata-font">
-                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                            <div class='watch-action'>
-                                                    <div class='watch-position align-left'>
-                                                        <div class='action-like'>
-                                                         <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                         <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                         </a>
-                                                        </div>
-                                                    </div>
-                                            </div>
+                                    <div class="excerpt sub-lineheight" >
+                                          <i class="fas fa-map-marker-alt"></i>  {{$hostel->location}}<br>
+                                          <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
+                                               <button class="btn btn-primary" style="background-color:#000066; color:#ffffff; padding:5px;"><i class="fa fa-eye"></i> view Contact</button>
                                             <div class='wti-clear'></div>               
                                              <div class="login-msg">
-                                                <div class="login-content">
+                                                <div class="login-content" style="text-align:center;">
                                                     <span class="login-info">
-                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793 -Agent</strong>                        
+                                                        <strong><i class="fa fa-phone-volume"></i> {{$hostel->contact}}</strong>                        
                                                     </span>
                                                 </span>
                                                 </div>
                                             </div>
-                                          </div>
+                                        </div>
                                     </div>
+                                    <!--excerpt-->   
                                 </div>
                             </div>
                         </article>
+                        @endforeach
                         <!--item listing-->
-                        <article class="cactus-post-item hentry">
-                            <div class="entry-content">
-                                <!--picture (remove)-->
-                                <div class="picture">
-                                    <div class="picture-content screenshots-preview-inlin" data-post-id="1570">
-                                        <a href="/" target="_self"  title=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                            <div class="screenshots"><img
-                                                src="{{ asset('wp-content/uploads/2016/05/vp-show-06-636x358.jpg')}}"
-                                                data-sizes="(max-width: 636px) 100vw, 636px"
-                                                alt="vp-show-06"
-                                                class="feature-image-first-index lazyload effect-fade"
-                                                style="padding-top:56.289308176101%;"
-                                                />
-                                                </div>
-                                            <div class="badges-group">
-                                                <div class="badges-item">
-                                                    <img src="../../wp-content/uploads/2016/05/12-015-Video-Badges_03.png" alt=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="cactus-note font-size-1"><i class="fas fa-thumbs-up"></i><span>2</span></div>
-                                        <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
-                                    </div>
-                                </div>
-                                <!--picture-->
-                                <div class="content">
-                                    <!--Title (no title remove)-->
-                                    <h3 class="cactus-post-title entry-title h4"> 
-                                         1 Room in Agip,Soroti, ugx:150,000 Per Month
-                                    </h3>
-                                    <!--Title-->
-                                    <!--excerpt (remove)-->
-                                    <div class="excerpt sub-lineheight">
-                                          <i class="fas fa-map-marker-alt"></i> Central Division 
-                                    </div>
-                                    <!--excerpt-->   
-                                   
-                                    <div class="posted-on metadata-font">
-                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                            <div class='watch-action'>
-                                                    <div class='watch-position align-left'>
-                                                        <div class='action-like'>
-                                                         <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                         <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                         </a>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class='wti-clear'></div>               
-                                             <div class="login-msg">
-                                                <div class="login-content">
-                                                    <span class="login-info">
-                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793 -Agent</strong>                        
-                                                    </span>
-                                                </span>
-                                                </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <!--item listing-->
-                        <article class="cactus-post-item hentry">
-                            <div class="entry-content">
-                                <!--picture (remove)-->
-                                <div class="picture">
-                                    <div class="picture-content screenshots-preview-inlin" data-post-id="1570">
-                                        <a href="/" target="_self"  title=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                            <div class="screenshots"><img
-                                                src="{{ asset('wp-content/uploads/2016/05/vp-show-06-636x358.jpg')}}"
-                                                data-sizes="(max-width: 636px) 100vw, 636px"
-                                                alt="vp-show-06"
-                                                class="feature-image-first-index lazyload effect-fade"
-                                                style="padding-top:56.289308176101%;"
-                                                />
-                                                </div>
-                                            <div class="badges-group">
-                                                <div class="badges-item">
-                                                    <img src="../../wp-content/uploads/2016/05/12-015-Video-Badges_03.png" alt=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="cactus-note font-size-1"><i class="fas fa-thumbs-up"></i><span>2</span></div>
-                                        <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
-                                    </div>
-                                </div>
-                                <!--picture-->
-                                <div class="content">
-                                    <!--Title (no title remove)-->
-                                    <h3 class="cactus-post-title entry-title h4"> 
-                                         1 Room in Agip,Soroti, ugx:150,000 Per Month
-                                    </h3>
-                                    <!--Title-->
-                                    <!--excerpt (remove)-->
-                                    <div class="excerpt sub-lineheight">
-                                          <i class="fas fa-map-marker-alt"></i> Central Division 
-                                    </div>
-                                    <!--excerpt-->   
-                                   
-                                    <div class="posted-on metadata-font">
-                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                            <div class='watch-action'>
-                                                    <div class='watch-position align-left'>
-                                                        <div class='action-like'>
-                                                         <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                         <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                         </a>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class='wti-clear'></div>               
-                                             <div class="login-msg">
-                                                <div class="login-content">
-                                                    <span class="login-info">
-                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793 -Agent</strong>                        
-                                                    </span>
-                                                </span>
-                                                </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <!--item listing-->
-                        <article class="cactus-post-item hentry">
-                            <div class="entry-content">
-                                <!--picture (remove)-->
-                                <div class="picture">
-                                    <div class="picture-content screenshots-preview-inlin" data-post-id="1570">
-                                        <a href="/" target="_self"  title=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                            <div class="screenshots"><img
-                                                src="{{ asset('wp-content/uploads/2016/05/vp-show-06-636x358.jpg')}}"
-                                                data-sizes="(max-width: 636px) 100vw, 636px"
-                                                alt="vp-show-06"
-                                                class="feature-image-first-index lazyload effect-fade"
-                                                style="padding-top:56.289308176101%;"
-                                                />
-                                                </div>
-                                            <div class="badges-group">
-                                                <div class="badges-item">
-                                                    <img src="../../wp-content/uploads/2016/05/12-015-Video-Badges_03.png" alt=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="cactus-note font-size-1"><i class="fas fa-thumbs-up"></i><span>2</span></div>
-                                        <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
-                                    </div>
-                                </div>
-                                <!--picture-->
-                                <div class="content">
-                                    <!--Title (no title remove)-->
-                                    <h3 class="cactus-post-title entry-title h4"> 
-                                         1 Room in Agip,Soroti, ugx:150,000 Per Month
-                                    </h3>
-                                    <!--Title-->
-                                    <!--excerpt (remove)-->
-                                    <div class="excerpt sub-lineheight">
-                                          <i class="fas fa-map-marker-alt"></i> Central Division 
-                                    </div>
-                                    <!--excerpt-->   
-                                   
-                                    <div class="posted-on metadata-font">
-                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                            <div class='watch-action'>
-                                                    <div class='watch-position align-left'>
-                                                        <div class='action-like'>
-                                                         <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                         <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                         </a>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class='wti-clear'></div>               
-                                             <div class="login-msg">
-                                                <div class="login-content">
-                                                    <span class="login-info">
-                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793 -Agent</strong>                        
-                                                    </span>
-                                                </span>
-                                                </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <!--item listing-->
-                        <article class="cactus-post-item hentry">
-                            <div class="entry-content">
-                                <!--picture (remove)-->
-                                <div class="picture">
-                                    <div class="picture-content screenshots-preview-inlin" data-post-id="1570">
-                                        <a href="/" target="_self"  title=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                            <div class="screenshots"><img
-                                                src="{{ asset('wp-content/uploads/2016/05/vp-show-06-636x358.jpg')}}"
-                                                data-sizes="(max-width: 636px) 100vw, 636px"
-                                                alt="vp-show-06"
-                                                class="feature-image-first-index lazyload effect-fade"
-                                                style="padding-top:56.289308176101%;"
-                                                />
-                                                </div>
-                                            <div class="badges-group">
-                                                <div class="badges-item">
-                                                    <img src="../../wp-content/uploads/2016/05/12-015-Video-Badges_03.png" alt=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="cactus-note font-size-1"><i class="fas fa-thumbs-up"></i><span>2</span></div>
-                                        <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
-                                    </div>
-                                </div>
-                                <!--picture-->
-                                <div class="content">
-                                    <!--Title (no title remove)-->
-                                    <h3 class="cactus-post-title entry-title h4"> 
-                                         1 Room in Agip,Soroti, ugx:150,000 Per Month
-                                    </h3>
-                                    <!--Title-->
-                                    <!--excerpt (remove)-->
-                                    <div class="excerpt sub-lineheight">
-                                          <i class="fas fa-map-marker-alt"></i> Central Division 
-                                    </div>
-                                    <!--excerpt-->   
-                                   
-                                    <div class="posted-on metadata-font">
-                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                            <div class='watch-action'>
-                                                    <div class='watch-position align-left'>
-                                                        <div class='action-like'>
-                                                         <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                         <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                         </a>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class='wti-clear'></div>               
-                                             <div class="login-msg">
-                                                <div class="login-content">
-                                                    <span class="login-info">
-                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793 -Agent</strong>                        
-                                                    </span>
-                                                </span>
-                                                </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <!--item listing-->
-                        <article class="cactus-post-item hentry">
-                            <div class="entry-content">
-                                <!--picture (remove)-->
-                                <div class="picture">
-                                    <div class="picture-content screenshots-preview-inlin" data-post-id="1570">
-                                        <a href="/" target="_self"  title=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                            <div class="screenshots"><img
-                                                src="{{ asset('wp-content/uploads/2016/05/vp-show-06-636x358.jpg')}}"
-                                                data-sizes="(max-width: 636px) 100vw, 636px"
-                                                alt="vp-show-06"
-                                                class="feature-image-first-index lazyload effect-fade"
-                                                style="padding-top:56.289308176101%;"
-                                                />
-                                                </div>
-                                            <div class="badges-group">
-                                                <div class="badges-item">
-                                                    <img src="../../wp-content/uploads/2016/05/12-015-Video-Badges_03.png" alt=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="cactus-note font-size-1"><i class="fas fa-thumbs-up"></i><span>2</span></div>
-                                        <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
-                                    </div>
-                                </div>
-                                <!--picture-->
-                                <div class="content">
-                                    <!--Title (no title remove)-->
-                                    <h3 class="cactus-post-title entry-title h4"> 
-                                         1 Room in Agip,Soroti, ugx:150,000 Per Month
-                                    </h3>
-                                    <!--Title-->
-                                    <!--excerpt (remove)-->
-                                    <div class="excerpt sub-lineheight">
-                                          <i class="fas fa-map-marker-alt"></i> Central Division 
-                                    </div>
-                                    <!--excerpt-->   
-                                   
-                                    <div class="posted-on metadata-font">
-                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                            <div class='watch-action'>
-                                                    <div class='watch-position align-left'>
-                                                        <div class='action-like'>
-                                                         <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                         <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                         </a>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class='wti-clear'></div>               
-                                             <div class="login-msg">
-                                                <div class="login-content">
-                                                    <span class="login-info">
-                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793 -Agent</strong>                        
-                                                    </span>
-                                                </span>
-                                                </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <!--item listing-->
-                        <article class="cactus-post-item hentry">
-                            <div class="entry-content">
-                                <!--picture (remove)-->
-                                <div class="picture">
-                                    <div class="picture-content screenshots-preview-inlin" data-post-id="1570">
-                                        <a href="/" target="_self"  title=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                            <div class="screenshots"><img
-                                                src="{{ asset('wp-content/uploads/2016/05/vp-show-06-636x358.jpg')}}"
-                                                data-sizes="(max-width: 636px) 100vw, 636px"
-                                                alt="vp-show-06"
-                                                class="feature-image-first-index lazyload effect-fade"
-                                                style="padding-top:56.289308176101%;"
-                                                />
-                                                </div>
-                                            <div class="badges-group">
-                                                <div class="badges-item">
-                                                    <img src="../../wp-content/uploads/2016/05/12-015-Video-Badges_03.png" alt=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="cactus-note font-size-1"><i class="fas fa-thumbs-up"></i><span>2</span></div>
-                                        <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
-                                    </div>
-                                </div>
-                                <!--picture-->
-                                <div class="content">
-                                    <!--Title (no title remove)-->
-                                    <h3 class="cactus-post-title entry-title h4"> 
-                                         1 Room in Agip,Soroti, ugx:150,000 Per Month
-                                    </h3>
-                                    <!--Title-->
-                                    <!--excerpt (remove)-->
-                                    <div class="excerpt sub-lineheight">
-                                          <i class="fas fa-map-marker-alt"></i> Central Division 
-                                    </div>
-                                    <!--excerpt-->   
-                                   
-                                    <div class="posted-on metadata-font">
-                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                            <div class='watch-action'>
-                                                    <div class='watch-position align-left'>
-                                                        <div class='action-like'>
-                                                         <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                         <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                         </a>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class='wti-clear'></div>               
-                                             <div class="login-msg">
-                                                <div class="login-content">
-                                                    <span class="login-info">
-                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793 -Agent</strong>                        
-                                                    </span>
-                                                </span>
-                                                </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <!--item listing-->
-                        <article class="cactus-post-item hentry">
-                            <div class="entry-content">
-                                <!--picture (remove)-->
-                                <div class="picture">
-                                    <div class="picture-content screenshots-preview-inlin" data-post-id="1570">
-                                        <a href="/" target="_self"  title=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                            <div class="screenshots"><img
-                                                src="{{ asset('wp-content/uploads/2016/05/vp-show-06-636x358.jpg')}}"
-                                                data-sizes="(max-width: 636px) 100vw, 636px"
-                                                alt="vp-show-06"
-                                                class="feature-image-first-index lazyload effect-fade"
-                                                style="padding-top:56.289308176101%;"
-                                                />
-                                                </div>
-                                            <div class="badges-group">
-                                                <div class="badges-item">
-                                                    <img src="../../wp-content/uploads/2016/05/12-015-Video-Badges_03.png" alt=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="cactus-note font-size-1"><i class="fas fa-thumbs-up"></i><span>2</span></div>
-                                        <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
-                                    </div>
-                                </div>
-                                <!--picture-->
-                                <div class="content">
-                                    <!--Title (no title remove)-->
-                                    <h3 class="cactus-post-title entry-title h4"> 
-                                        1 Room in Agip,Soroti, ugx:150,000 Per Month
-                                    </h3>
-                                    <!--Title-->
-                                    <!--excerpt (remove)-->
-                                    <div class="excerpt sub-lineheight">
-                                          <i class="fas fa-map-marker-alt"></i> Central Division 
-                                    </div>
-                                    <!--excerpt-->   
-                                   
-                                    <div class="posted-on metadata-font">
-                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                            <div class='watch-action'>
-                                                    <div class='watch-position align-left'>
-                                                        <div class='action-like'>
-                                                         <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                         <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                         </a>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class='wti-clear'></div>               
-                                             <div class="login-msg">
-                                                <div class="login-content">
-                                                    <span class="login-info">
-                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793 -Agent</strong>                        
-                                                    </span>
-                                                </span>
-                                                </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="cactus-post-item hentry">
-                            <div class="entry-content">
-                                <!--picture (remove)-->
-                                <div class="picture">
-                                    <div class="picture-content screenshots-preview-inlin" data-post-id="1570">
-                                        <a href="/" target="_self"  title=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                            <div class="screenshots"><img
-                                                src="{{ asset('wp-content/uploads/2016/05/vp-show-06-636x358.jpg')}}"
-                                                data-sizes="(max-width: 636px) 100vw, 636px"
-                                                alt="vp-show-06"
-                                                class="feature-image-first-index lazyload effect-fade"
-                                                style="padding-top:56.289308176101%;"
-                                                />
-                                                </div>
-                                            <div class="badges-group">
-                                                <div class="badges-item">
-                                                    <img src="../../wp-content/uploads/2016/05/12-015-Video-Badges_03.png" alt=" 1 Room in Agip,Soroti, ugx:150,000 Per Month">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="cactus-note font-size-1"><i class="fas fa-thumbs-up"></i><span>2</span></div>
-                                        <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
-                                    </div>
-                                </div>
-                                <!--picture-->
-                                <div class="content">
-                                    <!--Title (no title remove)-->
-                                    <h3 class="cactus-post-title entry-title h4"> 
-                                         1 Room in Agip,Soroti, ugx:150,000 Per Month
-                                    </h3>
-                                    <!--Title-->
-                                    <!--excerpt (remove)-->
-                                    <div class="excerpt sub-lineheight">
-                                        <i class="fas fa-map-marker-alt"></i> Central Division 
-                                    </div>
-                                    <!--excerpt-->   
-                                   
-                                    <div class="posted-on metadata-font">
-                                        <div class="share-tool-block like-button _check-like-id-344 login-to-vote" data-like="like" data-unlike="dislike">
-                                            <div class='watch-action'>
-                                                    <div class='watch-position align-left'>
-                                                        <div class='action-like'>
-                                                         <a class='lbg-style1 like-344 jlk' href='javascript:void(0)' data-task='like' data-post_id='344' data-nonce='79afb76e2c' rel='nofollow'>
-                                                         <button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> view Contact</button>                                                       
-                                                         </a>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class='wti-clear'></div>               
-                                             <div class="login-msg">
-                                                <div class="login-content">
-                                                    <span class="login-info">
-                                                        <strong><i class="fa fa-phone-volume"></i> 0775401793 -Agent</strong>                        
-                                                    </span>
-                                                </span>
-                                                </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <!--item listing-->
+                    </div>
+                    <div class="row">
+                       {{$hostel_accomodation->links()}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    @livewireScripts
 </div>
