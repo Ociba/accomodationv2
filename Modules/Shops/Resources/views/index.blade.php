@@ -21,7 +21,7 @@
                                 <!--Sidebar-->
                                 @include('layouts.sidebar1')
                                 <!--Sidebar-->                        
-                                @livewire('aprtments')
+                                @livewire('shop')
                                 <!--Sidebar-->
                                 @include('layouts.right-sidebar1')
                                 <!--Sidebar-->            
@@ -39,7 +39,8 @@
             <div class="canvas-ovelay"></div>
             @include('layouts.mobile-view')
             <!--Menu moblie-->
-        </div> 
+        </div>
+       
         @include('layouts.javascript')
         @include('layouts.sidebar-modal')
     </body>

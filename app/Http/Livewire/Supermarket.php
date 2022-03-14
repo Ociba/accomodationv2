@@ -3,14 +3,14 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Moels\Supermarket as Items;
+use App\Models\Supermarket as Items;
 use Livewire\WithPagination;
 
 class Supermarket extends Component
 {
     use WithPagination;
     public $searchTerm;
-    public $per_page="10";
+    public $per_page="9";
 
     public $item_group_id,$item,$description,$price,$photo,$discount,$new_price,$number;
 
@@ -27,8 +27,7 @@ class Supermarket extends Component
         return view('livewire.supermarket',[
             'supermarket_items' =>Items::join('supermarket_categories','supermarket_categories.id','supermarkets.item_group_id')
             ->where('item','like',$searchTerm)
-            ->orwhere('item_category','like',$searchTerm)
-            ->orderBy('created_at','Desc')
+            ->orderBy('supermarkets.created_at','Desc')
             ->Paginate($this->per_page)
         ]);
     }

@@ -35,5 +35,6 @@
     "Property": true,
     "SuperMarketItemCategory": true,
     "Produce": true,
-    "Income": true
+    "Income": true,
+    "Shops": true
 }

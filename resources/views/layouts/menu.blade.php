@@ -70,7 +70,7 @@
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/houses/">Houses</a></li>
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/apartment/">Apartments</a></li>
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/plotsandland/">Plots & Land</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/shop/">Shop</a></li>
+                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/shops/">Shop</a></li>
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/office/">Office</a></li>
                                     </ul>
                                 </li>

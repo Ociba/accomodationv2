@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\Shop\Http\Controllers;
+namespace Modules\Shops\Http\Controllers;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
-class ShopController extends Controller
+class ShopsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ShopController extends Controller
      */
     public function index()
     {
-        return view('shop::index');
+        return view('shops::index');
     }
 
     /**
@@ -23,7 +23,7 @@ class ShopController extends Controller
      */
     public function create()
     {
-        return view('shop::create');
+        return view('shops::create');
     }
 
     /**
@@ -43,7 +43,7 @@ class ShopController extends Controller
      */
     public function show($id)
     {
-        return view('shop::show');
+        return view('shops::show');
     }
 
     /**
@@ -53,7 +53,7 @@ class ShopController extends Controller
      */
     public function edit($id)
     {
-        return view('shop::edit');
+        return view('shops::edit');
     }
 
     /**

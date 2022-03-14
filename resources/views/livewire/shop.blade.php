@@ -1,4 +1,18 @@
 <div>
+   <style>
+        .mb-1 {
+        margin-top:5px;
+        }
+        .mt-0 {
+        margin-top:-100px;
+        }
+        .btn-primary{
+            background-color:#000066;
+            color:#ffffff;
+        }
+    </style>
+    @livewireStyles
+    <link rel="stylesheet" href="{{ asset('css/tailwind.css')}}" />
     <div class="main-content-col single-channel">
         <div class="main-content-col-body">
            @include('layouts.accomodation-crumb')
@@ -19,13 +33,16 @@
                         <i class="fa fa-hand-point-right"></i>
                         <span class="first-title">Like</span>
                         </a>
-                        <input type="hidden"  name="url_ajax" value="https://videopro.cactusthemes.com/v1/wp-admin/admin-ajax.php">
+                        <input type="hidden"  name="url_ajax" value="">
                         <span class="font-size-1 metadata-font sub-count">
                         <span class="subscribe-counter">1</span>               
                         </span>
                         <span class="info-dot"></span>
                         <span class="font-size-1 metadata-font sub-count meta-2">                
-                        8 Single 4 Double Rooms			
+                        @php
+                            $count_shops=DB::table('properties')->where('category_id',9)->count();
+                        @endphp                
+                        | {{$count_shops}} Shop (s)				
                         </span>
                     </div>
                 </div>
@@ -621,4 +638,5 @@
             </div>
         </div>
     </div>
+    @livewireScripts
 </div>
