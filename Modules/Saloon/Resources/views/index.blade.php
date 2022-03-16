@@ -29,7 +29,7 @@
                                                 <div class="single-page-content single-content">
                                                     <!--Single Page Content-->
                                                     <article id="post-1508" class="post-1508 page type-page status-publish cactus-single-content">
-                                                       @livewire('clothes')
+                                                       @livewire('saloon')
                                                     </article>
                                                 </div>
                                             </article>
