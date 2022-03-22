@@ -158,8 +158,8 @@
                                                                                                                 style="padding-top:56.265356265356%;"												
                                                                                                                 />
                                                                                                             </a>
-                                                                                                            <div class="cactus-note font-size-1"><i class="fa fa-thumbs-up"></i><span>1.92K</span></div>
-                                                                                                            <div class="cactus-note ct-time font-size-1"><span>03:03</span></div>
+                                                                                                            <div class="cactus-note font-size-1"><i class="fa fa-thumbs-up"></i><span>{{$items->item}}</span></div>
+                                                                                                            <div class="cactus-note ct-time font-size-1"><span></span></div>
                                                                                                             <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="191"><i class="fas fa-clock"></i></a>
                                                                                                         </div>
                                                                                                     </div>
@@ -173,7 +173,22 @@
                                                                                                             <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: {{ number_format($items->price)}}</span></div>
                                                                                                         </div>
                                                                                                         <div class="posted-on metadata-font text-center">
-                                                                                                            <div class="cactus-info font-size-1"><span><button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Add To Cart</button></span></div>
+                                                                                                            <div class="cactus-info font-size-1">
+                                                                                                            <span>
+                                                                                                            <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data">
+                                                                                                                @csrf
+                                                                                                                <input type="hidden" value="{{ $items->id }}" name="id">
+                                                                                                                <input type="hidden" value="{{ $items->item }}" name="name">
+                                                                                                                <input type="hidden" value="{{ $items->price }}" name="price">
+                                                                                                                <input type="hidden" value="{{ $items->photo }}"  name="image">
+                                                                                                                <input type="hidden" value="1" name="quantity">
+                                                                                                                <div class="col-xs-12">
+                                                                                                                    <button class="btn btn-primary mb-1" style="padding:5px;">Add To Cart</button>
+                                                                                                                    <a href="/cart" class="btn btn-warning" style="color:#ffffff; padding:7px;">View Cart</a>
+                                                                                                                </div>
+                                                                                                            </form>
+                                                                                                            </span>
+                                                                                                            </div>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>

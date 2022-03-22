@@ -27,8 +27,7 @@ Route::get('/save-client-information',[CheckoutController::Class,'validateSuperm
 //     return view('dashboard');
 // })->name('dashboard');
 Route::get('/login-now', function() { return view('login-page');});
-Route::get('/register-now', function() { return view('register-page');});  
-Route::get('/cart',[CartController::Class,'getCart'])->name('Cart'); 
+Route::get('/register-now', function() { return view('register-page');}); 
 Route::get('/checkout',[CartController::Class,'getCheckout'])->name('Checkout');
 Route::get('/order-list',[CartController::Class,'OrderList'])->name('Place Order');
 Route::get('/logout',[AuthenticationController::Class, 'logoutUser']);
@@ -39,3 +38,9 @@ Route::post('/create-prouduce-account',[AuthenticationController::Class, 'regist
 
 Route::get('/pay-with-mtn',[PaymentController::Class,'payWithMtn']);
 Route::get('/pay-with-airtel',[PaymentController::Class,'payWithAirtel']);
+
+Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');
+Route::post('cart', [HomeController::class, 'addToCart'])->name('cart.store');
+Route::get('update', [CartController::class, 'updateCart'])->name('cart.update');
+ Route::post('remove', [CartController::class, 'removeCart'])->name('cart.remove');
+Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');

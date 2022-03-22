@@ -32,12 +32,86 @@
                                                 <a itemprop="item" href="/" rel="v:url" property="v:title">
                                                 <span itemprop="name">Home</span></a><i class="fas fa-angle-right" aria-hidden="true"></i>
                                                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="current">
-                                                <span itemprop="name">{{request()->route()->getName()}}</span><meta itemprop="position" content="2" /></li></ol>
+                                                <span itemprop="name"></span><meta itemprop="position" content="2" /></li></ol>
                                                 <!-- .breadcrumbs -->
                                                 
                                                     <!--Single Page Content-->
                                                     <article id="post-1508" class="post-1508 page type-page status-publish cactus-single-content">
-                                                       @livewire('cart')
+                                                    <div class="vc_row wpb_row vc_row-fluid vc_custom_1469088724328 vc_row-has-fill">
+                                                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill">
+                                                                <div class="vc_column-inner vc_custom_1469092997733">
+                                                                  <div class="wpb_wrapper">
+                                                            <div class="wpb_text_column wpb_content_element  vc_custom_1469094242775" >
+                                                                <div class="wpb_wrapper" style="overflow-x:auto;">
+                                                        <table class="table">
+                                                        <tbody>
+                                                        <tr>
+                                                        <th>NAME</th>
+                                                        <th>Photo</th>
+                                                        <th>Quantity</th>
+                                                        <th>Price</th>
+                                                        <th>Remove</th>
+                                                        </tr>
+                                                        @foreach($cartItems as $items)
+                                                        <tr>
+                                                        <td hidden>{{$items->id}}</td>
+                                                        <td>{{$items->name}}</td>
+                                                        <td><img src="/super_market_photos/{{ $items->attributes->image }}"></td>
+                                                        <td>
+                                                            <form action="{{ route('cart.update')}}" method="get">
+                                                                @csrf
+                                                                <input type="hidden" name="id" value="{{ $items->id}}" >
+                                                                <input type="number" name="quantity" value="{{ $items->quantity }}" 
+                                                                class="w-1 text-center bg-gray-300" />
+                                                              <button type="submit" class="px-2 pb-2 ml-2 text-white bg-blue-500">update</button>
+                                                            </form>
+                                                        </td>
+                                                        <td>{{$items->price}}</td>
+                                                        <td>
+                                                        <form action="{{ route('cart.remove') }}" method="POST">
+                                                            @csrf
+                                                            <input type="hidden" value="{{ $items->id }}" name="id">
+                                                            <button class="px-4 py-2 text-white bg-red-600">x</button>
+                                                        </form>
+                                                        {{--<a href=""><i class="fa fa-times" style="color:#ff0000;"></i>--}}
+                                                        </td>
+                                                        </tr>
+                                                        @endforeach
+                                                        </tbody>
+                                                        </table>
+
+                                                                </div>
+                                                            </div></div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vc_row wpb_row vc_row-fluid vc_custom_1469089899584 vc_row-has-fill">
+                                                            <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
+                                                                <div class="vc_column-inner vc_custom_1469089852378">
+                                                                    <div class="wpb_wrapper">
+                                                                    <form action="{{ route('cart.clear') }}" method="POST">
+                                                                        @csrf
+                                                                        <button class="btn btn-danger mb-1">Remove All Cart</button>
+                                                                    </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wpb_column vc_column_container vc_col-sm-5 vc_col-has-fill">
+                                                                <div class="vc_column-inner vc_custom_1469089860166">
+                                                                    <div class="wpb_wrapper">
+                                                                        <a href="/checkout" title="Click To Proceed" id="cactus-btn-493"  class="btn btn-default bt-style-2">Proceed To Checkout </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill">
+                                                                <div class="vc_column-inner vc_custom_1469089860166">
+                                                                    <div class="wpb_wrapper">
+                                                                        <span title="Your Amount" id="cactus-btn-493"  class="btn btn-defaul bt-style-1"><strong> Total: Ugx: {{ number_format(Cart::getTotal()) }}</strong></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                       {{--@livewire('cart')--}}
                                                     </article>
                                                 </div>
                                             </article>

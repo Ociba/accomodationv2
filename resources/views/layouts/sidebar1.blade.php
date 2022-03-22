@@ -1,3 +1,4 @@
+<div>
 <div class="cactus-sidebar ct-small">
     <div class="cactus-sidebar-content">
         <aside id="top-channel-2" class=" style-5  widget widget_top_channels">
@@ -424,4 +425,5 @@
             </div>
         </aside>
     </div>
+</div>
 </div>

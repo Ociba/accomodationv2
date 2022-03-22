@@ -42,7 +42,7 @@
                         <div class="cactus-main-menu cactus-user-login navigation-font">
                             <ul>
                                 <li>
-                                <a href="/cart">Cart &nbsp; <i class="fas fa-shopping-cart"></i><span style="background-color:orange; border-radius: 10px; padding:3px;">1</span></a>
+                                <a href="/cart">Cart &nbsp; <i class="fas fa-shopping-cart"></i><span style="background-color:orange; border-radius: 10px; padding:3px;">{{ Cart::getTotalQuantity()}}</span></a>
                                 </li>
                                 <li>
                                     <a href="/login-now"><i class="fas fa-user"></i>&nbsp;Login</a>
