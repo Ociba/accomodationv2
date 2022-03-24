@@ -35,8 +35,68 @@
                                                 <span itemprop="name">{{request()->route()->getName()}}</span><meta itemprop="position" content="2" /></li></ol>
                                                 <!-- .breadcrumbs -->
                                                 
-                                                    <!--Single Page Content-->
+                                                    <!--Single Page Content-->  
                                                     <article id="post-1508" class="post-1508 page type-page status-publish cactus-single-content">
+                                                    <div class="vc_row wpb_row vc_row-fluid vc_custom_1469088724328 vc_row-has-fill">
+                                                            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill">
+                                                                <div class="vc_column-inner vc_custom_1469092997733"><div class="wpb_wrapper">
+                                                            <div class="wpb_text_column wpb_content_element  vc_custom_1469094242775" >
+                                                                <div class="wpb_wrapper" style="overflow-x:auto;">
+                                                                <span style="color:blue;"><i class="fa fa-user"></i> {{auth()->user()->name}}</span>
+                                                                    <table class="table">
+                                                        <tbody>
+                                                        <tr>
+                                                        <th>NAME</th>
+                                                        <th>Quantity</th>
+                                                        <th>Price</th>
+                                                        </tr>
+                                                        @foreach($cartItems as $item)
+                                                        <tr>
+                                                        <td>{{$item->name}}</td>
+                                                        <td>{{$item->quantity}}</td>
+                                                        <td>{{ number_format($item->quantity *$item->price)}}</td>
+                                                        </tr>
+                                                        @endforeach
+                                                        </tbody>
+                                                        </table>
+
+                                                                </div>
+                                                            </div>
+                                                        </div></div></div></div><br><br>
+                                                        <div class="vc_row wpb_row vc_row-fluid vc_custom_1469089899584 vc_row-has-fill">
+                                                            <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
+                                                                <div class="vc_column-inner vc_custom_1469089852378">
+                                                                    <div class="wpb_wrapper">
+                                                                        {{--<a href="" title="Send Order" id="cactus-btn-6166"  class="btn btn-default bt-style-2">Submit Order Now</a>--}}
+                                                                        <form action="/save-order" method="get">
+                                                                            @csrf
+                                                                            <input type="hidden" name="user_id" value="{{auth()->user()->id}}" class="form-control">
+                                                                            @foreach ($cartItems as $item)   
+                                                                            <input type="hidden" name="item_id" value="{{$item->id}}" class="form-control">
+                                                                            <input type="hidden" name="item_name" value="{{$item->name}}" class="form-control">
+                                                                            <input type="hidden" name="price" value="{{$item->price}}" class="form-control">
+                                                                            <input type="hidden" name="quantity" value="{{$item->quantity}}" class="form-control">
+                                                                            @endforeach
+                                                                            <button title="Send Order" type="submit" id="cactus-btn-6166"  class="btn btn-default bt-style-2">Submit Order Now</button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                                                                <div class="vc_column-inner vc_custom_1469089860166">
+                                                                    <div class="wpb_wrapper">
+                                                                        <a href="/logout" title="Logout Your Account    " id="cactus-btn-493"  class="btn btn-default bt-style-1">Logout</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wpb_column vc_column_container vc_col-sm-2 vc_col-has-fill">
+                                                                <div class="vc_column-inner vc_custom_1469089860166">
+                                                                    <div class="wpb_wrapper">
+                                                                        <span title="Your Amount" id="cactus-btn-493"  class="btn btn-defaul bt-style-1"><strong>Ugx: {{ Cart::getTotal() + 4000 }}</strong></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                        @livewire('place-order')
                                                     </article>
                                                 </div>

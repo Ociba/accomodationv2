@@ -102,7 +102,7 @@ img:nth-child(5) {
                                         <div class="picture">
                                             <div class="picture-content">
                                                 <a title="" target="_self" href="/agricultureequipments/">
-                                                    <img width="100" height="75"  src="{{ asset('equipment_photos/'.$equipment->photo)}}" data-sizes="(max-width: 100px) 100vw, 100px" class="lazyload effect-fade" style="padding-top:75%;" alt="canberra_hero_image_JiMVvYU"/>
+                                                    <img width="100" height="75"  src="{{ asset('super_market_photos/'.$equipment->photo)}}" data-sizes="(max-width: 100px) 100vw, 100px" class="lazyload effect-fade" style="padding-top:75%;" alt="canberra_hero_image_JiMVvYU"/>
                                                     
                                                 </a>
                                             </div>

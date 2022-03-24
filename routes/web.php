@@ -29,11 +29,12 @@ Route::get('/save-client-information',[CheckoutController::Class,'validateSuperm
 Route::get('/login-now', function() { return view('login-page');});
 Route::get('/register-now', function() { return view('register-page');}); 
 Route::get('/checkout',[CartController::Class,'getCheckout'])->name('Checkout');
-Route::get('/order-list',[CartController::Class,'OrderList'])->name('Place Order');
+Route::get('/place-order-now',[CartController::Class,'OrderList'])->name('Place Order');
 Route::get('/logout',[AuthenticationController::Class, 'logoutUser']);
 Route::get('/produce-registration', function(){ return view('produce-registration');}); 
 Route::post('/create-accomodation-account',[AuthenticationController::Class, 'registerAccomodationUser']);
 Route::post('/create-prouduce-account',[AuthenticationController::Class, 'registerProduceUser']);
+Route::get('/save-order',[CheckoutController::Class, 'createCheckoutOrder']);
 
 
 Route::get('/pay-with-mtn',[PaymentController::Class,'payWithMtn']);

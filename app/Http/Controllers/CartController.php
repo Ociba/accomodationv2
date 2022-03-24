@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Supermarket;
 use App\Models\User;
 use App\Models\Cart;
+use App\Models\Equipment;
 use Hash;
 
 class CartController extends Controller
@@ -14,8 +15,10 @@ class CartController extends Controller
      * This function gets cart
      */
     protected function cartList(){
+        $supermarket_items =Supermarket::where('discount',null)->where('status','active')->latest()->limit(6)->get();
+        $equipment_items =Equipment::where('status','active')->latest()->limit(6)->get();
         $cartItems = \Cart::getContent();
-        return view('cart',compact('cartItems'));
+        return view('cart',compact('cartItems','supermarket_items','equipment_items'));
     }
     /**
      * This function gets checkout for particular customer
@@ -27,7 +30,8 @@ class CartController extends Controller
      * This function gets order to be placed
      */
     protected function OrderList(){
-      return view('submit-order');
+        $cartItems = \Cart::getContent();
+      return view('submit-order', compact('cartItems'));
     }
     /**
      * This function returns cart page

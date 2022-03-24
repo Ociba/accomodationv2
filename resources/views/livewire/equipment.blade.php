@@ -82,7 +82,7 @@
                                                 <div class="picture-content">
                                                     <a href="/" target="_self" title="Hendrix Official Lorem Ipsum Music">
                                                         <img 
-                                                        data-src="{{ asset('equipment_photos/'.$equipment->photo)}}" style="height:150px;"
+                                                        data-src="{{ asset('super_market_photos/'.$equipment->photo)}}" style="height:150px;"
                                                         
                                                         data-sizes="(max-width: 480px) 100vw, (max-width: 767px) 340px, (max-width: 1040px) 192px, (min-width: 1280px) and (max-width: 1600px) 320px, 407px"
                                                         alt="vp-ms01"

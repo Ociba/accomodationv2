@@ -48,7 +48,7 @@ class AgricultureEquipmentsController extends Controller
     {
         $equipment_photo = request()->photo;
         $equipment_photo_original_name = $equipment_photo->getClientOriginalName();
-        $equipment_photo->move('equipment_photos/',$equipment_photo_original_name);
+        $equipment_photo->move('super_market_photos/',$equipment_photo_original_name);
 
         $equipment_obj =new Equipment;
         $equipment_obj ->equipment   =request()->equipment;

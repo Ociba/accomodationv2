@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Hash;
 use Auth;
+use App\Models\Order;
 
 class CheckoutController extends Controller
 {
@@ -25,7 +26,7 @@ class CheckoutController extends Controller
         $user_obj->town               =request()->town;
         $user_obj->password    = Hash::make(request()->password);
         $user_obj->save();
-        return redirect()->back()->with('msg','You have successfully created Your Account');
+        return redirect('/login-now')->with('msg','You have successfully created Your Account');
     }
     /**
      * This function validates user created
@@ -52,5 +53,21 @@ class CheckoutController extends Controller
                 return redirect()->back()->withErrors('Make sure the two passwords match');
             }
         }
+    }
+      /**
+     * This function creates checkout order
+     */
+    public function createCheckoutOrder(){
+        $cartItems = \Cart::getContent();
+        foreach($cartItems as $item){
+            Order::create([
+                'user_id'      =>auth()->user()->id,
+                'item_id'      =>$item->id,
+                'item_name'	   =>$item->name,
+                'quantity'     =>$item->quantity,
+                'price'        =>$item->price,
+            ]);
+        }
+    return redirect()->back()->with('msg', 'You have successfully created property');
     }
 }

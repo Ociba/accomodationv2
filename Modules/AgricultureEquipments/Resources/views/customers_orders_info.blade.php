@@ -54,7 +54,7 @@
                                                                             <td>{{$orders->item_name}}</td>
                                                                             <td>{{ number_format($orders->price)}}</td>
                                                                             {{--<td>{{$orders->description}}</td>--}}
-                                                                            <td><img style="width:60px; height:40px;" src="{{ asset('equipment_photos/'.$orders->photo)}}"></td>
+                                                                            <td><img style="width:60px; height:40px;" src="{{ asset('super_market_photos/'.$orders->photo)}}"></td>
                                                                             <td>{{$orders->quantity}}</td>
                                                                             <td>{{$orders->contact}}</td>
                                                                             <td>{{$orders->town}}</td>

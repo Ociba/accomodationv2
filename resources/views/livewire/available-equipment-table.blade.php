@@ -77,7 +77,7 @@
                                         <td hidden>{{$equipment->id}}</td>
                                         <td>{{ number_format($equipment->price)}}</td>
                                         <td>{{$equipment->description}}</td>
-                                        <td><img style="width:60px; height:50px;" src="{{ asset('equipment_photos/'.$equipment->photo)}}"></td>
+                                        <td><img style="width:60px; height:50px;" src="{{ asset('super_market_photos/'.$equipment->photo)}}"></td>
                                         <td>{{$equipment->equipment_discount}}</td>
                                         <td>{{$equipment->discount_amount}}</td>
                                         <td>{{$equipment->quantity}}</td>
