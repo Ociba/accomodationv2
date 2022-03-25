@@ -53,41 +53,15 @@
 <link rel='stylesheet' id='js_composer_front-css'  href="{{ asset('wp-content/plugins/js_composer/assets/css/js_composer.min.css')}}" type='text/css' media='all' />
 <script type='text/javascript' src="{{ asset('wp-includes/js/jquery/jquery.js')}}"></script>
 <script type='text/javascript' src="{{ asset('wp-includes/js/jquery/jquery-migrate.min.js')}}"></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var wtilp = {"ajax_url":"https:\/\/videopro.cactusthemes.com\/v1\/wp-admin\/admin-ajax.php"};
-    /* ]]> */
-</script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/wti-like-post/js/wti_like_post.js')}}"></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var asf = {"ajaxurl":"https:\/\/videopro.cactusthemes.com\/v1\/wp-admin\/admin-ajax.php"};
-    /* ]]> */
-</script>
-<script type='text/javascript' src="{{ asset('wp-content/plugins/advance-search-form/searchform.js')}}"></script>
+{{--<script type='text/javascript' src="{{ asset('wp-content/plugins/advance-search-form/searchform.js')}}"></script>--}}
 <script type='text/javascript' src="{{ asset('wp-content/plugins/advance-search-form/jquery.mousewheel.js')}}"></script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/easy-tab/tab.js')}}"></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var ajax_tptn_tracker = {"ajax_url":"https:\/\/videopro.cactusthemes.com\/v1\/wp-admin\/admin-ajax.php","top_ten_id":"1508","top_ten_blog_id":"1","activate_counter":"11","tptn_rnd":"535445127"};
-    /* ]]> */
-</script>
-<script type='text/javascript' src="{{ asset('wp-content/plugins/top-10/includes/js/top-10-tracker.js')}}"></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var wc_add_to_cart_params = {"ajax_url":"\/v1\/wp-admin\/admin-ajax.php","wc_ajax_url":"https:\/\/videopro.cactusthemes.com\/v1\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/videopro.cactusthemes.com\/v1\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
-    /* ]]> */
-</script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js')}}"></script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js')}}"></script>
 <script type='text/javascript' src='https://www.google.com/recaptcha/api.js?hl=en-US'></script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/theme-my-login/modules/themed-profiles/themed-profiles.js')}}"></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var cactus = {"ajaxurl":"https:\/\/videopro.cactusthemes.com\/v1\/wp-admin\/admin-ajax.php","video_pro_main_color":"#d9251d","query_vars":{"page":0,"pagename":"home-page-v5","error":"","m":"","p":0,"post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"name":"home-page-v5","static":"","page_id":0,"second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","paged":0,"meta_key":"","meta_value":"","preview":"","s":"","sentence":"","title":"","fields":"","menu_order":"","embed":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post__not_in":[],"post_name__in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"ignore_sticky_posts":false,"suppress_filters":false,"cache_results":true,"update_post_term_cache":true,"lazy_load_term_meta":true,"update_post_meta_cache":true,"post_type":"","posts_per_page":12,"nopaging":false,"comments_per_page":"50","no_found_rows":false,"order":"DESC"},"current_url":"https:\/\/videopro.cactusthemes.com\/v1\/home-page-v5"};
-    /* ]]> */
-</script>
-<script type='text/javascript' src="{{ asset('wp-content/themes/videopro/js/ajax.js')}}"></script>
+{{--<script type='text/javascript' src="{{ asset('wp-content/themes/videopro/js/ajax.js')}}"></script>--}}
 <link rel='https://api.w.org/' href='wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="{{ asset('xmlrpc.php?rsd')}}" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{{ asset('wp-includes/wlwmanifest.xml')}}" />

@@ -64,12 +64,13 @@ img:nth-child(5) {
                 <h2 class="widget-title h4"><i class="fas fab fa-connectdevelop"></i> <span>Connect With Us</span></h2>
                 <div class="textwidget">
                     <ul class='nav navbar-nav navbar-right social-listing list-inline social-accounts'>
-                        <li class="facebook"><a target='_blank' href="https://www.facebook.com/cactustheme/" title='Facebook'><i class="fab fa-facebook"></i></a></li>
-                        <li class="youtube"><a target='_blank' href="https://www.youtube.com/c/CactusThemes" title='YouTube'><i class="fab fa-youtube"></i></a></li>
-                        <li class="twitter"><a target='_blank' href="https://twitter.com/cactusthemes" title='Twitter'><i class="fab fa-twitter"></i></a></li>
-                        <li class="google-plus"><a target='_blank' href="https://google.com/+CactusThemes" title='Google Plus'><i class="fab fa-google-plus"></i></a></li>
-                        <li class="rss"><a target='_blank' href="https://www.rss.com/" title='RSS'><i class="fas fa-rss"></i></a></li>
-                        <li class="twitch"><a target='_blank' href="#" title='Twitch'><i class="fab fa-twitch"></i></a></li>
+                        <li class="facebook"><a target='_blank' href="https://www.facebook.com/Jjoome-accomodationproperty-shopping-online-100470529257806/" title='Facebook'><i class="fab fa-facebook"></i></a></li>
+                        <li class="youtube"><a target='_blank' href="https://www.youtube.com/channel/UCxemJjh0Ym2fCTcRvIr86ww" title='YouTube'><i class="fab fa-youtube"></i></a></li>
+                        <li class="twitter"><a target='_blank' href="https://twitter.com/JoomeProperty" title='Twitter'><i class="fab fa-twitter"></i></a></li>
+                        <li class="" style="color:green;"><a target='_blank' href="#" title='0775401793'><i class="fab fa-whatsapp-square"></i></a></li>
+                        <li class="rss"><a href="callto:+256753926367" title='+256753926367'><i class="fas fa-phone"></i></a></li>
+                        {{--<li class="twitch"><a target='_blank' href="#" title='Twitch'><i class="fab fa-twitch"></i></a></li>
+                        --}}
                     </ul>
                 </div>
             </div>

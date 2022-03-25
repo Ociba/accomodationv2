@@ -21,12 +21,12 @@
     /* ]]> */
 </script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js')}}"></script>
-<script type='text/javascript'>
+{{--<script type='text/javascript'>
     /* <![CDATA[ */
     var wc_cart_fragments_params = {"ajax_url":"\/v1\/wp-admin\/admin-ajax.php","wc_ajax_url":"https:\/\/videopro.cactusthemes.com\/v1\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_c57fb205b23914e517145c540ba13e11","fragment_name":"wc_fragments_c57fb205b23914e517145c540ba13e11"};
     /* ]]> */
-</script>
-<script type='text/javascript' src="{{ asset('wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js')}}"></script>
+</script>--}}
+{{--<script type='text/javascript' src="{{ asset('wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js')}}"></script>--}}
 <script type='text/javascript'>
     /* <![CDATA[ */
     var mashmenu = {"ajax_url":"https:\/\/videopro.cactusthemes.com\/v1\/wp-admin\/admin-ajax.php","ajax_loader":"on","ajax_enabled":"0"};
