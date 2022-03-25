@@ -24,14 +24,19 @@ class CartController extends Controller
      * This function gets checkout for particular customer
      */
     protected function getCheckout(){
-        return view('checkout');
+        $supermarket_items =Supermarket::where('discount',null)->where('status','active')->latest()->get();
+        $equipment_items =Equipment::where('status','active')->latest()->get();
+        $cartItems = \Cart::getContent();
+        return view('checkout',compact('cartItems','supermarket_items','equipment_items'));
     }
     /**
      * This function gets order to be placed
      */
     protected function OrderList(){
+        $supermarket_items =Supermarket::where('discount',null)->where('status','active')->latest()->limit(12)->get();
+        $equipment_items =Equipment::where('status','active')->latest()->limit(12)->get();
         $cartItems = \Cart::getContent();
-      return view('submit-order', compact('cartItems'));
+      return view('submit-order', compact('cartItems','supermarket_items','equipment_items'));
     }
     /**
      * This function returns cart page
