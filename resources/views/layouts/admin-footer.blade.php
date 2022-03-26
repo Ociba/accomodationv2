@@ -34,7 +34,7 @@
                                                     <div class="picture">
                                                         <div class="picture-content">
                                                             <a title="Love Is Blind 3D Animation Short Film HD" target="_self" href="../cupido-love-is-blind-3d-animation-short-film-hd/index.html">
-                                                                <img width="100" height="75"  data-src="https://videopro.cactusthemes.com/v1/wp-content/uploads/2016/05/vp-mv04-100x75.jpg" class="lazyload effect-fade" src="../wp-content/themes/videopro/images/dflazy.jpg" style="padding-top:75%;" alt="vp-mv04"/>
+                                                                <img width="100" height="75"  data-src="" class="lazyload effect-fade" style="padding-top:75%;" alt="vp-mv04"/>
                                                                 <div class="ct-icon-video small-icon"></div>
                                                             </a>
                                                             <div class="cactus-note ct-time font-size-1"><span>07:07</span></div>

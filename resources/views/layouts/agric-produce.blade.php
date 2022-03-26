@@ -33,7 +33,7 @@
                                                     />
                                                     <div class="badges-group">
                                                         <div class="badges-item">
-                                                            <img src="{{ asset('wp-content/uploads/2016/05/12-015-Video-Badges_03.png')}}" alt="Little Night Music In Perth Contemporary">
+                                                            <img src="{{ asset('advert/joome12.jpg')}}" style="height:40px;" alt="Little Night Music In Perth Contemporary">
                                                         </div>
                                                     </div>
                                                 </a>

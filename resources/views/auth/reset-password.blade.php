@@ -6,7 +6,8 @@
 
         <x-jet-validation-errors class="mb-4" />
 
-        <form method="POST" action="{{ route('password.update') }}">
+        {{--<form method="POST" action="{{ route('password.update') }}">--}}
+        <form method="POST" action="{{ url('/reset_password_without_token') }}"> 
             @csrf
 
             <input type="hidden" name="token" value="{{ $request->route('token') }}">

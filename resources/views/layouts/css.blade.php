@@ -1,5 +1,7 @@
+<link rel="icon" type="image/x-icon" href="{{ asset('wp-content/uploads/house.png')}}">
 <title>jjoome property  &#8211; limited -{{request()->route()->getName()}}</title>
-   
+
+
     <style type="text/css">
     img.wp-smiley,
     img.emoji {
@@ -63,7 +65,7 @@
 <script type='text/javascript' src="{{ asset('wp-content/plugins/theme-my-login/modules/themed-profiles/themed-profiles.js')}}"></script>
 {{--<script type='text/javascript' src="{{ asset('wp-content/themes/videopro/js/ajax.js')}}"></script>--}}
 <link rel='https://api.w.org/' href='wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="{{ asset('xmlrpc.php?rsd')}}" />
+{{--<link rel="EditURI" type="application/rsd+xml" title="RSD" href="{{ asset('xmlrpc.php?rsd')}}" />--}}
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{{ asset('wp-includes/wlwmanifest.xml')}}" />
 <meta name="generator" content="WordPress 4.9.7" />
 <meta name="generator" content="WooCommerce 3.3.3" />

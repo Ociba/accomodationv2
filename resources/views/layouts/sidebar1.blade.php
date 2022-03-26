@@ -420,7 +420,7 @@
             <style>#text-23 .ct-sub-w-title{color:FFFFFF !important; background:FF0000 !important}</style>
             <div class="widget-inner">
                 <div class="textwidget">
-                    <div style="text-align:center"><a href="/agricultureequipments/" title="VideoPro Sample Banner"><img src="{{ asset('wp-content/uploads/2016/05/banner-2.jpg')}}" alt="Ad banner"></a></div>
+                    <div style="text-align:center"><a href="/agricultureequipments/" title="VideoPro Sample Banner"><img src="{{ asset('advert/banner.jpg')}}" style="width:400px;" alt="Ad banner"></a></div>
                 </div>
             </div>
         </aside>

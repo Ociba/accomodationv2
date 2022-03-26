@@ -1,6 +1,6 @@
-<ol class="cactus-breadcrumb  navigation-font font-size-1 " itemscope itemtype="http://schema.org/BreadcrumbList">
+<ol class="cactus-breadcrumb  navigation-font font-size-1 " itemscope itemtype="#">
     <a itemprop="item" href="/" rel="v:url" property="v:title"><span itemprop="name">Home</span></a><i class="fas fa-angle-right" aria-hidden="true"></i>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop="itemListElement" itemscope itemtype="#">
         <a itemprop="item" href="#"><span itemprop="name">Accomodation</span></a>
         <meta itemprop="position" content="2" />
     </li>

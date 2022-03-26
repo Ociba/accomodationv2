@@ -40,25 +40,25 @@
                                                                 <form action="/create-prouduce-account" method="post" class="wpcf7-form" enctype="multipart/form-data">
                                                                 @csrf
                                                                     <p>Your Name *<br />
-                                                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></span> 
+                                                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></span> 
                                                                     </p>
                                                                     <p>Your Phone Number *<br />
-                                                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="contact" value="" size="40" maxLength="10" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></span> 
+                                                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="contact" size="40" maxLength="10" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></span> 
                                                                     </p>
                                                                     <p>Your Location *<br />
-                                                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></span> 
+                                                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="address" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></span> 
                                                                     </p>
                                                                     <p>Your Photo *<br />
-                                                                        <span class="wpcf7-form-control-wrap your-name"><input type="file" name="profile_photo_path" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></span> 
+                                                                        <span class="wpcf7-form-control-wrap your-name"><input type="file" name="profile_photo_path" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></span> 
                                                                     </p>
                                                                     <p>Your Email *<br />
-                                                                        <span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"  required /></span> 
+                                                                        <span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"  required /></span> 
                                                                     </p>
                                                                     <p>Your Password<br />
-                                                                        <span class="wpcf7-form-control-wrap your-subject"><input type="password" name="password" value="" size="40" class="wpcf7-form-control wpcf7-text" required /></span> 
+                                                                        <span class="wpcf7-form-control-wrap your-subject"><input type="password" name="password" size="40" class="wpcf7-form-control wpcf7-text" required /></span> 
                                                                     </p>
                                                                     <p>Confirm Password<br />
-                                                                        <span class="wpcf7-form-control-wrap your-subject"><input type="password" name="password_confirmation" value="" size="40" class="wpcf7-form-control wpcf7-text" required /></span> 
+                                                                        <span class="wpcf7-form-control-wrap your-subject"><input type="password" name="password_confirmation" size="40" class="wpcf7-form-control wpcf7-text" required /></span> 
                                                                     </p>
                                                                     <p><button type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit btn-primary">Submit</button>
                                                                     <div class="wpcf7-response-output wpcf7-display-none"></div>

@@ -23,7 +23,7 @@
                                                     </div>
                                                     <div class="badges-group">
                                                         <div class="badges-item">
-                                                            <img src="{{ asset('wp-content/uploads/2016/05/12-015-Video-Badges_03.png')}}" alt="House of Your Sleep Dreams">
+                                                            <img src="{{ asset('advert/joome12.jpg')}}" style="height:30px;" alt="House of Your Sleep Dreams">
                                                         </div>
                                                     </div>
                                                 </a>
@@ -113,7 +113,7 @@
                                                     </div>
                                                     <div class="badges-group">
                                                         <div class="badges-item">
-                                                            <img src="{{ asset('wp-content/uploads/2016/05/12-015-Video-Badges_03.png')}}" alt="House of Your Choice">
+                                                            <img src="{{ asset('advert/joome12.jpg')}}" style="height:30px;" alt="House of Your Choice">
                                                         </div>
                                                     </div>
                                                 </a>
@@ -147,7 +147,7 @@
                                                     </div>
                                                     <div class="badges-group">
                                                         <div class="badges-item">
-                                                            <img src="{{ asset('wp-content/uploads/2016/05/12-015-Video-Badges_05.png')}}" alt="Get well Furnished Accomodation">
+                                                            <img src="{{ asset('advert/joome12.jpg')}}" style="height:30px;" alt="Get well Furnished Accomodation">
                                                         </div>
                                                     </div>
                                                 </a>

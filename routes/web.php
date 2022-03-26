@@ -7,6 +7,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AccountsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,3 +46,7 @@ Route::post('cart', [HomeController::class, 'addToCart'])->name('cart.store');
 Route::get('update', [CartController::class, 'updateCart'])->name('cart.update');
  Route::post('remove', [CartController::class, 'removeCart'])->name('cart.remove');
 Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
+
+
+Route::post('reset_password_without_token', 'AccountsController@validatePasswordRequest');
+Route::post('reset_password_with_token', 'AccountsController@resetPassword');
