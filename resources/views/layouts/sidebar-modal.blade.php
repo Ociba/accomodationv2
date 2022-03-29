@@ -7,46 +7,47 @@
     <!--btn open-->
     <div class="cactus-button-open">
         <svg class="ct-icon-star-two">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ct-icon-star-two"></use>
+            <use xmlns:xlink="#" xlink:href="#ct-icon-star-two"></use>
         </svg>
-        <span>LINKS</span>
+        <span>Services</span>
     </div>
     <!--btn open-->
     <div class="cactus-buy-button">
-        <a href="https://themeforest.net/item/videopro-video-wordpress-theme/16677956?ref=cactusthemes" target="_blank" class="cactus-btn-buy">Buy Now</a>
+        <span class="cactus-btn-buy">For Other Services</span>
     </div>
     <div class="cactus-content-scroll">
-        <p class="desc">VideoPro has more features than you can imagine. In addition, it is highly customizabe and extensible</p>
+        <p class="desc">JJOOME is as well IT Innovation Company Dealing with Website Development,Web Application Development & Mobile Applications</p>
         <div class="cactus-content-body">
             <div class="cactus-group-demo">
                 <div class="cactus-group-content">
                     <div class="cactus-item">
-                        <a href="../index.html" target="_blank" class="cactus-item-content" title="Default Demo">
+                        <a href="https://jjoomeltd.com" target="_blank" class="cactus-item-content" title="Default Demo">
                             <img src="../wp-content/plugins/cactus-buy-button/img/entertainment.jpg" alt="Default Demo">
-                            <div>V1 - Default</div>
+                            <div>website</div>
                         </a>
                     </div>
                     <div class="cactus-item">
-                        <a href="http://videopro.cactusthemes.com/v2/" target="_blank" class="cactus-item-content" title="VideoPro Membership & Community Features">
+                        <a href="#" target="_blank" class="cactus-item-content" title="VideoPro Membership & Community Features">
                             <img style="margin:15px 0 20px 0" src="../wp-content/plugins/cactus-buy-button/img/videopro-v2.jpg" alt="VideoPro Membership & Community Features">
-                            <div>V2 - Membership</div>
+                            <div>Web Applications</div>
                         </a>
                     </div>
-                    <div class="cactus-item">
+                    {{--<div class="cactus-item">
                         <a href="http://videopro.cactusthemes.com/poster" target="_blank" class="cactus-item-content" title="Poster Movie Site">
                             <img src="../wp-content/plugins/cactus-buy-button/img/poster.jpg" alt="Poster Movie Site">
                             <div>Poster Movie</div>
                         </a>
                     </div>
                     <div class="cactus-item">
-                        <a href="http://videopro.cactusthemes.com/cooking" target="_blank" class="cactus-item-content" title="Cooking Demo">
+                        <a href="#" target="_blank" class="cactus-item-content" title="Cooking Demo">
                             <img src="../wp-content/plugins/cactus-buy-button/img/cooking.jpg" alt="Cooking Demo">
                             <div>Cooking</div>
                         </a>
                     </div>
+                    --}}
                 </div>
             </div>
         </div>
-        <p class="desc">Have a pre-sale question? <a href="https://themeforest.net/user/cactusthemes" target="_blank">Inbox us</a> now</p>
+        <p class="desc">Have a question? <a href="#" target="_blank">Inbox us</a> now</p>
     </div>
 </div>

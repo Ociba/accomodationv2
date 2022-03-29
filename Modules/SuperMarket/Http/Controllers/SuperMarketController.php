@@ -19,7 +19,8 @@ class SuperMarketController extends Controller
      */
     public function index()
     {
-        return view('supermarket::index');
+        $get_discount_items =Supermarket::whereNotNull('discount')->get();
+        return view('supermarket::index', compact('get_discount_items'));
     }
     /**
      * This function get all supermarket items

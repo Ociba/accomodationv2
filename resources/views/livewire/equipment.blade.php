@@ -107,7 +107,22 @@
                                                     <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: {{$equipment->price}}</span></div>
                                                 </div>
                                                 <div class="posted-on metadata-font">
-                                                    <div class="cactus-info font-size-1"><span><button class="btn btn-sm btn-primary" style="padding:5px;"><i class="fa fa-plus"></i> Add To Cart</button></span></div>
+                                                <div class="cactus-info font-size-1">
+                                                    <span>
+                                                        <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data">
+                                                            @csrf
+                                                            <input type="hidden" value="{{ $equipment->id }}" name="id">
+                                                            <input type="hidden" value="{{ $equipment->equipment }}" name="name">
+                                                            <input type="hidden" value="{{ $equipment->price }}" name="price">
+                                                            <input type="hidden" value="{{ $equipment->photo }}"  name="image">
+                                                            <input type="hidden" value="1" name="quantity">
+                                                            <div class="col-xs-12">
+                                                                <button class="btn btn-primary mb-1" style="padding:5px;"><i class="fas fa-plus"></i> Add To Cart</button>
+                                                                <a href="/cart" class="btn btn-warning mb-1" style="color:#ffffff; padding:5px;">View Cart</a>
+                                                            </div>
+                                                        </form>
+                                                    </span>
+                                                </div>
                                                 </div>
                                             </div>
                                         </div>

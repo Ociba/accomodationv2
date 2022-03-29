@@ -32,7 +32,7 @@
 		</div>
 	</form>
 	<ul class="tml-action-links">
-<li><a href="/register-now" rel="nofollow">Register</a></li>
+    {{--<li><a href="/register-now" rel="nofollow">Register</a></li>--}}
 <li>
      @if (Route::has('password.request'))
 	<a href="{{ route('password.request') }}" rel="nofollow">Lost Password</a>

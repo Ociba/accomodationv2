@@ -49,6 +49,7 @@ class ProduceController extends Controller
         $produce_obj->phone_number          = request()->phone_number;
         $produce_obj->produce_name          = request()->produce_name;
         $produce_obj->price                 = request()->price;
+        $produce_obj->description           =request()->description;
        $produce_obj->image                  =$produce_photo_original_name;
         $produce_obj->save();
         return redirect()->back()->with('msg','Operation Successfull');

@@ -18,7 +18,7 @@
     <div class="wpb_column vc_column_container vc_col-sm-12">
         <div class="vc_column-inner ">
             <div class="wpb_wrapper">
-                <div class="cactus-listing-wrap cactus-contents-block style-1 is_border" data-url="https://videopro.cactusthemes.com/v1/wp-admin/admin-ajax.php" data-shortcode="{&quot;title&quot;:&quot;Music Videos&quot;,&quot;parent_column_size&quot;:&quot;12&quot;,&quot;number&quot;:&quot;6&quot;,&quot;items_per_page&quot;:&quot;6&quot;,&quot;show_datetime&quot;:&quot;0&quot;,&quot;show_author&quot;:&quot;0&quot;,&quot;videoplayer_lightbox&quot;:&quot;1&quot;,&quot;cats&quot;:&quot;music&quot;,&quot;totalPage&quot;:1,&quot;itemEndPage&quot;:&quot;6&quot;}" data-total-pages="1" data-last-page-items="6" data-filter="0" data-query="{&quot;post_type&quot;:&quot;post&quot;,&quot;posts_per_page&quot;:&quot;6&quot;,&quot;post_status&quot;:&quot;publish&quot;,&quot;ignore_sticky_posts&quot;:1,&quot;order&quot;:&quot;DESC&quot;,&quot;category_name&quot;:&quot;music&quot;}" data-query-class="">
+                <div class="cactus-listing-wrap cactus-contents-block style-1 is_border" data-url="#" data-shortcode="{&quot;title&quot;:&quot;Music Videos&quot;,&quot;parent_column_size&quot;:&quot;12&quot;,&quot;number&quot;:&quot;6&quot;,&quot;items_per_page&quot;:&quot;6&quot;,&quot;show_datetime&quot;:&quot;0&quot;,&quot;show_author&quot;:&quot;0&quot;,&quot;videoplayer_lightbox&quot;:&quot;1&quot;,&quot;cats&quot;:&quot;music&quot;,&quot;totalPage&quot;:1,&quot;itemEndPage&quot;:&quot;6&quot;}" data-total-pages="1" data-last-page-items="6" data-filter="0" data-query="{&quot;post_type&quot;:&quot;post&quot;,&quot;posts_per_page&quot;:&quot;6&quot;,&quot;post_status&quot;:&quot;publish&quot;,&quot;ignore_sticky_posts&quot;:1,&quot;order&quot;:&quot;DESC&quot;,&quot;category_name&quot;:&quot;music&quot;}" data-query-class="">
                     <div class="control-header">
                         <h2 class="block-title">{{request()->route()->getName()}}</h2>
                         <label for="search">Search BY Name,Price</label>
@@ -67,7 +67,22 @@
                                                 <div class="cactus-info font-size-4" style="color:blue; font-weight:bold;"><span>Ugx: {{ number_format($beds->price)}}</span></div>
                                             </div>
                                             <div class="posted-on metadata-font text-center">
-                                                <div class="cactus-info font-size-1"><span><button class="btn btn-sm btn-primary" style="padding:5px;"><i class="fa fa-plus"></i> Add To Cart</button></span></div>
+                                            <div class="cactus-info font-size-1">
+                                                    <span>
+                                                        <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data">
+                                                            @csrf
+                                                            <input type="hidden" value="{{ $beds->id }}" name="id">
+                                                            <input type="hidden" value="{{ $beds->item }}" name="name">
+                                                            <input type="hidden" value="{{ $beds->price }}" name="price">
+                                                            <input type="hidden" value="{{ $beds->photo }}"  name="image">
+                                                            <input type="hidden" value="1" name="quantity">
+                                                            <div class="col-xs-12">
+                                                                <button class="btn btn-primary mb-1" style="padding:5px;"><i class="fas fa-plus"></i> Add To Cart</button>
+                                                                <a href="/cart" class="btn btn-warning mb-1" style="color:#ffffff; padding:5px;">View Cart</a>
+                                                            </div>
+                                                        </form>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

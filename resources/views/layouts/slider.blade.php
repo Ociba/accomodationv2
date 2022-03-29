@@ -10,17 +10,16 @@
                         <div class="cactus-listing-config  style-2">
                             <!--addClass: style-1 + (style-2 -> style-n)-->
                             <div class="cactus-sub-wrap">
-                                <!--item listing-->                                                
+                                <!--item listing-->    
+                                @foreach($get_accomodation_with_discount as $discount)                                            
                                 <article class="cactus-post-item">
                                     <div class="entry-content">
                                         <!--picture (remove)-->
                                         <div class="picture">
                                             <div class="picture-content">
                                                 <a href="/" target="_self" title="House of Your Sleep Dreams">
-                                                    <img width="636" height="358"  src="{{ asset('images/single.jpg')}}" data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade"  style="padding-top:56.289308176101%;" alt="vp-sp01"/>			
-                                                    <div class="ct-icon-video lightbox_item" data-source="" data-type="iframe-video" data-caption="House of Your Sleep Dreams" data-id="153">
-                                                        			
-                                                    </div>
+                                                    <img width="636" height="358"  src="{{ asset('/property_photos/'.$discount->photo)}}" data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade"  style="padding-top:56.289308176101%;" alt="vp-sp01"/>			
+                                                      
                                                     <div class="badges-group">
                                                         <div class="badges-item">
                                                             <img src="{{ asset('advert/joome12.jpg')}}" style="height:30px;" alt="House of Your Sleep Dreams">
@@ -30,12 +29,12 @@
                                                 <div class="content content-absolute-bt">
                                                     <!--Title (no title remove)-->
                                                     <h3 class="cactus-post-title entry-title h4"> 
-                                                        <a href="/" target="_self" title="House of Your Sleep Dreams">House of Your Sleep Dreams</a>
+                                                        <a href="/" target="_self" title="House of Your Sleep Dreams">Size:{{$discount->property_size}}|Rooms:{{$discount->bedroom}}| Garage: {{$discount->garage}}|<br>Batherooms: {{$discount->bathroom}} | Location: {{$discount->location}}|For: {{$discount->property_status}}</a>
                                                     </h3>
                                                     <!--Title-->
                                                     <div class="posted-on metadata-font">
-                                                        <a href="h" class="author cactus-info font-size-1"><span>jjoome </span></a>
-                                                        <div class="date-time cactus-info font-size-1"><a href="/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-27T04:27:36+00:00" class="entry-date updated">{{ date('Y')}}</time></a></div>
+                                                        <a href="h" class="author cactus-info font-size-1"><span style="color:blue; font-weight:bold; font-size:18px;">Shs. <del>{{number_format($discount->price)}}</del> </span></a>
+                                                        <div class="date-tim cactus-inf font-size-1" ><a href="/" target="_self" class="cactus-inf" rel="bookmark"><time datetime="2016-05-27T04:27:36+00:00" class="entry-date updated" style="color:blue; font-weight:bold; font-size:18px;">shs. {{number_format($discount->discount_price)}} |   {{$discount->contact}}</time></a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -43,130 +42,7 @@
                                         <!--picture-->
                                     </div>
                                 </article>
-                                <!--item listing-->
-                                <!--item listing-->                                                
-                                <article class="cactus-post-item">
-                                    <div class="entry-content">
-                                        <!--picture (remove)-->
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a href="/" target="_self" title="Affordable and Pocket Friendly">
-                                                    <img width="636" height="358"  data-src="{{ asset('images/shops.jpeg')}}" data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade"  style="padding-top:56.289308176101%;" alt="vp-sp05"/>			
-                                                    <div class="ct-icon-video lightbox_item" data-source="" data-type="iframe-video" data-caption="Affordable and Pocket Friendly" data-id="148">
-                                                       			
-                                                    </div>
-                                                </a>
-                                                <div class="content content-absolute-bt">
-                                                    <!--Title (no title remove)-->
-                                                    <h3 class="cactus-post-title entry-title h4"> 
-                                                        <a href="/" target="_self" title="Affordable and Pocket Friendly">Affordable and Pocket Friendly</a>
-                                                    </h3>
-                                                    <!--Title-->
-                                                    <div class="posted-on metadata-font">
-                                                        <a href="/" class="author cactus-info font-size-1"><span>jjoome</span></a>
-                                                        <div class="date-time cactus-info font-size-1"><a href="/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-27T04:24:31+00:00" class="entry-date updated">{{ date('Y')}}</time></a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--picture-->
-                                    </div>
-                                </article>
-                                <!--item listing-->
-                                <!--item listing-->                                                
-                                <article class="cactus-post-item">
-                                    <div class="entry-content">
-                                        <!--picture (remove)-->
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a href="/" target="_self" title="Confortable and Good space for Parking">
-                                                    <img width="636" height="358" src="{{ asset('images/house.jpg')}}" data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade"  style="padding-top:56.289308176101%;" alt="vp-sp02"/>			
-                                                    
-                                                </a>
-                                                <div class="content content-absolute-bt">
-                                                    <!--Title (no title remove)-->
-                                                    <h3 class="cactus-post-title entry-title h4"> 
-                                                        <a href="/" target="_self" title="Confortable and Good space for Parking">Confortable and Good space for Parking</a>
-                                                    </h3>
-                                                    <!--Title-->
-                                                    <div class="posted-on metadata-font">
-                                                        <a href="/" class="author cactus-info font-size-1"><span>jjoome</span></a>
-                                                        <div class="date-time cactus-info font-size-1"><a href="/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-27T04:12:23+00:00" class="entry-date updated">{{ date('Y')}}</time></a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--picture-->
-                                    </div>
-                                </article>
-                                <!--item listing-->
-                                <!--item listing-->                                                
-                                <article class="cactus-post-item">
-                                    <div class="entry-content">
-                                        <!--picture (remove)-->
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a href="/" target="_self" title="House of Your Choice">
-                                                    <img width="636" height="358"  data-src="{{ asset('images/hostel.jpg')}}" data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade"  style="padding-top:56.289308176101%;" alt="vp-sp04"/>			
-                                                    <div class="ct-icon-video lightbox_item" data-source="" data-type="iframe-video" data-caption="House of Your Choice" data-id="129">
-                                                       			
-                                                    </div>
-                                                    <div class="badges-group">
-                                                        <div class="badges-item">
-                                                            <img src="{{ asset('advert/joome12.jpg')}}" style="height:30px;" alt="House of Your Choice">
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <div class="content content-absolute-bt">
-                                                    <!--Title no title remove-->
-                                                    <h3 class="cactus-post-title entry-title h4"> 
-                                                        <a href="/" target="_self" title="House of Your Choice">House of Your Choice</a>
-                                                    </h3>
-                                                    <!--Title-->
-                                                    <div class="posted-on metadata-font">
-                                                        <a href="/" class="author cactus-info font-size-1"><span>jjoome</span></a>
-                                                        <div class="date-time cactus-info font-size-1"><a href="/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-27T04:07:45+00:00" class="entry-date updated">{{ date('Y')}}</time></a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--picture-->
-                                    </div>
-                                </article>
-                                <!--item listing-->
-                                <!--item listing-->                                                
-                                <article class="cactus-post-item">
-                                    <div class="entry-content">
-                                        <!--picture (remove)-->
-                                        <div class="picture">
-                                            <div class="picture-content">
-                                                <a href="/" target="_self" title="Get well Furnished Accomodation">
-                                                    <img width="636" height="358"  data-src="{{ asset('images/offices.jpg')}}"  data-sizes="(max-width: 636px) 100vw, 636px" class="lazyload effect-fade"  style="padding-top:56.289308176101%;" alt="vp-sp03"/>			
-                                                    <div class="ct-icon-video lightbox_item" data-source="" data-type="iframe-video" data-caption="Get well Furnished Accomodation" data-id="117">
-                                                        			
-                                                    </div>
-                                                    <div class="badges-group">
-                                                        <div class="badges-item">
-                                                            <img src="{{ asset('advert/joome12.jpg')}}" style="height:30px;" alt="Get well Furnished Accomodation">
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <div class="content content-absolute-bt">
-                                                    <!--Title (no title remove)-->
-                                                    <h3 class="cactus-post-title entry-title h4"> 
-                                                        <a href="/" target="_self" title="Get well Furnished Accomodation">Get well Furnished Accomodation</a>
-                                                    </h3>
-                                                    <!--Title-->
-                                                    <div class="posted-on metadata-font">
-                                                        <a href="/" class="author cactus-info font-size-1"><span>jjoome</span></a>
-                                                        <div class="date-time cactus-info font-size-1"><a href="/" target="_self" class="cactus-info" rel="bookmark"><time datetime="2016-05-27T03:59:02+00:00" class="entry-date updated">{{ date('Y')}}</time></a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--picture-->
-                                    </div>
-                                </article>
+                                @endforeach
                                 <!--item listing-->
                             </div>
                         </div>

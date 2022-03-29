@@ -748,8 +748,8 @@ License URI: https://www.cactusthemes.com
 		/*End - 3.14 - tag (point, like, time)*/
 
 		/*3.15 - icon video (size: small, normal, big ...)*/
-			.ct-icon-video { width:50px; height:50px; border-radius:4px; -webkit-border-radius:4px; background-color:rgba(0,0,0,0.75); position:absolute; top:50%; left:50%; margin-left:-25px; margin-top:-25px; backface-visibility:hidden; -webkit-backface-visibility:hidden;}
-			.ct-icon-video:before { content:''; display:block; width:0; height:0; border:solid rgba(255,255,255,0); border-width:11px 20px; border-left-color:rgba(255,255,255,1.00); position:absolute; top:50%; left:50%; margin-left:-8px; margin-top:-11px; backface-visibility:hidden; -webkit-backface-visibility:hidden;}
+			.ct-icon-video { width:100px; height:50px; border-radius:4px; -webkit-border-radius:4px; background-color:rgba(0,0,0,0.75); position:absolute; top:50%; left:50%; margin-left:-25px; margin-top:-25px; backface-visibility:hidden; -webkit-backface-visibility:hidden;}
+		
 
 			.ct-icon-video.big-icon-a { width:120px; height:120px; border-radius:10px; -webkit-border-radius:10px; margin:0 auto 40px auto; position:relative; top:auto; left:auto;}
 			.ct-icon-video.big-icon-a.lightbox_item{ z-index:9; cursor:pointer;}

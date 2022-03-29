@@ -24,7 +24,12 @@ class HomeController extends Controller
         //This statement get equipments
         $equipment_items =Equipment::where('status','active')->latest()->limit(6)->get();
         $cartItems = \Cart::getContent();
-        return view('welcome',compact('get_accomodation','supermarket_items','produce','equipment_items','cartItems'));
+
+        $get_accomodation_with_discount =Property::join('users','users.id','properties.user_id')
+        ->join('categories','categories.id','properties.category_id')->whereNotNull('discount_price')
+        ->where('properties.status','pending')
+        ->get(['categories.category_name','users.contact','properties.*']);
+        return view('welcome',compact('get_accomodation','supermarket_items','produce','equipment_items','cartItems','get_accomodation_with_discount'));
     }
     public function addToCart(Request $request)
     {

@@ -98,6 +98,10 @@
                                     <span class="wpcf7-form-control-wrap your-email">
                                         <input type="text" name="produce_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                     </span>
+                                    Description <span style="color:red;">(Specify Dry,Fresh,Shield,Unshield etc)</span>
+                                    <span class="wpcf7-form-control-wrap your-email">
+                                        <input type="text" name="description" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                    </span>
                                      Price <span style="color:red;">(Specify Per pair, Per Kilo,Each, Per bag)</span>
                                     <span class="wpcf7-form-control-wrap your-email">
                                         <input type="text" name="price" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />

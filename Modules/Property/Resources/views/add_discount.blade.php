@@ -45,7 +45,7 @@
                                                                                             <div class="wpb_text_column wpb_content_element  vc_custom_1469616820885 textwidget" >
                                                                                                 <div class="wpb_wrapper">
                                                                                                     Discount Amount
-                                                                                                    <input type="text" name="discount_price" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                                                                                    <input type="number" name="discount_price" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -58,7 +58,7 @@
                                                                                                 <div class="wpb_wrapper">
                                                                                                     Percentage Discount [e.g 5,10,20 ..]
                                                                                                     <span class="wpcf7-form-control-wrap your-email">
-                                                                                                    <input type="text" name="discount"  size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" />
+                                                                                                    <input type="text" name="discount"  size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" placeholder="Optional" />
                                                                                                     </span>
                                                                                                 </div>
                                                                                             </div>

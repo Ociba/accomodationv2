@@ -23,7 +23,6 @@ Route::get('/',[HomeController::Class,'getWelcomePage'])->name('Accomodation');
 Route::get('/dashboard',[DashboardController::Class,'getDashboard']);
 Route::get('/save-client-information',[CheckoutController::Class,'validateSupermarketUser']);
 
-
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
 // })->name('dashboard');

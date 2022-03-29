@@ -39,7 +39,10 @@
                         </span>
                         <span class="info-dot"></span>
                         <span class="font-size-1 metadata-font sub-count meta-2">                
-                        8 Single 4 Double Rooms			
+                        @php
+                            $count_offices=DB::table('properties')->where('category_id',10)->count();
+                        @endphp                
+                        | {{$count_offices}} Office (s)			
                         </span>
                     </div>
                 </div>
