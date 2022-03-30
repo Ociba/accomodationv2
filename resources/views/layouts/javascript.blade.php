@@ -55,4 +55,4 @@
 <script type='text/javascript' src="{{ asset('wp-content/plugins/videopro-shortcodes/shortcodes/library/touchswipe/jquery.touchSwipe.min.js')}}"></script>
 <script type='text/javascript' src="{{ asset('wp-includes/js/wp-embed.min.js')}}"></script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js')}}"></script>
-<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&amp;render=explicit'></script>
+{{--<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&amp;render=explicit'></script>--}}

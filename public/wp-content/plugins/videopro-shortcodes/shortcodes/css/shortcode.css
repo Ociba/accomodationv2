@@ -799,18 +799,18 @@ p + .dropcaps:not(.one-class) > span{margin-top:7px}
 .ct-compare-table-group > *.compare-table-item {font-size:14px; line-height:1.8; display:inline-block; vertical-align:middle; float:none; padding:0 15px; position:relative; margin-bottom:40px;}
 .ct-compare-table-group > *.compare-table-item:before { content:''; display:block; top:-6px; left:9px; right:9px; bottom:-6px; position:absolute; background-color:rgba(242,242,242,1.0); border-radius:5px; -webkit-border-radius:5px; z-index:0;}
 .ct-compare-table-group .compare-table-content { border-radius:3px; -webkit-border-radius:3px; text-align:center; position:relative; border:1px solid rgba(200,200,200,1.0); background-color:rgba(255,255,255,1.00);}
-.ct-compare-table-group .compare-table-title { background-color:rgba(25,166,18,1.0); color:rgba(255,255,255,1.00); padding-top:13px; padding-bottom:12px; margin-left:-1px; margin-right:-1px; margin-top:-1px; border-top-left-radius:3px; border-top-right-radius:3px; -webkit-border-top-left-radius:3px; -webkit-border-top-right-radius:3px; }
+.ct-compare-table-group .compare-table-title { background-color:rgba(0, 0, 153,1.0); color:rgba(255,255,255,1.00); padding-top:13px; padding-bottom:12px; margin-left:-1px; margin-right:-1px; margin-top:-1px; border-top-left-radius:3px; border-top-right-radius:3px; -webkit-border-top-left-radius:3px; -webkit-border-top-right-radius:3px; }
 
 .ct-compare-table-group .compare-table-item[data-special="1"] .compare-table-title{ padding-top:23px; padding-bottom:22px;}
 
 .ct-compare-table-group .compare-table-price {padding:25px 20px; position:relative; background-color:rgba(215,215,215,0.18); border-bottom:1px solid rgba(215,215,215,0.75);}
 .ct-compare-table-group .compare-table-price .price-wrap { display:inline-block; padding-top:7px; padding-bottom:6px; position:relative;}
-.ct-compare-table-group .compare-table-price .price-wrap .price-number{font-size:60px; font-weight:bold; line-height:1; color:rgba(25,166,18,1.0);}
+.ct-compare-table-group .compare-table-price .price-wrap .price-number{font-size:60px; font-weight:bold; line-height:1; color:rgba(0, 0, 153,1.0);}
 .ct-compare-table-group .compare-table-price .price-wrap .sub-text{padding-top:2px; padding-bottom:2px; margin-bottom:5px; margin-left:-25px; display:block; position:absolute; left:100%; bottom:0; white-space:nowrap;}
 .ct-compare-table-group .compare-table-price .price-wrap .sub-text + .price-number { padding-right:35px;}
 .ct-compare-table-group .compare-table-price .price-wrap .currency { font-size:18px; color:rgba(38,38,38,1.0); font-weight:bold; position:absolute; top:0; right:100%; line-height:1; display:block; top:12px; margin-right:3px;}
-.ct-compare-table-group .compare-table-item[data-special="1"] .price-wrap .currency { color:rgba(25,166,18,1.0);}
-.ct-compare-table-group .compare-table-price .price-wrap .sub-price { font-size:18px; color:rgba(25,166,18,1.0); font-weight:bold; position:absolute; top:0; left:100%; line-height:1; display:block; top:12px; margin-left:-30px;}
+.ct-compare-table-group .compare-table-item[data-special="1"] .price-wrap .currency { color:rgba(0, 0, 153,1.0);}
+.ct-compare-table-group .compare-table-price .price-wrap .sub-price { font-size:18px; color:rgba(0, 0, 153,1.0); font-weight:bold; position:absolute; top:0; left:100%; line-height:1; display:block; top:12px; margin-left:-30px;}
 
 .ct-compare-table-group .compare-table-option {border-bottom:1px solid rgba(215,215,215,0.75); padding:5px 10px;}
 .ct-compare-table-group .compare-table-option:last-child {border:none; padding-top:0; padding-bottom:0; background-color:rgba(215,215,215,0.18);}
@@ -818,7 +818,7 @@ p + .dropcaps:not(.one-class) > span{margin-top:7px}
 .ct-compare-table-group .compare-table-option p:empty{ display:none; }
 
 .ct-compare-table-group .btn{margin:0; margin-top:30px;}
-.ct-compare-table-group .compare-table-option .btn:not(:hover){ background-color:rgba(25,166,18,1.0);}
+.ct-compare-table-group .compare-table-option .btn:not(:hover){ background-color:rgba(0, 0, 153,1.0);}
 .ct-compare-table-group .btn { margin-top:20px; margin-bottom:20px;}
 
 .special-compare { position:absolute; display:block; top:0; right:0; width:0px; height:0px; width:0px; height:0px; border:45px solid rgba(34,34,34,0); border-top-color:rgba(34,34,34,1.0); border-right-color:rgba(34,34,34,1.0);}

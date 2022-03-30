@@ -41,18 +41,21 @@
                                 .cactus-submit-video a {background-color:##D9251D !important; color:##FFFFFF !important;}
                                 .cactus-submit-video a:hover{background-color:##999999 !important; color:##FFFFFF !important;}
                                 </style>-->
-                            <a href="#" data-toggle="modal" data-target="#videopro_submit_for" class="btn btn-user-submit btn-default bt-style-1 padding-small " data-type="">        	
-                            <span>1</span>       
+                            <a href="#" data-toggle="modal" data-target="#videopro_submit_for" class="btn btn-user-submit btn-default bt-style-3  padding-small" style="background-color:blue;" title="supermarket & Produce orders">        	
+                            <span>{{auth()->user()->countAllOrders()}}</span>       
                             </a>
-                            <a href="#" data-toggle="modal" data-target="#videopro_submit_for" class="btn btn-user-submit btn-default bt-style-1 padding-small " data-type="">        	
-                            <span>2</span>       
+                            <a href="#" data-toggle="modal" data-target="#videopro_submit_for" class="btn btn-user-submit btn-default bt-style-2 padding-small " title="Accomodation & Property Subscribers">        	
+                            <span>{{auth()->user()->getTodayRegisteredUsers()}}</span>       
                             </a>
-                            <a href="#" data-toggle="modal" data-target="#videopro_submit_for" class="btn btn-user-submit btn-default bt-style-1 padding-small " data-type="">        	
-                            <span>3</span>       
+                            <a href="#" data-toggle="modal" data-target="#videopro_submit_for" class="btn btn-user-submit btn-default bt-style-3 padding-small " title="Produce Subscribers">        	
+                            <span>{{ auth()->user()->getTodayRegisteredProduceUsers()}}</span>       
                             </a>
                         </div>
                         <div class="cactus-main-menu cactus-user-login navigation-font">
                             <ul>
+                                <li>
+                                <a href="/dashboard">{{auth()->user()->name}}</a>
+                                </li>
                                 <li>
                                     <a href="/logout"><i class="fas fa-user"></i>&nbsp;Logout</a>
                                     {{--

@@ -75,7 +75,7 @@
                                                                                         @php
                                                                                         $total_amount = \DB::table('unitprices')->where('unitprices.user_id',$info->user_id)
                                                                                         ->whereDate('unitprices.created_at' , '=',\Carbon\Carbon::today())
-                                                                                        ->whereTime('unitprices.created_at' , '<',\Carbon\Carbon::now()->subHours(1))
+                                                                                        ->whereTime('unitprices.created_at' , '>',\Carbon\Carbon::now()->subHours(1))
                                                                                         ->sum('total');
                                                                                         @endphp
                                                                                         <li><strong>UGX:{{ number_format($total_amount)}}</strong></li>

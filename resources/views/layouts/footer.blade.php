@@ -8,13 +8,13 @@
                   <div class="widget-inner">
                      <h2 class="widget-title h4">JJOOME</h2>
                      <div class="textwidget">
-                        JJOOME is the top WordPress solution for websites with video focus.Separated they live in Bo okmarks grove right at the coast of the semantics a large language ocean which is great. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. You will be happy with this WordPerss theme crafted by CactusThemes. VideoPro will provide you with the best solutions for video website.
+                        JJOOME is the top Online site for searching for your affordable and pocket friendly accomodation,property.We also deal with shopping online for both shop items and Agriculture produce based on your choice.Not to leave other people out of the site we have also provided your with chance of getting your desired agriculture Equipments.<br> <span style="color:#fff;"><em>We thank you for being our estimeed customers</span></em>
                         <br/><br/>
                         <ul class='nav navbar-nav navbar-right social-listing list-inline social-accounts'>
                            <li class="facebook"><a target='_blank' href="https://www.facebook.com/Jjoome-accomodationproperty-shopping-online-100470529257806/" title='Facebook'><i class="fab fa-facebook"></i></a></li>
                            <li class="youtube"><a target='_blank' href="https://www.youtube.com/channel/UCxemJjh0Ym2fCTcRvIr86ww" title='YouTube'><i class="fab fa-youtube"></i></a></li>
                            <li class="twitter"><a target='_blank' href="https://twitter.com/JoomeProperty" title='Twitter'><i class="fab fa-twitter"></i></a></li>
-                           <li class="" style="color:white; background-color:#ffffff;"><a target='_blank' href="#" title='0775401793'><i class="fab fa-whatsapp-square"></i></a></li>
+                           <li class="twitch"><a target='_blank' href="#" title='0775401793'><i class="fab fa-whatsapp-square"></i></a></li>
                            <li class="rss"><a href="callto:+256753926367" title='+256753926367'><i class="fas fa-phone"></i></a></li>
                            {{--<li class="twitch"><a target='_blank' href="#" title='Twitch'><i class="fab fa-twitch"></i></a></li>--}}
                         </ul>
@@ -161,7 +161,7 @@
                      <div class="widget_top_channel_content">
                         <div class="post-metadata sp-style">
                            @php
-                              $items=\DB::table('supermarkets')->latest()->limit(5)->get();
+                              $items=\DB::table('supermarkets')->latest()->limit(4)->get();
                            @endphp
                            @foreach($items as $item)
                            <div class="channel-subscribe">

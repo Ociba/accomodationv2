@@ -61,7 +61,7 @@
 <script type='text/javascript' src="{{ asset('wp-content/plugins/easy-tab/tab.js')}}"></script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js')}}"></script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js')}}"></script>
-<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?hl=en-US'></script>
+{{--<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?hl=en-US'></script>--}}
 <script type='text/javascript' src="{{ asset('wp-content/plugins/theme-my-login/modules/themed-profiles/themed-profiles.js')}}"></script>
 {{--<script type='text/javascript' src="{{ asset('wp-content/themes/videopro/js/ajax.js')}}"></script>--}}
 <link rel='https://api.w.org/' href='wp-json/' />
@@ -78,10 +78,10 @@
     <style>.woocommerce-product-gallery{ opacity: 1 !important; }</style>
 </noscript>
 <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
-<link rel="icon" href="{{ asset('wp-content/uploads/2016/05/cropped-VideoProFavicon-32x32.png')}}" sizes="32x32" />
-<link rel="icon" href="{{ asset('wp-content/uploads/2016/05/cropped-VideoProFavicon-192x192.png')}}" sizes="192x192" />
+{{--<link rel="icon" href="{{ asset('wp-content/uploads/2016/05/cropped-VideoProFavicon-32x32.png')}}" sizes="32x32" />
 <link rel="apple-touch-icon-precomposed" href="{{ asset('wp-content/uploads/2016/05/cropped-VideoProFavicon-180x180.png')}}" />
 <meta name="msapplication-TileImage" content="{{ asset('wp-content/uploads/2016/05/cropped-VideoProFavicon-270x270.png')}}" />
+--}}
 <style type="text/css" id="wp-custom-css">
     .fa-connectdevelop:before {
     font-family: Font Awesome\ 5 Brands;

@@ -42,18 +42,21 @@
                                                                                         </div>
                                                                                         --}}
                                                                                         <div class="compare-table-option">
-                                                                                            <p>5GB Storage</p>
+                                                                                            <p>Today Users : {{auth()->user()->countTodayAccomodationUser()}}</p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>4GB Memory</p>
+                                                                                            <p>Total Users : {{auth()->user()->countAccomodation()}}</p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>1,000GB Bandwidth</p>
+                                                                                            <p>Available: {{auth()->user()->countAvailableAccomodation()}}</p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>Forum Support</p>
+                                                                                            <p>Taken: {{auth()->user()->countTakenAccomodation()}}</p>
                                                                                         </div>
-                                                                                        <div class="compare-table-option"><a href="#" title="BUY THIS THEME" id="ct_custom_8731469785580"  class="btn btn-default bt-style-1">BUY THIS THEME</a>
+                                                                                        <div class="compare-table-option">
+                                                                                            <p>Amount: <strong><b>sh. {{ number_format(auth()->user()->sumAccomodationPayment())}}</b></strong></p>
+                                                                                        </div>
+                                                                                        <div class="compare-table-option"><a href="/property/" title="View Available Accomodation and Property" id="ct_custom_8731469785580"  class="btn btn-default bt-style-1">View</a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -67,18 +70,18 @@
                                                                                         </div>
                                                                                         --}}
                                                                                         <div class="compare-table-option">
-                                                                                            <p>20GB Storage</p>
+                                                                                            <p>Total Stock: {{ number_format(auth()->user()->countInitialStock())}}</p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>8GB Memory</p>
+                                                                                            <p>Out Of Stock: </p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>10,000GB Bandwidth</p>
+                                                                                            <p>Current Stock: </p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>24/7 Support</p>
+                                                                                            <p>Amount Collected: </p>
                                                                                         </div>
-                                                                                        <div class="compare-table-option"><a href="#" title="BUY THIS THEME" id="ct_custom_1191469785710"  class="btn btn-default bt-style-1">BUY THIS THEME</a>
+                                                                                        <div class="compare-table-option"><a href="/supermarket/supermarket-items" title="BUY THIS THEME" id="ct_custom_1191469785710"  class="btn btn-default bt-style-1">BUY THIS THEME</a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>

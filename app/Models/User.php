@@ -9,6 +9,8 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
+use Carbon\Carbon;
+use DB;
 
 class User extends Authenticatable
 {
@@ -67,5 +69,60 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
-
+    /**
+     * This function counts supermarket clients requests
+     * its should be less than 3 hours from the time it was sent
+     */
+    public function countAllOrders(){
+        return DB::table('orders')->whereDate('created_at' , '=',Carbon::today())
+        ->whereTime('created_at' , '>',Carbon::now()->subHours(3))->distinct('user_id')->count();
+    } 
+    /**
+     * This function counts for clients who have subscribed to advertise their houses and property today
+     */
+    public function getTodayRegisteredUsers(){
+        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type','accomodation')->count();
+    }
+    /**
+     * This function counts for clients who have subscribed to advertise their produce today
+     */
+    public function getTodayRegisteredProduceUsers(){
+        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type','produce')->count();
+    }
+    /**
+     * This function count accomodation users registered today
+     */
+    public function countTodayAccomodationUser(){
+        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type','accomodation')->count();
+    }
+    /**
+     * This function counts user registered for accomodation and property
+     */
+    public function countAccomodation(){
+        return DB::table('users')->where('type','accomodation')->count();
+    }
+    /**
+     * This function counts the accomodation and property available
+     */
+    public function countAvailableAccomodation(){
+        return DB::table('properties')->where('status','pending')->count();
+    }
+    /**
+     * This function counts the accomodation and property taken
+     */
+    public function countTakenAccomodation(){
+        return DB::table('properties')->where('status','taken')->count();
+    }
+     /**
+     * This function gets amount for user registered for accomodation and property
+     */
+    public function sumAccomodationPayment(){
+        return DB::table('users')->where('type','accomodation')->sum('amount');
+    }
+    /**
+     * This function count initial stock
+     */
+    public function countInitialStock(){
+        return DB::table('supermarkets')->sum('number');
+    }
 }

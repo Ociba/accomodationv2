@@ -9,7 +9,7 @@
         <svg class="ct-icon-star-two">
             <use xmlns:xlink="#" xlink:href="#ct-icon-star-two"></use>
         </svg>
-        <span>Services</span>
+        <span>SERVICES</span>
     </div>
     <!--btn open-->
     <div class="cactus-buy-button">
