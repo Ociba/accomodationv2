@@ -73,40 +73,37 @@
                                                                                             <p>Total Stock: {{ number_format(auth()->user()->countInitialStock())}}</p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>Out Of Stock: </p>
+                                                                                            <p>Stock Sold: {{ number_format( auth()->user()->countStockSold())}}</p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>Current Stock: </p>
+                                                                                            <p>Current Stock: {{ number_format( auth()->user()->countCurrentStock())}}</p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>Amount Collected: </p>
+                                                                                            <p><strong><b>Amount Collected: sh. {{ number_format( auth()->user()->totalAmountCollected())}}</strong></b></p>
                                                                                         </div>
-                                                                                        <div class="compare-table-option"><a href="/supermarket/supermarket-items" title="BUY THIS THEME" id="ct_custom_1191469785710"  class="btn btn-default bt-style-1">BUY THIS THEME</a>
+                                                                                        <div class="compare-table-option"><a href="/supermarket/supermarket-items" title="supermarket" id="ct_custom_1191469785710"  class="btn btn-default bt-style-1">View</a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div  class="compare-table-item col-md-3 " data-special="0">
                                                                                     <div class="compare-table-content">
                                                                                         <div class="compare-table-title h5">PRODUCE</div>
-                                                                                        {{--
-                                                                                        <div class="compare-table-price">
-                                                                                            <div class="price-wrap"><span class="currency">$</span><span class="sub-price">99</span><span class="sub-text">/month</span><span class="price-number">49.99</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        --}}
                                                                                         <div class="compare-table-option">
-                                                                                            <p>100GB Storage</p>
+                                                                                            <p>Today Users: {{ number_format( auth()->user()->countTodayRegisteredProduceUsers())}}</p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>8GB Memory</p>
+                                                                                            <p>Total Users: {{ number_format( auth()->user()->countProduce())}}</p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>Unlimited Bandwidth</p>
+                                                                                            <p>Available: {{ number_format( auth()->user()->countAvailableProduce())}}</p>
                                                                                         </div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>24/7 Support</p>
+                                                                                            <p>Taken :{{ number_format( auth()->user()->countTakenProduce())}}</p>
                                                                                         </div>
-                                                                                        <div class="compare-table-option"><a href="#" title="BUY THIS THEME" id="ct_custom_1191469785710"  class="btn btn-default bt-style-1">BUY THIS THEME</a>
+                                                                                        <div class="compare-table-option">
+                                                                                        <p><strong><b>Amount Collected: sh. {{ number_format( auth()->user()->sumProducePayment())}}</strong></b></p>
+                                                                                        </div>
+                                                                                        <div class="compare-table-option"><a href="/poultry/" title="view" id="ct_custom_1191469785710"  class="btn btn-default bt-style-1">View</a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -120,72 +117,11 @@
                                                                     <div class="vc_column-inner ">
                                                                         <div class="wpb_wrapper">
                                                                             <div id="v_comparetable_8519" class="ct-compare-table-group ">
-                                                                                <div  class="compare-table-item col-md-3 " data-special="0">
+                                                                                <div  class="compare-table-item col-sm-12 " data-special="0">
                                                                                     <div class="compare-table-content">
-                                                                                        <div class="compare-table-title h5">EQUIPMENTS</div>
-                                                                                        {{--
-                                                                                        <div class="compare-table-price">
-                                                                                            <div class="price-wrap"><span class="price-number">FREE</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        --}}
+                                                                                        <div class="compare-table-title h5">Total Income</div>
                                                                                         <div class="compare-table-option">
-                                                                                            <p>5GB Storage</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option">
-                                                                                            <p>4GB Memory</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option">
-                                                                                            <p>1,000GB Bandwidth</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option">
-                                                                                            <p>Forum Support</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option"><a href="#" title="BUY THIS THEME" id="ct_custom_8731469785580"  class="btn btn-default bt-style-1">BUY THIS THEME</a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div  class="compare-table-item col-md-3 " data-special="1">
-                                                                                    <div class="compare-table-content">
-                                                                                        <div class="compare-table-title h5">USERS</div>
-                                                                                        <div class="compare-table-option">
-                                                                                            <p>20GB Storage</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option">
-                                                                                            <p>8GB Memory</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option">
-                                                                                            <p>10,000GB Bandwidth</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option">
-                                                                                            <p>24/7 Support</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option"><a href="#" title="BUY THIS THEME" id="ct_custom_1191469785710"  class="btn btn-default bt-style-1">BUY THIS THEME</a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div  class="compare-table-item col-md-3 " data-special="0">
-                                                                                    <div class="compare-table-content">
-                                                                                        <div class="compare-table-title h5">INCOME</div>
-                                                                                        {{--
-                                                                                        <div class="compare-table-price">
-                                                                                            <div class="price-wrap"><span class="currency">$</span><span class="sub-price">99</span><span class="sub-text">/month</span><span class="price-number">49.99</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        --}}
-                                                                                        <div class="compare-table-option">
-                                                                                            <p>100GB Storage</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option">
-                                                                                            <p>8GB Memory</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option">
-                                                                                            <p>Unlimited Bandwidth</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option">
-                                                                                            <p>24/7 Support</p>
-                                                                                        </div>
-                                                                                        <div class="compare-table-option"><a href="#" title="BUY THIS THEME" id="ct_custom_1191469785710"  class="btn btn-default bt-style-1">BUY THIS THEME</a>
+                                                                                            <p>Income: sh. {{ number_format(auth()->user()->totalIncome())}}</p>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>

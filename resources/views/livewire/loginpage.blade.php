@@ -35,7 +35,7 @@
     {{--<li><a href="/register-now" rel="nofollow">Register</a></li>--}}
 <li>
      @if (Route::has('password.request'))
-	<a href="{{ route('password.request') }}" rel="nofollow">Lost Password</a>
+	<a href="{{ route('forget.password.get') }}" rel="nofollow">Lost Password</a>
 	 @endif
 </li>
 </ul>

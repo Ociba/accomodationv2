@@ -125,4 +125,72 @@ class User extends Authenticatable
     public function countInitialStock(){
         return DB::table('supermarkets')->sum('number');
     }
+    /**
+     * This function counts the supermarket items sold
+     */
+    public function countStockSold(){
+        return DB::table('orders')->where('status','delivered')->sum('quantity');
+    }
+
+    /**
+     * This function counts current supermarket stock
+     */
+    public function countCurrentStock(){
+        $delivered_items =\DB::table('orders')->where('status','delivered')->sum('quantity');
+        $original_number =\DB::table('supermarkets')->sum('number');
+        $stock=$original_number-$delivered_items;
+        return $stock;
+    }
+    /**
+     * This function gets total amount of supermarket and equipments sold
+     */
+    public function totalAmountCollected(){
+        return DB::table('unitprices')->sum('total');
+    }
+     
+    /**
+     * This function counts for clients who have subscribed to advertise their produce today
+     */
+    public function countTodayRegisteredProduceUsers(){
+        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type','produce')->count();
+    }
+    /**
+     * This function counts user registered for accomodation and property
+     */
+    public function countProduce(){
+        return DB::table('users')->where('type','produce')->count();
+    }
+    /**
+     * This function counts the accomodation and property available
+     */
+    public function countAvailableProduce(){
+        return DB::table('produces')->where('status','available')->sum('quantity');
+    }
+    /**
+     * This function counts the accomodation and property taken
+     */
+    public function countTakenProduce(){
+        return DB::table('produces')->where('status','sold')->sum('quantity');
+    }
+     /**
+     * This function gets amount for user registered for accomodation and property
+     */
+    public function sumProducePayment(){
+        return DB::table('users')->where('type','produce')->sum('amount');
+    }
+    /**
+     * This function counts equipment instock
+     */
+    public function countEquipmentStock(){
+        return DB::table('equipment')->where('status','active')->sum('quantity');
+    }
+    /**
+     * Total amount
+     */
+    public function totalIncome(){
+        $accomo_payments = DB::table('users')->where('type','accomodation')->sum('amount');
+        $produce_payment =DB::table('users')->where('type','produce')->sum('amount');
+        $unit_amount =DB::table('unitprices')->sum('total');
+       return $accomo_payments +  $produce_payment + $unit_amount;
+    }
 }

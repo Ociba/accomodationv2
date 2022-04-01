@@ -7,7 +7,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AccountsController;
+use App\Http\Controllers\ForgotPasswordController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,5 +47,7 @@ Route::get('update', [CartController::class, 'updateCart'])->name('cart.update')
 Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
 
 
-Route::post('reset_password_without_token', 'AccountsController@validatePasswordRequest');
-Route::post('reset_password_with_token', 'AccountsController@resetPassword');
+Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
+Route::post('forget-password', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post'); 
+Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
+Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
