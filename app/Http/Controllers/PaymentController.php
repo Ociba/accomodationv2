@@ -21,7 +21,7 @@ class PaymentController extends Controller
           'amount'        =>request()->amount,
           'payment_date' =>$days_from_now
         ));
-        return redirect()->back()->with('msg','Operation successful');
+        return redirect('/property/my-property')->with('msg','Operation successful');
     }
       /**
      * This function pays with mtn mobile money
@@ -34,6 +34,6 @@ class PaymentController extends Controller
           'amount' =>request()->amount,
           'payment_date' =>$days_from_now
         ));
-        return redirect()->back()->with('msg','Operation successful');
+        return redirect('/property/my-property')->with('msg','Operation successful');
     }
 }

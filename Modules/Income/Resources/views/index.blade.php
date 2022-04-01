@@ -11,7 +11,12 @@
         <a name="top" style="height:0; position:absolute; top:0;" id="top"></a>
         <div id="body-wrap"  class="cactus-box  ">
             <div id="wrap">
+                 @if(auth()->user()->amount == null || auth()->user()->payment_date == 'payment_date')
+                @include('layouts.admin-menu2')
+                @else
                 @include('layouts.admin-menu')
+                @endif
+
                 <!--body content-->
                 <div id="cactus-body-container">
                     <div class="cactus-sidebar-control   ">
