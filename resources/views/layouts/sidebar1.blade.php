@@ -412,7 +412,7 @@
                 <h2 class="widget-title h4"><a href="/agricultureequipments/">Agricultural Equipements</a></h2>
                 <div class="textwidget">
                     <img style="height:200px; width:250px;" src="{{asset('/produce/sprayer.jpeg')}}">
-                    <p><a href="/agricultureequipments/" title="BUY NOW" id="cactus-btn-232"  class="btn btn-default bt-style-1">BUY NOW</a></p>
+                    <p><a href="/agricultureequipments/" title="BUY NOW" id="cactus-btn-232"  class="btn btn-primary bt-style-2" style="text-align:center; padding:7px;">BUY NOW</a></p>
                 </div>
             </div>
         </aside>
