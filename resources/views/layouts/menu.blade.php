@@ -45,7 +45,7 @@
                                 <a href="/cart">Cart &nbsp; <i class="fas fa-shopping-cart"></i><span style="background-color:orange; border-radius: 10px; padding:3px;">{{ Cart::getTotalQuantity()}}</span></a>
                                 </li>
                                 <li>
-                                    <a href="/login-now"><i class="fas fa-user"></i>&nbsp;Login</a>
+                                    <a href="/login"><i class="fas fa-user"></i>&nbsp;Login</a>
                                     {{--<ul>
                                         <li><a href="/register-now">Register</a></li>
                                     </ul>--}}

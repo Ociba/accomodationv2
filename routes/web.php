@@ -27,7 +27,7 @@ Route::get('/save-client-information',[CheckoutController::Class,'validateSuperm
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
 // })->name('dashboard');
-Route::get('/login-now', function() { return view('login-page');});
+Route::get('/login-now', function() { return view('auth.login');});
 Route::get('/register-now', function() { return view('register-page');}); 
 Route::get('/checkout',[CartController::Class,'getCheckout'])->name('Checkout');
 Route::get('/place-order-now',[CartController::Class,'OrderList'])->name('Place Order');
