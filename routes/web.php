@@ -8,6 +8,7 @@ use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ForgotPasswordController;
+use App\Http\Controllers\SubscribersNotificationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,3 +52,7 @@ Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPassw
 Route::post('forget-password', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post'); 
 Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
 Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
+
+Route::get('/send', [SubscribersNotificationController::Class,'store']);
+
+Route::get('/post', [SubscribersNotificationController::Class,'postform']);

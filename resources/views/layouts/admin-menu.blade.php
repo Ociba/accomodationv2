@@ -93,8 +93,9 @@
                                     <a href="#"><i class="fa fa-users"></i> Users</a>
                                     <ul class="sub-menu dropdown-menu sub-menu-list level0">
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/users/">Registered Users</a></li>
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/subscribers/">Subscribers</a></li>
+                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/subscribers/">Subscribers</a></li> 
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/brokers/">Brokers</a></li>
+                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/post">Post</a></li>
                                     </ul>
                                 </li>
                                 <li id="mega-menu-item-773" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent level0 has-sub dropdown main-menu-item list-style">

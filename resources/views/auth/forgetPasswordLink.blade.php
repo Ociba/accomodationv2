@@ -29,10 +29,10 @@
                                                 <div class="single-page-content single-content">
                                                 <ol class="cactus-breadcrumb  navigation-font font-size-1 " itemscope itemtype="http://schema.org/BreadcrumbList">
                                                 <a itemprop="item" href="../index.html" rel="v:url" property="v:title"><span itemprop="name">Home</span></a><i class="fas fa-angle-right" aria-hidden="true"></i><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="current"><span itemprop="name">Log In</span><meta itemprop="position" content="2" /></li></ol><!-- .breadcrumbs -->
-                                                <h1 class="single-title entry-title">Send Email To Reset Password</h1>    
+                                                <h1 class="single-title entry-title">Reset Your Password</h1>    
                                                     <!--Single Page Content-->
                                                     <article id="post-1508" class="post-1508 page type-page status-publish cactus-single-content">
-                                                    <x-jet-validation-errors class="mb-4" />
+                                                    
 
                                                     <form action="{{ route('reset.password.post') }}" method="POST">
                                                             @csrf
@@ -43,7 +43,7 @@
                                                                 <div class="col-md-6">
                                                                     <input type="text" id="email_address" class="form-control" name="email" required autofocus>
                                                                     @if ($errors->has('email'))
-                                                                        <span class="text-danger">{{ $errors->first('email') }}</span>
+                                                                        <span style="color:red;">{{ $errors->first('email') }}</span>
                                                                     @endif
                                                                 </div>
                                                             </div>
