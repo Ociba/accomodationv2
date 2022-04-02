@@ -10,21 +10,21 @@ class DashboardController extends Controller
      * This function gets admin dashboard
      */
     protected function getDashboard(){
-        if(auth()->user()->type == 'admin'){
+        if(auth()->user()->type_id == '1'){
             return view('admin.dashboard');
-        }elseif(auth()->user()->type == 'broker'){
+        }elseif(auth()->user()->type_id == '2'){
             return redirect("/clients");
-        }elseif(auth()->user()->type == 'supermarket'){
+        }elseif(auth()->user()->type_id == '3'){
             return redirect('/place-order-now');
         }else{
-            if(auth()->user()->type == 'accomodation' && (auth()->user()->amount != null)){
+            if(auth()->user()->type_id == '4' && (auth()->user()->amount != null)){
                 return redirect('/property/my-property');
-            }elseif(auth()->user()->type == 'accomodation' && (auth()->user()->payment_date == 'payment_date')){
+            }elseif(auth()->user()->type_id == '4' && (auth()->user()->payment_date == 'payment_date')){
                 return redirect('/income/');
             }else{
-                if(auth()->user()->type == 'produce' && (auth()->user()->amount != null)){
+                if(auth()->user()->type_id == '5' && (auth()->user()->amount != null)){
                     return redirect('/produce/my-produce');
-                }elseif(auth()->user()->type == 'produce' && (auth()->user()->payment_date == 'payment_date')){
+                }elseif(auth()->user()->type_id == '5' && (auth()->user()->payment_date == 'payment_date')){
                     return redirect('/income/');
                 }else{
                     return redirect('/income/');

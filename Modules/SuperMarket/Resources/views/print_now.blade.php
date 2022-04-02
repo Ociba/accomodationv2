@@ -149,6 +149,9 @@
                                                             </div>
                                                         </div>
                                                         @endforeach
+                                                        <button class="print-link" onclick="jQuery.print()">
+                                                        Print page - jQuery.print()
+                                                        </button>
                                                 </div>
                                         </div>
                                     </div>
@@ -183,13 +186,41 @@
         <!--Menu moblie-->
         @include('layouts.javascript')
         @include('layouts.sidebar-modal')
-        <script>
-        // -------------------------------------------------------------------------
-        // Print on window load
-
-        $(function() {
-            window.print();
+        <script type="text/JavaScript" src="{{ asset('print.js')}}"></script>
+        <script type='text/javascript'>
+        //<![CDATA[
+        jQuery(function($) { 'use strict';
+            try {
+                var original = document.getElementById('canvasExample');
+                original.getContext('2d').fillRect(20, 20, 120, 120);
+            } catch (err) {
+                console.warn(err)
+            }
+            $("#ele2").find('.print-link').on('click', function() {
+                //Print ele2 with default options
+                $.print("#ele2");
             });
+            $("#ele4").find('button').on('click', function() {
+                //Print ele4 with custom options
+                $("#ele4").print({
+                    //Use Global styles
+                    globalStyles : false,
+                    //Add link with attrbute media=print
+                    mediaPrint : false,
+                    //Print in a hidden iframe
+                    iframe : false,
+                    //Don't print this
+                    noPrintSelector : ".avoid-this",
+                    //Add this at top
+                    prepend : "Hello World!!!<br/>",
+                    //Add this on bottom
+                    append : "<span><br/>Buh Bye!</span>",
+                    //Log to console when printing is done via a deffered callback
+                    deferred: $.Deferred().done(function() { console.log('Printing done', arguments); })
+                });
+            });
+        });
+        //]]>
         </script>
     </body>
 </html>

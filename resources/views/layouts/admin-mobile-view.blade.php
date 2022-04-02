@@ -16,6 +16,7 @@
                         <li id="nav-menu-item-2219" class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-post"><a href="/subscribers/" class="menu-link  sub-menu-link">Subscribers </a></li>
                         <li id="nav-menu-item-2311" class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-post"><a href="/brokers/" class="menu-link  sub-menu-link">Brokers </a></li>
                         <li id="nav-menu-item-2312" class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-post"><a href="/post" class="menu-link  sub-menu-link">Post </a></li>
+                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/users-types">Account Settings</a></li>
                     </ul>
                 </li>
                 <li id="nav-menu-item-1446" class="main-menu-item menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent dropdown">

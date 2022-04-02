@@ -24,7 +24,7 @@ class AuthenticationController extends Controller
         $user_obj->name               = request()->name;
         $user_obj->address            = request()->address;
         $user_obj->contact            = request()->contact;
-        $user_obj->type               ="accomodation";
+        $user_obj->type_id            = "4";
        $user_obj->profile_photo_path =$user_photo_original_name;
         $user_obj->password    = Hash::make(request()->password);
         $user_obj->save();
@@ -65,7 +65,7 @@ class AuthenticationController extends Controller
         $user_obj->name               = request()->name;
         $user_obj->address            = request()->address;
         $user_obj->contact            = request()->contact;
-        $user_obj->type               ="produce";
+        $user_obj->type_id            ="5";
        $user_obj->profile_photo_path =$user_photo_original_name;
         $user_obj->password    = Hash::make(request()->password);
         $user_obj->save();

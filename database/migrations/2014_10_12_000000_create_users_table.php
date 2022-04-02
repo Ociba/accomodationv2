@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('type');
+            $table->foreignId('type_id');
             $table->string('contact')->nullable();
             $table->string('amount')->nullable();
             $table->string('payment_date')->nullable();

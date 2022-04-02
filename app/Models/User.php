@@ -28,7 +28,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'type',
+        'type_id',
         'password',
         'amount',
         'payment_date',
@@ -81,25 +81,25 @@ class User extends Authenticatable
      * This function counts for clients who have subscribed to advertise their houses and property today
      */
     public function getTodayRegisteredUsers(){
-        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type','accomodation')->count();
+        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type_id','4')->count();
     }
     /**
      * This function counts for clients who have subscribed to advertise their produce today
      */
     public function getTodayRegisteredProduceUsers(){
-        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type','produce')->count();
+        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type_id','5')->count();
     }
     /**
      * This function count accomodation users registered today
      */
     public function countTodayAccomodationUser(){
-        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type','accomodation')->count();
+        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type_id','4')->count();
     }
     /**
      * This function counts user registered for accomodation and property
      */
     public function countAccomodation(){
-        return DB::table('users')->where('type','accomodation')->count();
+        return DB::table('users')->where('type_id','4')->count();
     }
     /**
      * This function counts the accomodation and property available
@@ -117,7 +117,7 @@ class User extends Authenticatable
      * This function gets amount for user registered for accomodation and property
      */
     public function sumAccomodationPayment(){
-        return DB::table('users')->where('type','accomodation')->sum('amount');
+        return DB::table('users')->where('type_id','4')->sum('amount');
     }
     /**
      * This function count initial stock
@@ -152,13 +152,13 @@ class User extends Authenticatable
      * This function counts for clients who have subscribed to advertise their produce today
      */
     public function countTodayRegisteredProduceUsers(){
-        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type','produce')->count();
+        return DB::table('users')->whereDate('created_at' , '=',Carbon::today())->where('type_id','5')->count();
     }
     /**
      * This function counts user registered for accomodation and property
      */
     public function countProduce(){
-        return DB::table('users')->where('type','produce')->count();
+        return DB::table('users')->where('type_id','5')->count();
     }
     /**
      * This function counts the accomodation and property available
@@ -176,7 +176,7 @@ class User extends Authenticatable
      * This function gets amount for user registered for accomodation and property
      */
     public function sumProducePayment(){
-        return DB::table('users')->where('type','produce')->sum('amount');
+        return DB::table('users')->where('type_id','5')->sum('amount');
     }
     /**
      * This function counts equipment instock
@@ -188,8 +188,8 @@ class User extends Authenticatable
      * Total amount
      */
     public function totalIncome(){
-        $accomo_payments = DB::table('users')->where('type','accomodation')->sum('amount');
-        $produce_payment =DB::table('users')->where('type','produce')->sum('amount');
+        $accomo_payments = DB::table('users')->where('type_id','4')->sum('amount');
+        $produce_payment =DB::table('users')->where('type_id','5')->sum('amount');
         $unit_amount =DB::table('unitprices')->sum('total');
        return $accomo_payments +  $produce_payment + $unit_amount;
     }
