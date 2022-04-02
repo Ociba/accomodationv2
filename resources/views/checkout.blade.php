@@ -38,6 +38,11 @@
                                                     <!--Single Page Content-->
                                                     <article id="post-1508" class="post-1508 page type-page status-publish cactus-single-content">
                                                       @include('layouts.messages')
+                                                        @if ($message = Session::get('success'))
+                                                            <div class="p-4 mb-3 bg-green-400 rounded">
+                                                                <p class="text-green-800">{{ $message }}</p>
+                                                            </div>
+                                                        @endif
                                                        @livewire('checkout')
                                                        <div class="vc_row wpb_row vc_row-fluid">
                                                                 <div class="wpb_column vc_column_container vc_col-sm-12">

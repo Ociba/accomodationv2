@@ -26,7 +26,7 @@ class CheckoutController extends Controller
         $user_obj->town               =request()->town;
         $user_obj->password    = Hash::make(request()->password);
         $user_obj->save();
-        return redirect('/login-now')->with('msg','You have successfully created Your Account');
+        return redirect('/login')->with('msg','You have successfully created Your Account');
     }
     /**
      * This function validates user created

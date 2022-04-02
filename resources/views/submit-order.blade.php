@@ -39,6 +39,11 @@
                                                     <article id="post-1508" class="post-1508 page type-page status-publish cactus-single-content">
                                                     <div class="vc_row wpb_row vc_row-fluid vc_custom_1469088724328 vc_row-has-fill">
                                                             <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill">
+                                                            @if ($message = Session::get('success'))
+                                                                <div class="p-4 mb-3 bg-green-400 rounded">
+                                                                    <p class="text-green-800">{{ $message }}</p>
+                                                                </div>
+                                                            @endif
                                                                 <div class="vc_column-inner vc_custom_1469092997733"><div class="wpb_wrapper">
                                                             <div class="wpb_text_column wpb_content_element  vc_custom_1469094242775" >
                                                                 <div class="wpb_wrapper" style="overflow-x:auto;">

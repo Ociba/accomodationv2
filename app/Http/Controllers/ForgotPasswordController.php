@@ -41,7 +41,7 @@ class ForgotPasswordController extends Controller
             $message->subject('Reset Password');
         });
 
-        return back()->with('message', 'We have e-mailed your password reset link!');
+        return back()->with('msg', 'We have e-mailed your password reset link!');
     }
     /**
      * Write code on Method
@@ -81,6 +81,6 @@ class ForgotPasswordController extends Controller
 
         DB::table('password_resets')->where(['email'=> $request->email])->delete();
 
-        return redirect('/login')->with('message', 'Your password has been changed!');
+        return redirect('/login')->with('msg', 'Your password has been changed!');
     }
 }

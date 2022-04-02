@@ -28,7 +28,7 @@ class AuthenticationController extends Controller
        $user_obj->profile_photo_path =$user_photo_original_name;
         $user_obj->password    = Hash::make(request()->password);
         $user_obj->save();
-        return Redirect('/login-now')->with('msg','You have successfully created Account');
+        return Redirect('/login')->with('msg','You have successfully created Account');
     }
     //This function validates accomodation user  registerProduceUser
     protected function registerAccomodationUser(){
@@ -69,7 +69,7 @@ class AuthenticationController extends Controller
        $user_obj->profile_photo_path =$user_photo_original_name;
         $user_obj->password    = Hash::make(request()->password);
         $user_obj->save();
-        return Redirect('/login-now')->with('msg','You have successfully created Account');
+        return Redirect('/login')->with('msg','You have successfully created Account');
     }
      //This function validates accomodation user  
      protected function registerProduceUser(){
