@@ -11,6 +11,7 @@ use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
 use Carbon\Carbon;
 use DB;
+use Auth;
 
 class User extends Authenticatable
 {
@@ -192,5 +193,19 @@ class User extends Authenticatable
         $produce_payment =DB::table('users')->where('type_id','5')->sum('amount');
         $unit_amount =DB::table('unitprices')->sum('total');
        return $accomo_payments +  $produce_payment + $unit_amount;
+    }
+      /** 
+     * This function gets Role permissions
+    */
+    public function Permisions(){
+        $empty_permissions_array = [];
+        $permissions_array = DB::table('type_permissions')
+        ->join('permissions','permissions.id','type_permissions.permission_id')
+        ->where('type_id',Auth::user()->type_id)
+        ->select('permissions.permission')->get();
+        foreach(json_decode($permissions_array,true) as $permissions){
+                array_push($empty_permissions_array,$permissions["permission"]);
+        }
+        return $empty_permissions_array;
     }
 }

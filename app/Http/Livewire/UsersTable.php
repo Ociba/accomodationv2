@@ -12,7 +12,7 @@ class UsersTable extends Component
     public $searchTerm;
     public $per_page="10";
 
-    public $name,$email,$contact,$type;
+    public $name,$email,$contact;
 
     //using the bootstrap pagination theme
     protected $paginationTheme = 'tailwind'; 
@@ -26,10 +26,9 @@ class UsersTable extends Component
     {
         $searchTerm = '%'.$this->searchTerm.'%';
         return view('livewire.users-table',[
-            'users' =>User::where('name','like',$searchTerm)
-            ->orwhere('type','like',$searchTerm)
+            'users' =>User::join('types','types.id','users.type_id')->where('name','like',$searchTerm)
             ->orderBy('created_at','Desc')
-            ->Paginate($this->per_page,['users.*'])
+            ->Paginate($this->per_page,['users.*','types.type'])
         ]);
     }
 }

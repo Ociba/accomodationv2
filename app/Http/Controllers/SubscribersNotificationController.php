@@ -28,7 +28,7 @@ class SubscribersNotificationController extends Controller
             Notification::route('mail' , $subscriber->email) //Sending mail to subscriber
                           ->notify(new NewPostNotify($new_post)); //With new post
  
-        return redirect()->back();
+        return redirect()->back()->with('msg',"The notification has been created successfully");
       }
     }
 }

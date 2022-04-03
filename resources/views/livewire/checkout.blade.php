@@ -2,7 +2,7 @@
     <div class="body-content">
         <!--Content-->
         @include('layouts.messages')
-        <p class="message">Create Account Or <a href="/login-now" style="color:blue; font-weight:bold;">Already have an Account Login</a></p>
+        <p class="message">Create Account Or <a href="/login" style="color:blue; font-weight:bold;">Already have an Account Login</a></p>
         <form name="registerform" id="registerform" action="/save-client-information" method="get">
             @csrf         
             <div class="vc_row wpb_row vc_row-fluid vc_custom_1469089899584 vc_row-has-fill">

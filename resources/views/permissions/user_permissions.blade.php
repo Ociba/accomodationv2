@@ -45,24 +45,10 @@
                                                             @include('layouts.messages')
                                                             <div class="vc_row wpb_row vc_row-fluid vc_custom_1469088724328 vc_row-has-fill">
                                                             <div class="wpb_text_column wpb_content_element  vc_custom_1469094242775" >
-                                                               @foreach($get_users_type as $user)
-                                                                <div class="vc_row wpb_row vc_row-fluid vc_custom_1469089899584 vc_row-has-fill">
-                                                                    <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
-                                                                        <div class="vc_column-inner vc_custom_1469089852378">
-                                                                            <div class="wpb_wrapper">
-                                                                                
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
-                                                                        <div class="vc_column-inner vc_custom_1469089860166">
-                                                                        <span style="color:blue; font-weight:bold;">{{$user->type}}</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
-                                                                        <div class="vc_column-inner vc_custom_1469089860166">
-                                                                        </div>
-                                                                    </div>
+                                                            
+                                                                @foreach($get_users_type as $user)
+                                                                <div class="row text-center">
+                                                                <span  style="color:blue; text-transform: uppercase; font-weight:bold;">{{$user->type}}</span>
                                                                 </div>
                                                                 @endforeach
                                                                 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill">
@@ -70,30 +56,50 @@
                                                                         <div class="wpb_wrapper">
                                                                         <div class="wpb_text_column wpb_content_element  vc_custom_1469094242775" >  
                                                                                 <div class="wpb_wrapper" style="overflow-x:auto;">
+                                                                                <form action="/assign-permission/{{request()->route()->type_id}}" method="get">
+                                                                                   @csrf
+                                                                                   <input type="hidden" class="form-check-input"  name="type_id" value="{{request()->route()->type_id}}" >
                                                                                     <table class="table">
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <th>No</th>
-                                                                                                <th>Permissions</th>
+                                                                                                <th>Select Permissions</th>
                                                                                             </tr>
                                                                                                 @foreach($get_permissions as $i=>$permissions)
                                                                                             <tr>
-                                                                                                @php
+                                                                                                {{--@php
                                                                                                 if( $get_permissions->currentPage() == 1){
                                                                                                 $i = $i+1;
                                                                                                 }else{
                                                                                                 $i = ($i+1) + 10*($get_permissions->currentPage()-1);
                                                                                                 }
-                                                                                                @endphp
-                                                                                                <td>{{$i}}</td>
-                                                                                                <td>{{$permissions->permission}}</td>
+                                                                                                @endphp--}}
+                                                                                                @if ($get_permissions->currentPage() > 1)
+                                                                                                @php($i =  1 + (($get_permissions->currentPage() - 1) * $get_permissions->perPage()))
+                                                                                                @else
+                                                                                                @php($i = 1)
+                                                                                                @endif
+                                                                                                <td> 
+                                                                                                    <div class="form-check mr-sm-2">
+                                                                                                        <input type="checkbox" class="form-check-input checkbox"  name="user_permisions[]" value="{{$permissions->id}}" > {{$permissions->permission}}
+                                                                                                        <label class="form-check-label" for="checkbox1"></label>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                {{--<td>{{$permissions->permission}}</td>--}}
                                                                                             </tr>
                                                                                             @endforeach
                                                                                         </tbody>
                                                                                     </table>
-                                                                                </div>
-                                                                                <div class="row mb-1">
-                                                                                   {{--{{ $get_permissions->links()}}--}}
+                                                                                    <div class="row mb-1">
+                                                                                    @if(isset($search_query))
+                                                                                    {{ $get_permissions->appends(['name' => $search_query])->links() }}
+                                                                                    @else
+                                                                                    {{ $get_permissions->links() }}
+                                                                                    @endif
+                                                                                    </div>
+                                                                                    <div class="row text-center">
+                                                                                    <button type="submit" value="Save" class="wpcf7-form-control wpcf7-submit btn-primary" style="padding:7px;">Submit</button>
+                                                                                    </div>
+                                                                                    </form>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -136,5 +142,6 @@
         @include('layouts.javascript')
         @include('layouts.sidebar-modal')
         @livewireScripts
+       
     </body>
 </html>

@@ -75,20 +75,20 @@
                                                                                     <table class="table">
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <th>No</th>
+                                                                                                {{--<th>No</th>--}}
                                                                                                 <th>Permissions</th>
                                                                                                 <th>Click To Proceed</th>
                                                                                             </tr>
                                                                                                 @foreach($get_permission_for_selected_type as $i=>$user)
                                                                                             <tr>
-                                                                                                @php
+                                                                                                {{--@php
                                                                                                 if( $get_permission_for_selected_type->currentPage() == 1){
                                                                                                 $i = $i+1;
                                                                                                 }else{
                                                                                                 $i = ($i+1) + 10*($get_permission_for_selected_type->currentPage()-1);
                                                                                                 }
                                                                                                 @endphp
-                                                                                                <td>{{$i}}</td>
+                                                                                                <td>{{$i}}</td>--}}
                                                                                                 <td>{{$user->permission}}</td>
                                                                                                 <td>
                                                                                                     <a href="/unassign-permission/{{$user->type_id}}"  class="btn btn-primary p-2">Remove Permission</a>

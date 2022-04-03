@@ -56,3 +56,25 @@
 <script type='text/javascript' src="{{ asset('wp-includes/js/wp-embed.min.js')}}"></script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js')}}"></script>
 {{--<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&amp;render=explicit'></script>--}}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#select_all').on('click',function(){
+            if(this.checked){
+                $('.checkbox').each(function(){
+                    this.checked = true;
+                });
+            }else{
+                $('.checkbox').each(function(){
+                    this.checked = false;
+                });
+            }
+        });
+        $('.checkbox').on('click',function(){
+            if($('.checkbox:checked').length == $('.checkbox').length){
+                $('#select_all').prop('checked',true);
+            }else{
+                $('#select_all').prop('checked',false);
+            }
+        });
+    });
+</script>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\TypePermission;
 use App\Models\Permission;
 use App\Models\User;
+use Auth;
 
 class PermissionsController extends Controller
 {
@@ -33,5 +34,36 @@ class PermissionsController extends Controller
     $get_users_type =User::join('types','types.id','users.type_id')->where('users.type_id',$type_id)->limit(1)->get(['types.type','users.type_id']);
     $get_permissions =Permission::simplePaginate(10);
     return view('permissions.user_permissions',compact('get_users_type','get_permissions'));
+  }
+  /**
+   * This function saves selected permissions for type
+   */
+  public function assignPermissions($type_id, Request $request){
+    if(empty($request->user_permisions)){
+        return redirect()->back()->withErrors("No updates were made, you didn't select any permision");
+    }
+    $permissions = $request->user_permisions;
+        foreach($permissions as $permission){
+            if(TypePermission::where('type_id',$type_id)->where('permission_id',$permission)->exists()){
+                continue;
+            }
+            else{
+              TypePermission::create(array(
+                    'type_id'       => $type_id,
+                    'permission_id' => $permission,
+                    'user_id'       => Auth::user()->id
+                ));
+            }
+        }
+    return redirect()->back()->with('msg',"Operation Successfully");
+}
+/**
+ * This function  removes permission fron type
+ */
+  public function unsignPermission($id){
+    TypePermission::join('roles','permission_roles.role_id','roles.id')
+    ->join('permissions','permission_roles.permission_id','permissions.id')
+    ->where('permission_roles.id',$id)->delete();
+    return redirect()->back()->with('message','Permission has been unsigned successfully');
   }
 }
