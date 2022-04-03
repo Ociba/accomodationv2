@@ -89,9 +89,10 @@
                                                                                                 }
                                                                                                 @endphp
                                                                                                 <td>{{$i}}</td>--}}
+                                                                                                <td hidden>{{$user->id}}
                                                                                                 <td>{{$user->permission}}</td>
                                                                                                 <td>
-                                                                                                    <a href="/unassign-permission/{{$user->type_id}}"  class="btn btn-primary p-2">Remove Permission</a>
+                                                                                                    <a href="/unassign-permission/{{$user->id}}"  class="btn btn-primary p-2">Remove Permission</a>
                                                                                                 </td>
                                                                                             </tr>
                                                                                             @endforeach

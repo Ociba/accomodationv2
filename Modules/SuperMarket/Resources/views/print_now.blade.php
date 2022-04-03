@@ -12,7 +12,7 @@
         <a name="top" style="height:0; position:absolute; top:0;" id="top"></a>
         <div id="body-wrap"  class="cactus-box  ">
             <div id="wrap">
-                @include('layouts.admin-menu')
+                {{--@include('layouts.admin-menu')--}}
                 <!--body content-->
                 <div id="cactus-body-container">
                     <div class="cactus-sidebar-control   ">
@@ -27,7 +27,7 @@
                                                 <div class="single-page-content single-content">
                                                     <!--Single Page Content-->
                                                     <article id="post-1148" class="post-1148 page type-page status-publish cactus-single-content">
-                                                        <div class="body-content">
+                                                        <div class="body-content" id="print">
                                                             @foreach($print_orders_info as $info)
                                                             <div class="vc_row wpb_row vc_row-fluid vc_custom_1469090485921 vc_row-has-fill">
                                                                 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill">
@@ -149,9 +149,11 @@
                                                             </div>
                                                         </div>
                                                         @endforeach
-                                                        <button class="print-link" onclick="jQuery.print()">
-                                                        Print page - jQuery.print()
+                                                        <div class="row text-center">
+                                                        <button class="print-lin" onclick="jQuery.print()">
+                                                        Printed By {{auth()->user()->name}}
                                                         </button>
+                                                        </div>
                                                 </div>
                                         </div>
                                     </div>
@@ -177,32 +179,22 @@
         <!--body content-->
         <div class="main-bottom-sidebar-wrap"></div>
         <!--footer-->
-        @include('layouts.admin-footer')
+        {{--@include('layouts.admin-footer')--}}
         <!--footer-->
         </div>
         <!--Menu moblie-->
         <div class="canvas-ovelay"></div>
-        @include('layouts.admin-mobile-view')
+        {{--@include('layouts.admin-mobile-view')--}}
         <!--Menu moblie-->
         @include('layouts.javascript')
-        @include('layouts.sidebar-modal')
+        {{--@include('layouts.sidebar-modal')--}}
         <script type="text/JavaScript" src="{{ asset('print.js')}}"></script>
         <script type='text/javascript'>
         //<![CDATA[
         jQuery(function($) { 'use strict';
-            try {
-                var original = document.getElementById('canvasExample');
-                original.getContext('2d').fillRect(20, 20, 120, 120);
-            } catch (err) {
-                console.warn(err)
-            }
-            $("#ele2").find('.print-link').on('click', function() {
-                //Print ele2 with default options
-                $.print("#ele2");
-            });
-            $("#ele4").find('button').on('click', function() {
+            $("#ele3").find('button').on('click', function() {
                 //Print ele4 with custom options
-                $("#ele4").print({
+                $("#ele3").print({
                     //Use Global styles
                     globalStyles : false,
                     //Add link with attrbute media=print

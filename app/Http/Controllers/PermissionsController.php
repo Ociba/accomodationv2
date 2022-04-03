@@ -24,7 +24,7 @@ class PermissionsController extends Controller
 
      $get_permission_for_selected_type =TypePermission::join('permissions','permissions.id','type_permissions.permission_id')
      ->where('type_permissions.type_id',$type_id)
-     ->get(['permissions.permission']);
+     ->get(['permissions.permission','type_permissions.id']);
      return view('permissions.user_type_permissions',compact('get_permission_for_selected_type','get_users_type'));
   }
   /**
@@ -60,10 +60,9 @@ class PermissionsController extends Controller
 /**
  * This function  removes permission fron type
  */
-  public function unsignPermission($id){
-    TypePermission::join('roles','permission_roles.role_id','roles.id')
-    ->join('permissions','permission_roles.permission_id','permissions.id')
-    ->where('permission_roles.id',$id)->delete();
-    return redirect()->back()->with('message','Permission has been unsigned successfully');
+  public function unsignPermission($type_id){
+    TypePermission::join('permissions','permissions.id','type_permissions.permission_id')
+    ->where('type_permissions.id',$type_id)->delete();
+    return redirect()->back()->with('msg','Permission has been unsigned successfully');
   }
 }

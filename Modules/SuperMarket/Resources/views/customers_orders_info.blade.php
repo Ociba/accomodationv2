@@ -65,7 +65,7 @@
                                                                             <form action="/supermarket/mark-as-seen/{{$orders->id}}" action="get">
                                                                                 <input type="hidden" name="user_id" value="{{$orders->user_id}}">
                                                                                 <input type="hidden" name="total" class="form-control" required>
-                                                                                <button type="submit" class="btn btn-info btn-sm"><i class="feather icon-file"></i>&nbsp;Mark Seen </button>
+                                                                                <button type="submit" class="btn btn-info btn-sm"title="Mark As Seen To Get Unit Price"><i class="feather icon-file"></i>&nbsp;Mark Seen</button>
                                                                             </form>
                                                                             </td>
                                                                         </tr>

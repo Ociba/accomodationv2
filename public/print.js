@@ -95,7 +95,7 @@
                             frameWindow.print();
                         }
                         // focus body as it is losing focus in iPad and content not getting printed
-                        $('body').focus();
+                        $('article').focus();
                     } catch (e) {
                         frameWindow.print();
                     }
@@ -119,7 +119,7 @@
         if (iframeCount === 0) {
             // Create a new iFrame if none is given
             $iframe = $('<iframe height="0" width="0" border="0" wmode="Opaque"/>')
-                .prependTo('body')
+                .prependTo('article')
                 .css({
                     "position": "absolute",
                     "top": -999,

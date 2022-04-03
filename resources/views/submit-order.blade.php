@@ -34,7 +34,7 @@
                                                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="current">
                                                 <span itemprop="name">{{request()->route()->getName()}}</span><meta itemprop="position" content="2" /></li></ol>
                                                 <!-- .breadcrumbs -->
-                                                
+                                                    @include('layouts.messages')
                                                     <!--Single Page Content-->  
                                                     <article id="post-1508" class="post-1508 page type-page status-publish cactus-single-content">
                                                     <div class="vc_row wpb_row vc_row-fluid vc_custom_1469088724328 vc_row-has-fill">
@@ -96,7 +96,7 @@
                                                             <div class="wpb_column vc_column_container vc_col-sm-2 vc_col-has-fill">
                                                                 <div class="vc_column-inner vc_custom_1469089860166">
                                                                     <div class="wpb_wrapper">
-                                                                        <span title="Your Amount" id="cactus-btn-493"  class="btn btn-defaul bt-style-1"><strong>Ugx: {{ Cart::getTotal() + 4000 }}</strong></span>
+                                                                        <span title="Your Amount" id="cactus-btn-493"  class="btn btn-defaul bt-style-1"><strong>Ugx: {{ number_format(Cart::getTotal() + 4000) }}</strong></span>
                                                                     </div>
                                                                 </div>
                                                             </div>

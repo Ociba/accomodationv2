@@ -57,7 +57,8 @@ Route::get('/send', [SubscribersNotificationController::Class,'store']);
 Route::get('/post', [SubscribersNotificationController::Class,'postform']); 
 Route::get('/users-types',[PermissionsController::Class,'getUsersTypes']); 
 Route::get('/assign-or-remove-permission/{type_id}',[PermissionsController::Class,'selectUsertypePermissions']);
-Route::get('/add-permission/{type_id}',[PermissionsController::Class,'getPermissions']);
+Route::get('/add-permission/{type_id}',[PermissionsController::Class,'getPermissions']);  
 Route::get('/assign-permission/{type_id}',[PermissionsController::Class,'assignPermissions']);
+Route::get('/unassign-permission/{type_id}',[PermissionsController::Class,'unsignPermission']);
 });
 

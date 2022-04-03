@@ -68,6 +68,6 @@ class CheckoutController extends Controller
                 'price'        =>$item->price,
             ]);
         }
-    return redirect()->back()->with('msg', 'You have successfully created property');
+    return redirect()->back()->with('msg', 'You have successfully submitted Your Order,Our deleivery Person will call you soon');
     }
 }
