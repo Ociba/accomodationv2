@@ -4,10 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
-use App\Notifications\NewPostNotify;
-use Illuminate\Support\Facades\Notification;
 use App\Models\Subscriber;
-use Illuminate\Notifications\Notifiable;
+use Notification;
+use App\Notifications\MyFirstNotification;
 
 class SubscribersNotificationController extends Controller
 {
@@ -22,13 +21,19 @@ class SubscribersNotificationController extends Controller
        $new_post->body  =request()->body;
        $new_post->save();
  
-        $subscribers = Subscriber::all(); //Retrieving all subscribers
+        $subscribers = \DB::table('subscribers')->first(); //Retrieving all subscribers
  
-        foreach($subscribers as $subscriber){
-            Notification::route('mail' , $subscriber->email) //Sending mail to subscriber
-                          ->notify(new NewPostNotify($new_post)); //With new post
+        $details = [
+            'greeting' => 'Hi Artisan',
+            'body' => 'This is my first notification from ItSolutionStuff.com',
+            'thanks' => 'Thank you for using ItSolutionStuff.com tuto!',
+            'actionText' => 'View My Site',
+            'actionURL' => url('send'),
+            //'order_id' => 101
+        ];
+  
+        Notification::send([$subscribers], new MyFirstNotification($details));
  
         return redirect()->back()->with('msg',"The notification has been created successfully");
-      }
     }
 }

@@ -53,7 +53,7 @@ Route::get('/place-order-now',[CartController::Class,'OrderList'])->name('Place 
 Route::get('/logout',[AuthenticationController::Class, 'logoutUser']);
 Route::get('/pay-with-mtn',[PaymentController::Class,'payWithMtn']);
 Route::get('/pay-with-airtel',[PaymentController::Class,'payWithAirtel']);
-Route::get('/send', [SubscribersNotificationController::Class,'store']);
+Route::get('send', [SubscribersNotificationController::Class,'store']);
 Route::get('/post', [SubscribersNotificationController::Class,'postform']); 
 Route::get('/users-types',[PermissionsController::Class,'getUsersTypes']); 
 Route::get('/assign-or-remove-permission/{type_id}',[PermissionsController::Class,'selectUsertypePermissions']);
