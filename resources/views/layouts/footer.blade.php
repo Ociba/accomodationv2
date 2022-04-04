@@ -201,9 +201,9 @@
                <div class="menu-footer-menu-container ">
                   <ul id="menu-footer-menu" class="menu" style="color:#ffffff;">
                      <li id="menu-item-782" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-782"><a href="/" style="color:#ffffff;">Home</a></li>
-                     <li id="menu-item-783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-783"><a href="#" style="color:#ffffff;"><img style="width:20px; height:20px; color:#ffffff;" src="{{ asset('produce/call2.png')}}"> 0753-652367</a></li>
-                     <li id="menu-item-784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-784"><a href="#" style="color:#ffffff;"><img style="width:20px; height:20px;" src="{{ asset('produce/wa1.png')}}"> 0775-401793</a></li>
-                     <li id="menu-item-785" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-785"><a href="#" style="color:#ffffff;"><i class="fa fa-envelope"></i> ocibajames@gmail.com</a></li>
+                     <li id="menu-item-783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-783"><a href="tel:+256753652367" style="color:#ffffff;"><img style="width:20px; height:20px; color:#ffffff;" src="{{ asset('produce/call2.png')}}"> 0753-652367</a></li>
+                     <li id="menu-item-784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-784"><a href="tel:+256775401793" style="color:#ffffff;"><img style="width:20px; height:20px;" src="{{ asset('produce/wa1.png')}}"> 0775-401793</a></li>
+                     <li id="menu-item-785" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-785"><a href="mailto:ocibajames@gmail.com" style="color:#ffffff;"><i class="fa fa-envelope"></i> ocibajames@gmail.com</a></li>
                   </ul>
                </div>
             </div>
