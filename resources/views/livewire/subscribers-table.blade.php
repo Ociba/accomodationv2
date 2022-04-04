@@ -68,7 +68,7 @@
                                         }
                                         @endphp
                                         <td>{{$i}}</td>
-                                        <td>{{$subscribed->subscriber_email}}</td>
+                                        <td>{{$subscribed->email}}</td>
                                         <td>{{$subscribed->created_at}}</td>
                                         <td>
                                             <a href="/subscribers/delete-email/{{$subscribed->id}}"  class="btn btn-danger">Delete</a>

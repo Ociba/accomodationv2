@@ -25,7 +25,7 @@ class SubscribersController extends Controller
     public function createSubscriber()
     {
         $subscriber_object =new Subscriber;
-        $subscriber_object->subscriber_email =request()->subscriber_email;
+        $subscriber_object->email =request()->email;
         $subscriber_object->save();
         return redirect()->back();
     }

@@ -20,6 +20,7 @@ class MyFirstNotification extends Notification
     public function __construct($details)
     {
         $this->details = $details;
+        
     }
    
     /**
@@ -43,6 +44,7 @@ class MyFirstNotification extends Notification
     {
         return (new MailMessage)
                     ->greeting($this->details['greeting'])
+                    ->line($this->details['title'])
                     ->line($this->details['body'])
                     ->action($this->details['actionText'], $this->details['actionURL'])
                     ->line($this->details['thanks']);

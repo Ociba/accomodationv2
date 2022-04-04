@@ -188,7 +188,7 @@ img:nth-child(5) {
                         {{--@include('layouts.messages')--}}
                         <form action="/subscribers/send-email" method="get" class="wpcf7-form">
                             <p><span class="wpcf7-form-control-wrap email-719">
-                                <input type="email" name="subscriber_email" value="" size="40" class="" required placeholder="Your Email" />
+                                <input type="email" name="email" value="" size="40" class="" required placeholder="Your Email" />
                                 </span>
                             </p>
                             <p><button type="submit" value="SUBSCRIBE" class="btn btn-primary" style="background-color:orange;">Subscribe Now</button>

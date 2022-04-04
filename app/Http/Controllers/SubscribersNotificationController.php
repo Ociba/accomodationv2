@@ -24,15 +24,14 @@ class SubscribersNotificationController extends Controller
         $subscribers = \DB::table('subscribers')->get('email'); //Retrieving all subscribers
  
         $details = [
-            'greeting' => 'Hi Artisan',
-            'body' => 'This is my first notification from ItSolutionStuff.com',
-            'thanks' => 'Thank you for using ItSolutionStuff.com tuto!',
-            'actionText' => 'View My Site',
-            'actionURL' => url('send'),
-            //'order_id' => 101
+            'greeting' => 'Hi, Subscriber!',
+            'title'    =>'Testing Notification',
+            'body' => 'There is a new post , hope you will like it',
+            'thanks' => 'Thank you for using joome Accomodation,Property produce and supermarket Platform!',
+            'actionText' => 'View Our Platform',
+            'actionURL' => url('https://jjoome.goproug.com/'),
         ];
   
-        //Notification::send([$subscribers], new MyFirstNotification($details));
         Notification::route('mail', $subscribers)->notify(new MyFirstNotification($details));
  
         return redirect()->back()->with('msg',"The notification has been created successfully");
