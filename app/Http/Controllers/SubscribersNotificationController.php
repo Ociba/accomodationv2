@@ -21,7 +21,7 @@ class SubscribersNotificationController extends Controller
        $new_post->body  =request()->body;
        $new_post->save();
  
-        $subscribers = \DB::table('subscribers')->first(); //Retrieving all subscribers
+        $subscribers = \DB::table('subscribers')->get('email'); //Retrieving all subscribers
  
         $details = [
             'greeting' => 'Hi Artisan',
@@ -32,7 +32,8 @@ class SubscribersNotificationController extends Controller
             //'order_id' => 101
         ];
   
-        Notification::send([$subscribers], new MyFirstNotification($details));
+        //Notification::send([$subscribers], new MyFirstNotification($details));
+        Notification::route('mail', $subscribers)->notify(new MyFirstNotification($details));
  
         return redirect()->back()->with('msg',"The notification has been created successfully");
     }
