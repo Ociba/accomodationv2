@@ -17,7 +17,7 @@ class CheckoutController extends Controller
         $user_obj = new User;
         $user_obj->email              = request()->email;
         $user_obj->name               = request()->name;
-        $user_obj->type               ="supermarket";
+        $user_obj->type_id            =3;
         $user_obj->contact            =request()->contact;
         $user_obj->address            =request()->address;
         $user_obj->division           =request()->division;

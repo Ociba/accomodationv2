@@ -51,14 +51,14 @@ Route::group(['middleware' => ['auth']], function () {
 Route::get('/dashboard',[DashboardController::Class,'getDashboard']);
 Route::get('/place-order-now',[CartController::Class,'OrderList'])->name('Place Order');
 Route::get('/logout',[AuthenticationController::Class, 'logoutUser']);
-Route::get('/pay-with-mtn',[PaymentController::Class,'payWithMtn']);
-Route::get('/pay-with-airtel',[PaymentController::Class,'payWithAirtel']);
+Route::get('/pay-subscription',[PaymentController::Class,'payWithMobileMoney']);
 Route::get('send', [SubscribersNotificationController::Class,'store']);
 Route::get('/post', [SubscribersNotificationController::Class,'postform']); 
 Route::get('/users-types',[PermissionsController::Class,'getUsersTypes']); 
 Route::get('/assign-or-remove-permission/{type_id}',[PermissionsController::Class,'selectUsertypePermissions']);
 Route::get('/add-permission/{type_id}',[PermissionsController::Class,'getPermissions']);  
-Route::get('/assign-permission/{type_id}',[PermissionsController::Class,'assignPermissions']);
+Route::get('/assign-permission/{type_id}',[PermissionsController::Class,'assignPermissions']);  
 Route::get('/unassign-permission/{type_id}',[PermissionsController::Class,'unsignPermission']);
+Route::get('/make-payments',[PaymentController::Class,'makeDeposit']);
 });
 

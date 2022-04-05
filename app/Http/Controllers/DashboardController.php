@@ -17,9 +17,9 @@ class DashboardController extends Controller
         }elseif(auth()->user()->type_id == '3'){
             return redirect('/place-order-now');
         }else{
-            if(auth()->user()->type_id == '4' && (auth()->user()->amount != null)){
+            if(auth()->user()->type_id == '4' && (auth()->user()->payment_status = 'successful')){
                 return redirect('/property/my-property');
-            }elseif(auth()->user()->type_id == '4' && (auth()->user()->payment_date == 'payment_date')){
+            }elseif(auth()->user()->type_id == '4' && (auth()->user()->payment_date == 'payment_date') || (auth()->user()->payment_status == 'pending')){
                 return redirect('/income/');
             }else{
                 if(auth()->user()->type_id == '5' && (auth()->user()->amount != null)){

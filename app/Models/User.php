@@ -39,6 +39,7 @@ class User extends Authenticatable
         'street',
         'plot_number',
         'town',
+        'payment_status',
     ];
 
     /**
