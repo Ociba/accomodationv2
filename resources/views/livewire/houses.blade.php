@@ -116,7 +116,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <div class="cactus-note font-size-1"><i class="fas fa-thumbs-up"></i><span>2</span></div>
+                                        <div class="cactus-note font-size-1"><span>jjoome</span></div>
                                         <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
                                     </div>
                                 </div>

@@ -63,13 +63,29 @@ class PaymentController extends Controller
             //print_r('Curl error: ' . curl_error($crl));
             $result_noti = 0; die();
         } else {
-            \Log::info("wait");
+           // \Log::info("wait");
+           if(json_decode($result,true)["code"] == 0){
+            $payment_message = json_decode($result,true)["message"];
+            'payment_status' == 'pending';
+            return $this->updatePaymentStatus($user_id);
+        }else{
+            $payment_message = json_decode($result,true)["message"];
+            'payment_status' == 'failed';
+            return $this->updatePaymentStatus($user_id);
+        }
             $result_noti = 1; die();
         }
         // Close cURL session handle
         curl_close($crl);
-        //call the method to update the transaction status
-        // return $this->updateTransactionStatus($package_id, $transaction_id, $transaction_message, $transaction_memo); 
+    }
+
+     /**
+     * This function updates the payments status and id in the users table once a paymennt is successful
+     */
+    private function updatePaymentStatus($user_id){
+        User::where('id',$user_id)->update(array(
+            'payment_status'  => request()->payment_status
+        ));
     }
 
 }

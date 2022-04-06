@@ -11,7 +11,7 @@
         <a name="top" style="height:0; position:absolute; top:0;" id="top"></a>
         <div id="body-wrap"  class="cactus-box  ">
             <div id="wrap">
-                 @if(auth()->user()->payment_status == 'pending' || auth()->user()->payment_date == 'payment_date')
+                 @if(auth()->user()->payment_status != 'pending' || auth()->user()->payment_date == 'payment_date')
                 @include('layouts.admin-menu2')
                 @else
                 @include('layouts.admin-menu')

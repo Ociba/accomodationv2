@@ -25,7 +25,7 @@
                     </div>
                     <div class="channel-picture">
                         <a href="#">
-                        <img src="{{ asset('wp-content/uploads/apart.png')}}" width="110" height="110" alt="videopro" class="avatar avatar-110 wp-user-avatar wp-user-avatar-110 alignnone photo" />                                       
+                        <img src="{{ asset('wp-content/uploads/house.png')}}" width="110" height="110" alt="videopro" class="avatar avatar-110 wp-user-avatar wp-user-avatar-110 alignnone photo" />                                       
                          </a>
                     </div>
                     <div class="channel-button " id="">
@@ -117,7 +117,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <div class="cactus-note font-size-1"><i class="fas fa-thumbs-up"></i><span>2</span></div>
+                                        <div class="cactus-note font-size-1"><span>jjoome</span></div>
                                         <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
                                     </div>
                                 </div>

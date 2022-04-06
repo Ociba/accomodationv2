@@ -52,7 +52,7 @@
                                                         </div>
                                                     </div>
                                                 </a>
-                                                <div class="cactus-note font-size-1"><i class="fa fa-thumbs-up"></i><span>{{$shoe->item}}</span></div>
+                                                <div class="cactus-note font-size-1"><span>{{$shoe->item}}</span></div>
                                                 <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
                                             </div>
                                         </div>

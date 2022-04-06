@@ -14,7 +14,7 @@ class AddPaymentStatusColumnsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->enum('payment_status',['pending','successful'])->default('pending')->after('payment_date');
+            $table->enum('payment_status',['pending','successful','failed'])->default('pending')->after('payment_date');
         });
     }
 

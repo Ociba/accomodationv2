@@ -176,8 +176,8 @@
                                                                                                                 style="padding-top:56.265356265356%;"												
                                                                                                                 />
                                                                                                             </a>
-                                                                                                            <div class="cactus-note font-size-1"><i class="fa fa-thumbs-up"></i><span>{{$items->item}}</span></div>
-                                                                                                            <div class="cactus-note ct-time font-size-1"><span></span></div>
+                                                                                                            <div class="cactus-note font-size-1"><span>{{$items->item}}</span></div>
+                                                                                                            <div class="cactus-note ct-time font-size-1"><span>jjoome</span></div>
                                                                                                             <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="191"><i class="fas fa-clock"></i></a>
                                                                                                         </div>
                                                                                                     </div>
@@ -256,7 +256,7 @@
                                                                                                                 style="padding-top:56.265356265356%;"												
                                                                                                                 />
                                                                                                             </a>
-                                                                                                            <div class="cactus-note font-size-1"><i class="fa fa-thumbs-up"></i><span>{{$equipment->equipment}}</span></div>
+                                                                                                            <div class="cactus-note font-size-1"><span>{{$equipment->equipment}}</span></div>
                                                                                                             <div class="cactus-note ct-time font-size-1"><span>jjoome</span></div>
                                                                                                             <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="191"><i class="fas fa-clock"></i></a>
                                                                                                         </div>

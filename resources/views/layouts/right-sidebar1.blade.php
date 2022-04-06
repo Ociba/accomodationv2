@@ -182,7 +182,7 @@ img:nth-child(5) {
             <div class="widget-inner">
                 <h2 class="widget-title h4"><i class="fas fa-envelope"></i> <span>Email Subscribe</span></h2>
                 <div class="textwidget">
-                    Want to be the first to know when new videos available? Subscribe to our weekly email newsletter. No spam!
+                    Want to be the first to know when new Products available? Subscribe to our weekly email newsletter. No spam!
                     <div role="form"  lang="en-US" dir="">
                         <div class="screen-reader-response"></div>
                         {{--@include('layouts.messages')--}}

@@ -5,10 +5,10 @@
                 <div class="cactus-listing-wrap cactus-contents-block style-1 is_border">
                     <div class="control-header">
                         <h2 class="block-title">Agriculture Products</h2>
-                        <div class="view-sortby metadata-font font-size-1 ct-gradient elms-right">
+                        {{--<div class="view-sortby metadata-font font-size-1 ct-gradient elms-right">
                             <span class="cur-item" data-filter="0" >Search</span>
                             <i class="fa fa-search"></i>
-                        </div>
+                        </div>--}}
                     </div>
                     <div class="block-wrap ajax-container active tab-active" data-filter="0" data-paged="1">
                         <div class="cactus-listing-config style-2">
@@ -37,12 +37,12 @@
                                                         </div>
                                                     </div>
                                                 </a>
-                                                <div class="cactus-note font-size-1"><i class="fa fa-thumbs-up"></i><span>2</span></div>
+                                                <div class="cactus-note font-size-1"><span>jjoome</span></div>
                                                 <a href="#" title="Watch Later" class="btn btn-default video-tb icon-only font-size-1 btn-watch-later" data-id="1570"><i class="fas fa-clock"></i></a>
                                             </div>
                                         </div>
                                         <!--picture-->
-                                        <div class="content">
+                                        <div class="content" style="text-align:center;">
                                             <!--Title (no title remove)-->
                                             <h3 class="cactus-post-title entry-title h4"> 
                                                 {{$production->produce_name}}  | {{$production->address}}   

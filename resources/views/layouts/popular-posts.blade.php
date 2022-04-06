@@ -30,8 +30,8 @@
                                                 <img width="277" style="height:156px"  src="{{ asset('produce_photos/'.$produce->image)}}"  data-sizes="(max-width: 277px) 100vw, 277px" class="lazyload effect-fade"" alt="vp-sp04"/>
                                                 <div class="ct-icon-video"></div>
                                             </a>
-                                            <div class="cactus-note font-size-1"><i class="fas fa-thumbs-up"></i><span>438.74K</span></div>
-                                            <div class="cactus-note ct-time font-size-1"><span>05:05</span></div>
+                                            <div class="cactus-note font-size-1"></i><span>jjoome</span></div>
+                                            {{--<div class="cactus-note ct-time font-size-1"><span>05:05</span></div>--}}
                                         </div>
                                     </div>
                                     <!--picture-->
