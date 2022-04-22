@@ -2,7 +2,23 @@
     <div class="body-content">
         <!--Content-->
         @include('layouts.messages')
-        <p class="message">Create Account Or <a href="/login" style="color:blue; font-weight:bold;">Already have an Account Login</a></p>
+        <div class="vc_row wpb_row vc_row-fluid vc_custom_1469089899584 vc_row-has-fill">
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_1469089852378">
+                        <div class="wpb_wrappe">
+                        <span class="message">Create Account Or <a href="/login" style="color:blue; font-weight:bold;">Already have an Account Login</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_1469089852378">
+                        <div class="wpb_wrappe">
+                        <span class="message"><a href="/profile-form" style="color:red; font-weight:bold;">Update Profile</a></span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+       
         <form name="registerform" id="registerform" action="/save-client-information" method="get">
             @csrf         
             <div class="vc_row wpb_row vc_row-fluid vc_custom_1469089899584 vc_row-has-fill">
@@ -30,11 +46,18 @@
                         </div>
                     </div>
                 </div>
+                @php
+                 $get_locations =\DB::table('locations')->select('id','location')->get();
+                @endphp
                 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
                     <div class="vc_column-inner vc_custom_1469089860166">
                         <div class="wpb_wrappe">
-                            <label for="address">Address <span style="color:red;">*</span></label>
-                            <input type="text" name="address" id="address" class="input" value="" size="50" />
+                            <label for="address">Choose Address <span style="color:red;">*</span></label>
+                             <select class="form-control" name="location_id" required>
+                             @foreach($get_locations as $locate)
+                             <option value="{{$locate->id}}">{{$locate->location}}</option>
+                             @endforeach
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -87,9 +110,9 @@
                     </div>
                 </div>
             </div>
-            <p class="tml-submit-wra">
-                <button type="submit" class="btn btn-primary">Submit</a>
-            </p>
+            <div>
+                <button type="submit" class="btn btn-primary mb-1" style="padding:5px;">Submit</a>
+            </div>
         </form>
     </div>
     <!--Content-->

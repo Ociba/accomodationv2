@@ -56,5 +56,6 @@
             <!--Menu moblie-->
         </div>
         @include('layouts.javascript')
+        @include('layouts.sidebar-modal')
     </body>
 </html>

@@ -175,10 +175,11 @@
                                     <a href="/agricultureequipments/"><i class="fa fa-play-circle-o"></i>Equipments</a>
                                 </li>
                                 <li id="mega-menu-item-1446" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent level0 has-sub dropdown main-menu-item list-style">
-                                    <a href="#"><i class="fa fa-play-circle-o"></i> Register</a>
+                                    <a href="#"><i class="fa fa-play-circle-o"></i> Register</a> 
                                     <ul class="sub-menu dropdown-menu sub-menu-list level0">
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/register-now">Accomodation | Property</a></li>
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/produce-registration/">Produce</a></li>
+                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="ajax-contact-form">Ajax</a></li>
                                     </ul>
                                 </li>
                             </ul>

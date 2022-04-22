@@ -17,7 +17,7 @@
                                         </div>
                                         <div style="text-align:left;">
                                         <label>Mobile Money Phone Number</label>
-                                        <input type="number" name="phone_number" placeholder="" required>
+                                        <input type="number" name="phone_number" placeholder="e.g 2567********" required>
                                         </div>
                                         <div class="row text-center">
                                         <button title="Make Payments"   class="btn btn-primary bt-style-2" style="background-color:#000066;">Pay Now</button>

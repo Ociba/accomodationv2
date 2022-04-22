@@ -44,20 +44,26 @@
                                                                     <p class="text-green-800">{{ $message }}</p>
                                                                 </div>
                                                             @endif
+                                                            @php
+                                                            $locations =\DB::table('users')->join('locations','locations.id','users.location_id')
+                                                            ->where('users.id',auth()->user()->id)->value('locations.location');
+                                                            @endphp
                                                                 <div class="vc_column-inner vc_custom_1469092997733"><div class="wpb_wrapper">
                                                             <div class="wpb_text_column wpb_content_element  vc_custom_1469094242775" >
                                                                 <div class="wpb_wrapper" style="overflow-x:auto;">
-                                                                <span style="color:blue;"><i class="fa fa-user"></i> {{auth()->user()->name}}</span>
+                                                                <span style="color:blue;"><i class="fa fa-user"></i> {{auth()->user()->name}} | {{auth()->user()->contact}} | {{$locations}}</span>
                                                                     <table class="table">
                                                         <tbody>
                                                         <tr>
                                                         <th>NAME</th>
+                                                        <th>Item</th>
                                                         <th>Quantity</th>
                                                         <th>Price</th>
                                                         </tr>
                                                         @foreach($cartItems as $item)
                                                         <tr>
                                                         <td>{{$item->name}}</td>
+                                                        <td><img src="/super_market_photos/{{ $item->attributes->image }}"></td>
                                                         <td>{{$item->quantity}}</td>
                                                         <td>{{ number_format($item->quantity *$item->price)}}</td>
                                                         </tr>
@@ -68,6 +74,10 @@
                                                                 </div>
                                                             </div>
                                                         </div></div></div></div><br><br>
+                                                        @php
+                                                            $transport_amount =\DB::table('users')->join('locations','locations.id','users.location_id')
+                                                            ->where('users.id',auth()->user()->id)->value('locations.transport_amount');
+                                                        @endphp
                                                         <div class="vc_row wpb_row vc_row-fluid vc_custom_1469089899584 vc_row-has-fill">
                                                             <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
                                                                 <div class="vc_column-inner vc_custom_1469089852378">
@@ -86,17 +96,20 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                                                            <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
                                                                 <div class="vc_column-inner vc_custom_1469089860166">
                                                                     <div class="wpb_wrapper">
                                                                         <a href="/logout" title="Logout Your Account    " id="cactus-btn-493"  class="btn btn-default bt-style-1">Logout</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="wpb_column vc_column_container vc_col-sm-2 vc_col-has-fill">
+                                                            
+                                                            <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
                                                                 <div class="vc_column-inner vc_custom_1469089860166">
                                                                     <div class="wpb_wrapper">
-                                                                        <span title="Your Amount" id="cactus-btn-493"  class="btn btn-defaul bt-style-1"><strong>Ugx: {{ number_format(Cart::getTotal() + 4000) }}</strong></span>
+                                                                    <span title="Your Amount" id="cactus-btn-493"  class="btn btn-defaul bt-style-1"><strong>Subtotal Ugx: {{ number_format(Cart::getTotal()) }}</strong></span><br>
+                                                                    <span title="Your Amount" id="cactus-btn-493"  class="btn btn-defaul bt-style-1"><strong>Transport Ugx: {{ number_format($transport_amount) }}</strong></span><br>
+                                                                        <span title="Your Amount" id="cactus-btn-493"  class="btn btn-defaul bt-style-1"><strong>Total Amount Ugx: {{ number_format(Cart::getTotal() + $transport_amount) }}</strong></span>
                                                                     </div>
                                                                 </div>
                                                             </div>

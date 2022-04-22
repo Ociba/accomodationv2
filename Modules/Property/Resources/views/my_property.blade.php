@@ -226,7 +226,7 @@
                                                                         <div class="wpb_wrapper">
                                                                             Price <span style="color:red">*</span>
                                                                             <span class="wpcf7-form-control-wrap your-email">
-                                                                            <input type="text" name="price" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                                                            <input type="number" name="price" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                                                             </span>
                                                                         </div>
                                                                     </div>

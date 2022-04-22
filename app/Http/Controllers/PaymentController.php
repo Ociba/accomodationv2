@@ -21,7 +21,7 @@ class PaymentController extends Controller
           'amount'        =>request()->amount,
           'payment_date' =>$days_from_now
         ));
-        return redirect('/property/my-property')->with('msg','Operation successful');
+        return redirect('/property/my-property')->with('msg','Operation successful,Wait pop up to Confirm Payment');
     }
     public function makeDeposit(){
         $transaction_id = rand(1000,1000000);
@@ -42,7 +42,7 @@ class PaymentController extends Controller
         curl_setopt($crl, CURLOPT_POSTFIELDS, $post_data);
         // Set HTTP Header for POST request 
         curl_setopt($crl, CURLOPT_HTTPHEADER, array(
-            'username:jaaja_school',
+            'username:jaajacollections',
             'password:'.$password,
             'Content-Type: application/json',
             // 'Content-Length: ' . strlen($payload))
@@ -55,24 +55,15 @@ class PaymentController extends Controller
           'amount'        =>request()->amount,
           'payment_date' =>$days_from_now,
         ));
-        return redirect('/property/my-property')->with('msg','Operation successful');
-
+        return redirect()->back()->with('msg','Operation successful,Wait pop up to Confirm Payment');
         // handle curl error
         if ($result === false) {
             // throw new Exception('Curl error: ' . curl_error($crl));
             //print_r('Curl error: ' . curl_error($crl));
             $result_noti = 0; die();
         } else {
-           // \Log::info("wait");
-           if(json_decode($result,true)["code"] == 0){
-            $payment_message = json_decode($result,true)["message"];
-            'payment_status' == 'pending';
-            return $this->updatePaymentStatus($user_id);
-        }else{
-            $payment_message = json_decode($result,true)["message"];
-            'payment_status' == 'failed';
-            return $this->updatePaymentStatus($user_id);
-        }
+            //\Log::info("wait");
+          
             $result_noti = 1; die();
         }
         // Close cURL session handle

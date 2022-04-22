@@ -36,5 +36,6 @@
     "SuperMarketItemCategory": true,
     "Produce": true,
     "Income": true,
-    "Shops": true
+    "Shops": true,
+    "Location": true
 }

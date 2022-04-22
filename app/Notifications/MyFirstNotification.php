@@ -43,6 +43,7 @@ class MyFirstNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
+                    ->subject('JJoome Online Selling & Buying')
                     ->greeting($this->details['greeting'])
                     ->line($this->details['title'])
                     ->line($this->details['body'])

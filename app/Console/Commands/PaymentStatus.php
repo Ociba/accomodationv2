@@ -64,7 +64,7 @@ class PaymentStatus extends Command
         curl_setopt($crl, CURLOPT_POSTFIELDS, $post_data);
         // Set HTTP Header for POST request 
         curl_setopt($crl, CURLOPT_HTTPHEADER, array(
-            'username:jaaja_school',
+            'username:jaajacollections',
             'password:'.$password,
             'Content-Type: application/json',
             // 'Content-Length: ' . strlen($payload))

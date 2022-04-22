@@ -33,11 +33,11 @@
                                                                 @csrf
                                                                 Old Price
                                                                 <span class="wpcf7-form-control-wrap your-email">
-                                                                    <input type="text" name="price"  value="{{ number_format($equipment->price)}}" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" readonly />
+                                                                    <input type="number" name="price"  value="{{ number_format($equipment->price)}}" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" readonly />
                                                                 </span>
                                                                 New Amount
                                                                 <span class="wpcf7-form-control-wrap your-email">
-                                                                    <input type="text" name="discount_amount"  size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
+                                                                    <input type="number" name="discount_amount"  size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required />
                                                                 </span>
                                                                 Discount Percentage
                                                                 <span class="wpcf7-form-control-wrap your-email">

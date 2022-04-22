@@ -8,6 +8,11 @@ use App\Models\Supermarket;
 use App\Models\Produce;
 use App\Models\Equipment;
 use App\Models\Cart;
+use App\Http\Requests;
+use Redirect;
+use View;
+use File;
+
 
 class HomeController extends Controller
 {
@@ -46,5 +51,23 @@ class HomeController extends Controller
 
         //return redirect()->route('cart.list');
         return redirect()->back();
+    }
+    public function saveData(Request $request)
+    {
+    $id          = $request->id; 
+    $name        = $request->name;
+    $price       = $request->price;
+    $quantity    = $request->quantity;
+    $image       = $request->image;
+    \Cart::add([
+    'id'   => $id,
+    'name'  => $name,
+    'price' => $price,
+    'quantity'     => $quantity,
+    'attributes' => array(
+        'image' => $request->image,
+    )
+    ]);
+    
     }
 }

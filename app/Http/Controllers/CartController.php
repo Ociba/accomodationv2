@@ -7,6 +7,7 @@ use App\Models\Supermarket;
 use App\Models\User;
 use App\Models\Cart;
 use App\Models\Equipment;
+use App\Models\Location;
 use Hash;
 
 class CartController extends Controller

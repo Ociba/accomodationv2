@@ -45,6 +45,12 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            @php
+                                                                $location =\DB::table('orders')->join('supermarkets','supermarkets.id','orders.item_id')
+                                                                ->join('users','users.id','orders.user_id')
+                                                                ->join('locations','locations.id','users.location_id')
+                                                                ->where('orders.user_id',$info->user_id)->value('locations.location');
+                                                            @endphp
                                                             <div class="vc_row wpb_row vc_row-fluid vc_custom_1469094858728 vc_row-has-fill">
                                                                 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
                                                                     <div class="vc_column-inner vc_custom_1469094319392">
@@ -55,7 +61,7 @@
                                                                                         <li><strong>Name:</strong> {{$info->name}}</li>
                                                                                         <li><strong class="font-weight-semibold">Date</strong>: {{date("jS F, Y", strtotime($info->created_at));}}</li>
                                                                                         <li><strong>Email:</strong> {{$info->email}}</li>
-                                                                                        <li><strong>Address:</strong> {{$info->address}}</li>
+                                                                                        <li><strong>Address:</strong> {{$location}}</li>
                                                                                         <li><strong>Street:</strong> {{$info->street}}</li>
                                                                                         <li><strong>Division:</strong> {{$info->division}}</li>
                                                                                     </ul>
@@ -131,6 +137,12 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                @php
+                                                                    $transport_amount =\DB::table('orders')->join('supermarkets','supermarkets.id','orders.item_id')
+                                                                    ->join('users','users.id','orders.user_id')
+                                                                    ->join('locations','locations.id','users.location_id')
+                                                                    ->where('orders.user_id',$info->user_id)->value('locations.transport_amount');
+                                                                @endphp
                                                                 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
                                                                     <div class="vc_column-inner vc_custom_1469094324635">
                                                                         <div class="wpb_wrapper">
@@ -138,8 +150,8 @@
                                                                                 <div class="wpb_wrapper">
                                                                                     <ul>
                                                                                         <li><strong>Subtotal: </strong>UGX:{{ number_format($total_amount)}}</li>
-                                                                                        <li><strong>Transport:</strong> UGX: 4,000</li>
-                                                                                        <li><strong>To Be Paid:</strong> UGX: {{ number_format($total_amount + 4000)}}</li>
+                                                                                        <li><strong>Transport:</strong> UGX:{{ number_format($transport_amount)}}</li>
+                                                                                        <li><strong>To Be Paid:</strong> UGX: {{ number_format($total_amount + $transport_amount)}}</li>
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
@@ -150,7 +162,7 @@
                                                         </div>
                                                         @endforeach
                                                         <div class="row text-center">
-                                                        <button class="print-lin" onclick="jQuery.print()">
+                                                        <button class="print-lin" title="click here to print" style="background-color:#f2f2f2; color:black;" onclick="jQuery.print()">
                                                         Printed By {{auth()->user()->name}}
                                                         </button>
                                                         </div>

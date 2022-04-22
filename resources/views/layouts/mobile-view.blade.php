@@ -113,7 +113,16 @@
                                 <li id="nav-menu-item-2505" class="sub-menu-item menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="/stem-tubers/" class="menu-link  sub-menu-link">Sugarcane </a></li>
                             </ul>
                         </li>
-                        <li id="nav-menu-item-2514" class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="/agriculture-equipments/" class="menu-link  sub-menu-link">Equipments </a></li>
+                    </ul>
+                </li>
+                <li id="nav-menu-item-2491" class="main-menu-item menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children parent dropdown">
+                    <a href="/agriculture-equipments/" class="menu-link dropdown-toggle disabled main-menu-link" data-toggle="dropdown"><i class="fa fa-arrow"></i> Equipments </a>
+                </li>
+                <li id="nav-menu-item-1446" class="main-menu-item menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent dropdown">
+                    <a href="#" class="menu-link dropdown-toggle disabled main-menu-link" data-toggle="dropdown"><i class="fa fa-user-circle-o"></i> Register </a>
+                    <ul class="dropdown-menu menu-depth-1">
+                        <li id="nav-menu-item-2218" class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-post"><a href="/register-now" class="menu-link  sub-menu-link">Accomodation | Property </a></li>
+                        <li id="nav-menu-item-2219" class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-post"><a href="/produce-registration/" class="menu-link  sub-menu-link">Produce </a></li>
                     </ul>
                 </li>
             </ul>

@@ -30,18 +30,20 @@
                                                         @include('layouts.messages')
                                                             <div role="form" class="" id="" lang="en-US">
                                                                 <div class="screen-reader-response"></div>
-                                                                <form action="/send" method="get" class="wpcf7-form" enctype="multipart/form-data">
+                                                                @foreach($update_notification as $post)
+                                                                <form action="/send/{{$post->id}}" method="get" class="wpcf7-form" enctype="multipart/form-data">
                                                                 @csrf
                                                                     <p>Title *<br />
-                                                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="title" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></span> 
+                                                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="title" value="{{$post->title}}"  size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></span> 
                                                                     </p>
                                                                     <p>Message *<br />
-                                                                        <span class="wpcf7-form-control-wrap your-name"><textarea type="text" name="body" size="40" maxLength="200" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></textarea></span> 
+                                                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="body" value="{{$post->body}}" size="40" maxLength="200" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required /></span> 
                                                                     </p>
                                                                     
                                                                     <p><button type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit btn-primary">Submit</button>
                                                                     <div class="wpcf7-response-output wpcf7-display-none"></div>
                                                                 </form>
+                                                                @endforeach
                                                             </div>
                                                         </div>
                                                 </div>

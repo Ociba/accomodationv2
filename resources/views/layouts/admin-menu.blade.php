@@ -109,11 +109,13 @@
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/brokers/">Brokers</a></li>
                                          @endif
                                          @if(in_array('Can view Post', auth()->user()->Permisions()))
-                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/post">Post</a></li>
+                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/get-post">Post</a></li>
                                          @endif
                                          @if(in_array('Can view Account Settings', auth()->user()->Permisions()))
                                         <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/users-types">Account Settings</a></li>
                                         @endif
+                                        <li class="menu-item level2  menu-item menu-item-type-post_type menu-item-object-post level1"><a href="/location/">Location</a></li>
+                                        
                                     </ul>
                                 </li>
                                 @endif

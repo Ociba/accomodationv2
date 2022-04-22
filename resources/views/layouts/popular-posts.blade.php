@@ -16,7 +16,8 @@
                         <div class="cactus-sub-wrap">
                             @php
                             //This statement gets all the produce available
-                                $all_produce =\DB::table('produces')->join('users','users.id','produces.created_by')->where('produces.status','available')
+                                $all_produce =\DB::table('produces')->join('users','users.id','produces.created_by')
+                                ->where('produces.status','available')
                                 ->get(['produces.*','users.address']);
                             @endphp
                             <!--item listing-->   

@@ -8,7 +8,6 @@
     </head>
     <body class="ct_channel-template-default single single-ct_channel postid-2188 group-blog enable-sticky-menu  behavior-down sidebar-both layout-fullwidth wpb-js-composer js-comp-ver-5.4.5 vc_responsive">
         <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=498927376861973&autoLogAppEvents=1"></script>
         <a name="top" style="height:0; position:absolute; top:0;" id="top"></a>
         <div id="body-wrap"  class=" ">
             <div id="wrap">

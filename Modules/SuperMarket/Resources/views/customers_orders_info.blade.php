@@ -58,7 +58,7 @@
                                                                             <td>{{$orders->quantity}}</td>
                                                                             <td>{{$orders->contact}}</td>
                                                                             <td>{{$orders->town}}</td>
-                                                                            <td>{{ $orders->address}}</td>
+                                                                            <td>{{ $orders->location}}</td>
                                                                             <td>{{ $orders->street}}</td>
                                                                             <td>{{ $orders->plot_number}}</td>
                                                                             <td>

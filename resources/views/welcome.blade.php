@@ -130,10 +130,6 @@
                                                                             <div class="cactus-listing-wrap cactus-contents-block style-1 is_border">
                                                                                 <div class="control-header">
                                                                                     <h2 class="block-title">Your Supermarket</h2>
-                                                                                    <div class="prev-next-slider elms-right">
-                                                                                        <a href="#" class="btn btn-default ct-gradient bt-action metadata-font font-size-1 icon-smart control-prev"><i class="fa fa-angle-left"></i></a>
-                                                                                        <a href="#" class="btn btn-default ct-gradient bt-action metadata-font font-size-1 icon-smart control-next"><i class="fa fa-angle-right"></i></a>
-                                                                                    </div>
                                                                                 </div>
                                                                                 <div class="block-wrap ajax-container active tab-active" data-filter="0" data-paged="1">
                                                                                     <div class="cactus-listing-config style-2">
@@ -175,8 +171,9 @@
                                                                                                         <div class="posted-on metadata-font text-center">
                                                                                                             <div class="cactus-info font-size-1">
                                                                                                             <span>
-                                                                                                            <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data">
+                                                                                                            <form action="/store" method="POST" enctype="multipart/form-data">
                                                                                                                 @csrf
+                                                                                                                <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                                                                                                 <input type="hidden" value="{{ $items->id }}" name="id">
                                                                                                                 <input type="hidden" value="{{ $items->item }}" name="name">
                                                                                                                 <input type="hidden" value="{{ $items->price }}" name="price">
@@ -184,6 +181,7 @@
                                                                                                                 <input type="hidden" value="1" name="quantity">
                                                                                                                 <div class="col-xs-12">
                                                                                                                     <button class="btn btn-primary mb-1" style="padding:5px;">Add To Cart</button>
+                                                                                                                    
                                                                                                                     <a href="/cart" class="btn btn-warning" style="color:#ffffff; padding:7px;">View Cart</a>
                                                                                                                 </div>
                                                                                                             </form>
@@ -310,5 +308,29 @@
             <!--Menu moblie-->
         </div>
         @include('layouts.javascript')
+        @include('layouts.sidebar-modal')
     </body>
 </html>
+{{--<script src="{{ asset('form/form.js')}}"></script>--}}
+<script>
+$(document).ready(function() {
+$(".submit_btnqq").click('#btn-moreqq',function(e){
+e.preventDefault();
+var id      = $("input[name='id']").val();
+var name   = $("input[name='name']").val();
+var price  = $("input[name='price']").val();
+var image = $("input[name='image']").val();
+var quantity = $("input[name='quantity']").val();
+$.ajax({
+url: "http://localhost:8001/store",
+type:'POST',
+data: {id:id, name:name, price:price, image:image,quantity:quantity},
+success: function(data) {
+$('#btn-moreqq').html("Register");
+$('#display_info').html('Successfully Scholarship Form is Submitted.');
+$("#myform")[0].reset(); 
+}
+});
+}); 
+});
+</script>

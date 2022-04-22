@@ -118,13 +118,13 @@
                                                                                 <th>Subtotal</th>
                                                                                 <td data-title="Subtotal"><span class="woocommerce-Price-amount amount">Ugx: {{ number_format(Cart::getTotal()) }}</span></td>
                                                                             </tr>
-                                                                            <tr class="order-total">
+                                                                            {{--<tr class="order-total">
                                                                                 <th>Transport</th>
                                                                                 <td data-title="Total"><strong>Ugx: 4,000</span></strong> </td>
-                                                                            </tr>
+                                                                            </tr>--}}
                                                                             <tr class="order-total">
                                                                                 <th>Total</th>
-                                                                                <td data-title="Total"><strong>Ugx: {{ number_format(Cart::getTotal() + 4000) }}</span></strong> </td>
+                                                                                <td data-title="Total"><strong>Ugx: {{ number_format(Cart::getTotal()) }}</span></strong> </td>
                                                                             </tr>
                                                                             
                                                                         </table>

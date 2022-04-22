@@ -153,12 +153,13 @@ class SuperMarketController extends Controller
     protected function getCustomerOrdersInfo($order_id){
         $get_all_orders_info=Order::join('users','users.id','orders.user_id')
         ->join('supermarkets','supermarkets.id','orders.item_id')
+        ->join('locations','locations.id','users.location_id')
         ->where('orders.status','active')
         ->whereDate('orders.created_at' , '=',Carbon::today())
         ->whereTime('orders.created_at' , '>',Carbon::now()->subHours(1))
          ->where('orders.user_id',$order_id)
         ->select('users.*','orders.user_id','orders.item_name','orders.quantity','orders.price','orders.id','orders.created_at','supermarkets.photo',
-        'supermarkets.description')
+        'supermarkets.description','locations.location')
         ->get();
         return view('supermarket::customers_orders_info',compact('get_all_orders_info'));
     }
@@ -188,7 +189,7 @@ class SuperMarketController extends Controller
         $unit_price->user_id =request()->user_id;
         $unit_price->total =$total;
         $unit_price->save();
-        return redirect()->back()->with('msg','Operation Successful');
+        return redirect('/supermarket/supermarkets-orders')->with('msg','Operation Successful');
     }
    /**
     * This function marks order as delivered
